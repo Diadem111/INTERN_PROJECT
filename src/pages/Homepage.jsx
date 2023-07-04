@@ -11,9 +11,9 @@ function Homepage() {
       </div>
 
       {/* hero section */}
-      <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`bg-green-200 ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          Hero
+          <Hero/>
         </div>
       </div>
 

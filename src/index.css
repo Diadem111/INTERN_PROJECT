@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Patua+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -86,7 +87,7 @@
 }
 .logo {
   font-size: 20px;
-  font-family:"josefin+Sans";
+  font-family:"Josefin Sans";
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -95,6 +96,10 @@
 #Signup {
   border-radius: 40px;
   background-color: red;
+}
+.typo{
+  color: #010101;
+  font-family:"Patua One";
 }
 @-webkit-keyframes slide-top {
   0% {

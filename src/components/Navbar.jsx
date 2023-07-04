@@ -32,13 +32,15 @@ const Navbar = () => {
         borderRadius: index === navLinks.length - 
         1 ? "5px" : "0",
         padding: index === navLinks.length - 
-        1 ? "10px" : "0",
+        1 ? "8px" : "0",
+        fontFamily: index === navLinks.length -1 
+        ? "Lato" : "Lato",
       }}
       className={` 
-      font-normal font-lato
-      cursor-pointer text-[16px] text-black
+      font-normal font-lato font-bold
+      cursor-pointer text-[18px] text-black
        ${index === navLinks.length
-         - 1  ? 'mr-0' : 'mr-5' }
+         - 1  ? 'mr-0' : 'mr-4' }
        text-white`}>
         <a href={`#${nav.id}` } className="text-black">
           {nav.title}
@@ -54,7 +56,7 @@ const Navbar = () => {
         src={toggle ? close : menu }
         alt="menu"
         className='w-[28px] h-[28px] 
-        object-contain ' 
+        object-contain bg-black text-primary ' 
         onClick= {() => setToggle((prev) => 
           !prev)}
         />
