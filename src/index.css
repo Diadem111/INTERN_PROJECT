@@ -92,6 +92,10 @@
   line-height: normal;
   color: #A57D4A;
 }
+#Signup {
+  border-radius: 40px;
+  background-color: red;
+}
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);

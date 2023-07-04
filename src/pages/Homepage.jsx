@@ -3,7 +3,7 @@ import styles from '../style';
 import { Navbar, Hero, Footer } from '../components';
 function Homepage() {
   return (
-    <div className="bg-primary w-full overflow-hidden">
+    <div className="bg-white w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
