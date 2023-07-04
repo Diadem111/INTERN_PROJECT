@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <div className="bg-primary w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.bo}`}>
+        <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>
       </div>
@@ -17,7 +17,7 @@ function Homepage() {
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           business
           deals

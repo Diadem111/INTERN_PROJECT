@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -84,7 +84,14 @@
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
+.logo {
+  font-size: 20px;
+  font-family:"josefin+Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #A57D4A;
+}
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);
