@@ -26,16 +26,17 @@ const Cards = () => {
         {foods.map((item, index) => (
           <div key={index} className=' shadow-2xl 
           rounded-lg hover:scale-105 duration-300'>
-             <div className='flex flex-row '>
+             <div className='flex  '>
               <div className='imgdiv flex flex-row gap-3'>
-                
               <img src={item.image} alt={item.name}
               className='w-[100%] h-[100%] object-cover rounded-t-lg lightgray 50%'
             />
             <div>
+                <div className='w-[150px] flex flex-row '>
                 <p className=''>{item.name}</p>
+                </div>
                 <div className='flex flex-row'>
-                    <p>{item.title}</p>
+                    <small>{item.title}</small>
                     <small>{item.reviews}</small>
                 </div>
             </div>
