@@ -3,7 +3,7 @@ import styles from '../style';
 import { cards } from '../constants';
 import "../index.css";
 import { FaStar } from "react-icons/fa";
-
+import { BsHeart } from "react-icons/bs";
 const Cards = () => {
   // console.log(restaurants);
   const [foods, setFoods] = useState(cards);
@@ -14,37 +14,42 @@ const Cards = () => {
 
       <div className='flex flex-col justify-between'>
         <div>
-          <h2 className='res hover:bg-yellow-200'>See which restaurants people are raving about</h2>
+          <h2 className='res hover:bg-yellow-200 font-bold'>See which restaurants people are raving about</h2>
         </div>
         <div>
-          <p className='res2 hover:bg-yellow-200'>From verified diners like you</p>
+          <p className='res11 hover:bg-yellow-200 font-light'>From verified diners like you</p>
         </div>
       </div>
       {/* done with res part */}
       {/* display foods */}
-      <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 pt-4 '>
         {foods.map((item, index) => (
-          <div key={index} className=' shadow-2xl 
-          rounded-lg hover:scale-105 duration-300'>
+          <div key={index} className={` shadow-2xl 
+          rounded-b-xl hover:scale-105 
+          duration-300 h-[200px] `}
+          style={{
+            marginTop: index === foods.length - 2 ?  "lg:25px" :""
+          }}
+          >
              <div className='flex  '>
-              <div className='imgdiv flex flex-row gap-3'>
+              <div className='imgdiv flex item-center  gap-3'>
               <img src={item.image} alt={item.name}
-              className='w-[100%] h-[100%] object-cover rounded-t-lg lightgray 50%'
+              className='w-[100%] h-[100%] object-cover lightgray 50% '
             />
             <div>
-                <div className='w-[150px] flex flex-row '>
-                <p className=''>{item.name}</p>
+                <div className='w-[150px] flex flex-row text-center mt-6 '>
+                <p className='font-light dd'>{item.name}</p>
                 </div>
-                <div className='flex flex-row'>
-                    <small>{item.title}</small>
-                    <small>{item.reviews}</small>
+                <div className='flex flex-row gap-2'>
+                    <small className='#BCA78C font-light dd1'>{item.title}</small>
+                    <small className="#BCA78C font-normal dd1">{item.reviews}</small>
                 </div>
             </div>
               </div>
              </div>
-                <div className='mx-2 pt-1'>
-              <p>{item.name}</p>
-              <span className='flex pt-2'>
+                <div className=' pt-1'>
+              {/* <p>{item.name}</p> */}
+              <span className='flex pt-2 mx-2'>
                 {[...Array(5)].map(star => {
                   const currentRating = index + 1;
                   return (
@@ -67,8 +72,13 @@ const Cards = () => {
                   );
                 })}
               </span>
-              <p className='tes pt-1'>{item.text}</p>
-              <button className='butq mt-2 mb-2'>{item.category}</button>
+              <p className='mx-2 tes pt-1'>{item.text}</p>
+              <div className='dd2 mt-2 mb-2 rounded-b-lg  flex flex-row justify-between'>
+                <p className='dd mx-5 mt-2'>{item.category}</p>
+                <div>
+                    <BsHeart size={25} className='mx-5 mt-2' />
+                </div>
+                </div>
             </div>
           </div>
         ))}
