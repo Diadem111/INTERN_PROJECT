@@ -5,6 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  button {
+    @apply border border-black rounded-xl
+     px-5 py-1
+  }
+}
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
@@ -97,10 +104,72 @@
   border-radius: 40px;
   background-color: red;
 }
+#but{
+  padding: 12px 12px;
+  border: 1px solid #EDC453;
+  border-radius: 8px;
+  background-color: #EDC453;
+  color: #010101;
+  font-size: 18px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  gap: 8px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center; 
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+}
 .typo{
   color: #010101;
   font-family:"Patua One";
 }
+.res{
+  color: #010101;
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.res2{
+  color: #010101;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-decoration-line: underline;
+}
+input[type=radio]{
+  display:none
+}
+.star{
+  cursor: pointer;
+}
+.tes{
+ color: #010101;
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+.butq{
+  display: inline-flex;
+padding: 4px 14px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 4px;
+border: 1px solid #EDC453;
+background: #EDC453;
+cursor: pointer;
+}
+
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);

@@ -16,6 +16,101 @@ export const navLinks = [
 
 ];
 
+export const restaurants = [
+  {
+    id:"1",
+    name:"Coca Asia",
+    text:"Coco Asia located in the heart of Rushden Lakes shopping development, calm oasis for shoppers to take a break and enjoy breakfast, lunch...",
+    image:"../Rectangle 203.png",
+    category:"Book Now"
+  },
+  {
+    id:"2",
+    name:"Mama Pot",
+    text:"Mama Pot simply the perfect country destination for all who love good food and a relaxed drink in the beautiful village of Underwood ...",
+    image:"../Rectangle 203 (1).png",
+    category:"Book Now"
+  },
+  {
+    id:"3",
+    name:"Big Easy",
+    text:"Big Eazy restaurant with a fresh outtake on a mixture of Mediterranean and Italian cuisines. Our ethos ‘Flavours of the Sun’ sounds...",
+    image:"../Rectangle 203 (2).png",
+    category:"Book Now"
+  },
+  {
+    id:"4",
+    name:"Meal Meat",
+    text:"Meal Meat restaurant in the heart of Covent Garden and the West End, serving the best seafood, fish, shellfish and oysters on the...",
+    image:"../Rectangle 203 (3).png",
+    category:"Book Now"
+  }
+]
+export const breakfast = [
+  {
+    id:"1",
+    name:"The House",
+    text:"The House  is a luxury Afternoon Tea experience is served in the dedicated Tea Lounge. Enjoy sweet and savoury treats designed by...",
+    image:"../Rectangle 203 (4).png",
+    category:"Book Now"
+  },
+  {
+    id:"2",
+    name:"The Breakfast Club",
+    text:"The Breakfast Club is bringing his abundance of cooking experience and expertise to breakfast lovers...",
+    image:"../Rectangle 203 (5).png",
+    category:"Book Now"
+  },
+  {
+    id:"3",
+    name:"Le Bistro",
+    text:" Le Bistro contemporary, artistic and elegant, Brasserie of Light is a new destination restaurant and bar offering all day dining in a chic, Art ...",
+    image:"../Rectangle 203 (6).png",
+    category:"Book Now"
+  },
+  {
+    id:"4",
+    name:"Mama D Cafe",
+    text:"Mama D Cafe is a classy  Modern European eatery offering walk-in seats in a polished, elegant space...",
+    image:"../Rectangle 203 (7).png",
+    category:"Book Now"
+  }
+]
+
+export const outDoor = [
+  {
+    id:"1",
+    name:"KIA",
+    text:"Unwind and feel the energy at KIA, Nigeria's top USDA prime steak house, brought to you from New York with a sophisticated, trendy vibe...",
+    image:"../Rectangle 203 (8).png",
+    category:"Book Now"
+  },
+  {
+    id:"2",
+    name:"House Dine",
+    text:"House Dine showcasing the flavors and traditions of Nigeria and a large selection of agave-based spirits, along with classic...",
+    image:"../Rectangle 203 (9).png",
+    category:"Book Now"
+  },
+  {
+    id:"3",
+    name:"Grillzly",
+    text:"Grillzly Influenced by the stylish country inns of Tuscany its unique interiors create a warmth and  enjoyed by both business and private parties...",
+    image:"../Rectangle 203 (10).png",
+    category:"Book Now"
+  },
+  {
+    id:"4",
+    name:"Replay",
+    text:" NO.4 speciality and cocktails & mocktails, Mouth-watering dynamite shrimps Mongolian Beef, freshly made desserts from our pastry bar...",
+    image:"../Rectangle 203 (11).png",
+    category:"Book Now"
+  },
+
+]
+
+
+
 export const features = [
   {
     id: "feature-1",

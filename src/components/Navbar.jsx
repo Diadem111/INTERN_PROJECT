@@ -10,7 +10,7 @@ const Navbar = () => {
   
   return (
     <nav className='w-full flex py-6 
-    justify-between items-center navbar'>
+    justify-between items-center navbar border-b-purple-300'>
     <div className='flex justify-center items-center '>
     <img src="../project.png" alt='scribelogo' className='w-[50px] h-[32px] px-1'/>
     <div>
@@ -35,6 +35,8 @@ const Navbar = () => {
         1 ? "8px" : "0",
         fontFamily: index === navLinks.length -1 
         ? "Lato" : "Lato",
+        cursor: index  === navLinks.length -1 ? "pointer" : "pointer",
+        transition:index  === navLinks.length -1 ? "all 0.3s ease 0s" : "all 0.3s ease 0s",
       }}
       className={` 
       font-normal font-lato font-bold
