@@ -169,7 +169,13 @@ border: 1px solid #EDC453;
 background: #EDC453;
 cursor: pointer;
 }
-
+.imgdiv{
+  border:2px solid #EDC453;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  
+}
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);

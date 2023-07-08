@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from '../style';
-import { Navbar, Hero, Footer,
-       Breakfast,
-      NewRestaurant,
+import {
+  Navbar, Hero, Footer,
+  Breakfast,
+  NewRestaurant,
+  Cards,
   Outdoor,
- } from '../components';
+} from '../components';
 function Homepage() {
   return (
     <div className="bg-white w-full overflow-hidden border-b-purple-300">
@@ -17,15 +19,16 @@ function Homepage() {
       {/* hero section */}
       <div className={` bg-green-600 ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero/>
+          <Hero />
         </div>
       </div>
 
       <div className={` ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <NewRestaurant/>
-          <Breakfast/>
-          <Outdoor/>
+          <NewRestaurant />
+          <Breakfast />
+          <Outdoor />
+          <Cards />
         </div>
       </div>
 

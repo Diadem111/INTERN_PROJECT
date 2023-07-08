@@ -110,6 +110,41 @@ export const outDoor = [
 ]
 
 
+export const cards = [
+  {
+    id:"1",
+    name:"Adeola Oyinka",
+    title:"Lagos island",
+    reviews:"4 reviews",
+    text:"We went for my daughter's 18th. She has has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
+    image:"../Ellipse 18.png",
+    category:"Coco Asia"
+  },
+  {
+    id:"2",
+    name:"Adeola Oyinka",
+    title:"Lagos island",
+    reviews: "4 reviews",
+    text:"We went for my daughter's 18th. She has has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
+    image:"../Ellipse 18 (2).png",
+    category:"Le Bistro"
+  },
+  {
+    id:"3",
+    name:"Romoke Johnson",
+    title:"Lagos island",
+    reviews: "4 reviews",
+    text:"We went for my daughter's 18th. She has has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
+    image:"../Ellipse 18 (3).png",
+    category:"Mama Pot"
+  },
+  
+]
+
+
+
+
+
 
 export const features = [
   {

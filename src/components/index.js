@@ -4,7 +4,7 @@ import { Hero } from "./Hero";
 import Breakfast from "./Breakfast";
 import NewRestaurant from "./NewRestaurant";
 import Outdoor from "./Outdoor";
-
+import Cards from "./Cards";
 export {
     Navbar,
     Footer,
@@ -12,4 +12,5 @@ export {
     NewRestaurant,
     Outdoor,
     Breakfast,
+    Cards,
 }
