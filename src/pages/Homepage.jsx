@@ -1,12 +1,14 @@
-import React from 'react';
-import styles from '../style';
+import React from "react";
+import styles from "../style";
 import {
-  Navbar, Hero, Footer,
+  Navbar,
+  Hero,
+  Footer,
   Breakfast,
   NewRestaurant,
   Cards,
   Outdoor,
-} from '../components';
+} from "../components";
 function Homepage() {
   return (
     <div className="bg-white w-full overflow-hidden border-b-purple-300">
@@ -17,7 +19,7 @@ function Homepage() {
       </div>
 
       {/* hero section */}
-      <div className={` bg-green-600 ${styles.flexStart}`}>
+      <div className={`  ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
         </div>
@@ -31,10 +33,8 @@ function Homepage() {
           <Cards />
         </div>
       </div>
-
-
     </div>
-  )
+  );
 }
 
 export default Homepage;
