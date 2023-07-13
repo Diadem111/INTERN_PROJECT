@@ -5,6 +5,7 @@ import Breakfast from "./Breakfast";
 import NewRestaurant from "./NewRestaurant";
 import Outdoor from "./Outdoor";
 import Cards from "./Cards";
+import {Beforefooter} from "./Beforefooter";
 export {
     Navbar,
     Footer,
@@ -13,4 +14,5 @@ export {
     Outdoor,
     Breakfast,
     Cards,
+    Beforefooter,
 }

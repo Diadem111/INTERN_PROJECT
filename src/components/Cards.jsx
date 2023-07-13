@@ -30,11 +30,13 @@ const Cards = () => {
           <div
             key={index}
             className={` shadow-2xl 
-          rounded-b-xl hover:scale-105 
-          duration-300 h-[200px] `}
-            style={{
-              marginTop: index === foods.length - 2 ? "lg:25px" : "",
-            }}
+          rounded-b-xl hover:scale-105 rounded-[20px]
+          duration-300 h-[200px] 
+        ${index !== item.length - 0 ?	"mt-10" : "mt-0" }  `
+        }
+            // style={{
+            //   marginTop: index !== foods.length - 1 ? "mt-6" : "mb-0",
+            // }}
           >
             <div className="flex  ">
               <div className="imgdiv flex item-center  gap-3">

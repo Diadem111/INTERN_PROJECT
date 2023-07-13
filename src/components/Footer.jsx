@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import styles from "../style";
+
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
-  )
+    <section className={`${styles.flexCenter}`}>
+      <div>
+
+      </div>
+    </section>
+    )
 }

@@ -8,6 +8,7 @@ import {
   NewRestaurant,
   Cards,
   Outdoor,
+  Beforefooter,
 } from "../components";
 function Homepage() {
   return (
@@ -31,6 +32,7 @@ function Homepage() {
           <Breakfast />
           <Outdoor />
           <Cards />
+          <Beforefooter />
         </div>
       </div>
     </div>
