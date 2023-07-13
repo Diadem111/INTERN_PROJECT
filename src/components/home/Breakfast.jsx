@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import styles from "../style";
-import { breakfast } from "../constants";
+import styles from "../../style";
+import { breakfast } from "../../constants";
 import "../index.css";
 import { FaStar } from "react-icons/fa";
 

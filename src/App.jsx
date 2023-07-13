@@ -8,7 +8,6 @@ function App() {
     <Routes>
       <Route path="/" exact element={<Homepage />}></Route>
     </Routes>
-    worrrrrrrrrrrrrrrrrrrrrrr
   );
 }
 

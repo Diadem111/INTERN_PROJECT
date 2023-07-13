@@ -11,7 +11,7 @@ import {
 } from "../components";
 function Homepage() {
   return (
-    <div className="bg-white w-full overflow-hidden border-b-purple-300">
+    <div className="bg-[#FEFCF2] w-full overflow-hidden border-b-purple-300">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />

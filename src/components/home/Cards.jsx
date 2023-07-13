@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import styles from "../style";
-import { cards } from "../constants";
+import styles from "../../style";
+import { cards } from "../../constants";
 import "../index.css";
 import { FaStar } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
