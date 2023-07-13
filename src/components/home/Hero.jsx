@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../style";
-import "../index.css";
+import "../../index.css";
 // import { secondimage,thirdimage } from "../assets";
 
 export const Hero = () => (
