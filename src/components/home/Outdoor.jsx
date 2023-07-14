@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import styles from "../style";
-import { outDoor } from "../constants";
-import "../index.css";
+import styles from "../../style";
+import { outDoor } from "../../constants";
+import "../../index.css";
 import { FaStar } from "react-icons/fa";
 
 const outdoor = () => {

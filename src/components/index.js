@@ -1,16 +1,8 @@
 import Navbar from "./Navbar";
 import { Footer } from "./Footer";
-import { Hero } from "./Hero";
-import Breakfast from "./Breakfast";
-import NewRestaurant from "./NewRestaurant";
-import Outdoor from "./Outdoor";
-import Cards from "./Cards";
-export {
-    Navbar,
-    Footer,
-    Hero,
-    NewRestaurant,
-    Outdoor,
-    Breakfast,
-    Cards,
-}
+import { Hero } from "./home/Hero";
+import Breakfast from "./home/Breakfast";
+import NewRestaurant from "./home/NewRestaurant";
+import Outdoor from "./home/Outdoor";
+import Cards from "./home/Cards";
+export { Navbar, Footer, Hero, NewRestaurant, Outdoor, Breakfast, Cards };
