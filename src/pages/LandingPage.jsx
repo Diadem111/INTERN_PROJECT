@@ -1,8 +1,12 @@
 import React from 'react';
-import { landingpageImg } from '../components/landingpage/landingpageImg';
-
+import { LandingpageImg } from '../components/landingpage/landingInfo';
+import styles from "../style";
 export const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+     <div className="bg-[#FEFCF2] w-full overflow-hidden border-b-purple-300">
+       <div className={`${styles.boxWidth}`}>
+         <LandingpageImg/>
+       </div>
+</div>
   )
 }
