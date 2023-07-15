@@ -4,14 +4,10 @@ import "../../index.css";
 // import { secondimage,thirdimage } from "../assets";
 
 export const Hero = () => (
-  <section
-    id="home"
-    className={`
-  flex md:flex-row flex-col `}
-  >
+  <section id="home">
     <div
-      className={`flex-1 w-full h-[100px]
-  flex-col xl:px-0 sm:px-16 px-6 `}
+      className={`flex-1 w-full md:h-[100px]
+  flex-col xl:px-0 sm:px-16 px-6 h-[200px]   `}
     >
       {/* <div className='flex flex-row 
   items-center py-[6px] px-4 
@@ -19,10 +15,10 @@ export const Hero = () => (
 
   </div> */}
       <div
-        className={`flex-1 flex-row
+        className={`flex-1 
      items-center   ${styles.flexCenter}  md:my-0 my-1`}
       >
-        <div className=" bg-red-500  w-full  ">
+        <div className=" w-full  ">
           {/* <div className="w-[671px] h-[297px] ">
             <h1
               className="flex-1 font-zodiak 
@@ -43,63 +39,66 @@ export const Hero = () => (
           </div> */}
           {/* img div */}
           <div
-            className="w-full h-[80px]    rounded-lg
-        "
+            className="w-full md:h-[100px] h-[150px]    rounded-lg"
             style={{ position: "relative" }}
           >
             <img
               alt="Image"
               src="../tasty.png"
-              className="w-full h-[100px] rounded-lg"
+              className="w-full md:h-[6.8rem] h-[12rem]  rounded-lg  bg-black/2"
             />
             <div
-              style={{
-                position: "absolute",
-                top: "55%",
-                left: "20%",
-                transform: "translate(-50%, -50%)",
-                textAlign: "center",
-              }}
+              className="absolute  md:left-36 left-28 md: -translate-x-28
+            md:-translate-y-28
+            text-center -translate-x-28 -translate-y-44 mx-auto "
             >
               <div
-                className="w-[375px] h-[18px]  "
-                style={{
-                  fontFamily: "Lato",
-                  fontWeight: "500px",
-                  lineHeight: "18px",
-                }}
+                className="md:w-[50rem] w-[20rem] h-[10rem]
+                 mx-auto font-lato font-medium
+                 break-word "
               >
-                <p className="text-white text-[13px] py-2 text-start">
+                <p
+                  className="text-white md:text-[20px] 
+                
+                 sm:break-word text-[22px]  px-2 lg:px-0 
+                 leading-2   py-2 text-start font-Lato"
+                >
                   Find your next great culinary experience with TableScribe
                 </p>
               </div>
-              <section className="flex justify-center items-center w-full ">
+            </div>
+            {/* input details */}
+            <div
+              className="absolute top-36 md:left-36 
+                   text-center md:-translate-x-28 md:-translate-y-28
+                   -translate-x-28 -translate-y-16 left-[115px]   "
+            >
+              <section
+                className="flex 
+                w-full  flex-wrap  "
+              >
                 <div
-                  className="w-[300px]  
+                  className="md:w-[18rem] w-[16rem] lg:w-[510px]   
           text-start py-3 flex "
                 >
                   <input
                     type="text"
                     placeholder="Location or Cuisine"
-                    style={{
-                      width: "100%",
-                      borderRadius: "8px",
-                      padding: "10px",
-                      textAlign: "start",
-                      paddingLeft: "30px",
-                      marginRight: "2px",
-                    }}
+                    className="w-[100%] rounded-lg p-2 text-start 
+                    px-10 font-bold font-lato text-[17px] "
                   />
                   <img
                     src="../search.png"
                     alt="Search Logo"
+                    className="md:top-[40%] top-6 
+                    md:-translate-y-42 -translate-y-42"
                     style={{
                       position: "absolute",
-                      top: "62%",
+                      // top: "50%",
                       left: "10px",
                       color: "#888",
-                      transform: "translateY(-50%)",
-                      width: "16px",
+                      // transform: "translateY(-180%)",
+                      width: "18px",
                       filter: `invert(50%)`,
                     }}
                   />

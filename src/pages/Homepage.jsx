@@ -29,7 +29,7 @@ function Homepage() {
           <Outdoor />
           <Cards />
           <Beforefooter />
-          <Footer/>
+        
         </div>
       </div>
     </div>
