@@ -1,6 +1,6 @@
 import React from 'react'
 
-const arrangementHero = () => {
+const ArrangementHero = () => {
   return (
     <section>
 
@@ -8,4 +8,4 @@ const arrangementHero = () => {
   )
 }
 
-export default arrangementHero
+export default ArrangementHero

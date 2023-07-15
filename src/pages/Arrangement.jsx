@@ -1,8 +1,13 @@
-import React from 'react'
-
+import React from 'react';
+import styles from "../style";
+import ArrangementHero from '../components/arrangement/arrangementHero';
 const Arrangement = () => {
   return (
-    <div>Arrangement</div>
+    <div className='w-full overflow-hidden' >
+        <div className={`${styles.boxWidth}`}>
+         <ArrangementHero/>
+       </div>
+    </div>
   )
 }
 
