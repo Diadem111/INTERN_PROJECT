@@ -12,7 +12,7 @@ import {
 } from "../components";
 function Homepage() {
   return (
-    <div className="bg-[#FEFCF2] w-full overflow-hidden border-b-purple-300">
+    <div className="bg-[#FEFCF2] w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}></div>
 
       {/* hero section */}
@@ -29,7 +29,6 @@ function Homepage() {
           <Outdoor />
           <Cards />
           <Beforefooter />
-          <Footer/>
         </div>
       </div>
     </div>
