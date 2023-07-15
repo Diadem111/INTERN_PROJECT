@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Homepage from "./pages/Homepage";
 import Restaurant from "./pages/Restaurant";
+import { LandingPage } from "./pages/LandingPage";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Homepage />} />
+      <Route path="/" exact element={<LandingPage />} />
+        <Route path="/gallery" exact element={<Homepage />} />
         <Route path="/restaurants" exact element={<Restaurant />} />
       </Routes>
       <Footer />
