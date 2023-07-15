@@ -5,6 +5,7 @@ import Breakfast from "./home/Breakfast";
 import NewRestaurant from "./home/NewRestaurant";
 import Outdoor from "./home/Outdoor";
 import Cards from "./home/Cards";
+<<<<<<< HEAD
 import {Beforefooter} from "./Beforefooter";
 export {
     Navbar,
@@ -16,3 +17,16 @@ export {
     Cards,
     Beforefooter,
 }
+=======
+import { Beforefooter } from "./Beforefooter";
+export {
+  Navbar,
+  Footer,
+  Hero,
+  NewRestaurant,
+  Outdoor,
+  Breakfast,
+  Cards,
+  Beforefooter,
+};
+>>>>>>> c47dbc129fa5bff18fb491f1078507e89b378269
