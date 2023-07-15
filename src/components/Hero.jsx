@@ -7,10 +7,10 @@ export const Hero = () => (
   <section
     id="home"
     className={`
-  flex md:flex-row flex-col ${styles.paddingY}`}
+  flex md:flex-row flex-col `}
   >
     <div
-      className={`flex-1 ${styles.flexStart}
+      className={`flex-1 w-full h-[100px]
   flex-col xl:px-0 sm:px-16 px-6 `}
     >
       {/* <div className='flex flex-row 
@@ -22,8 +22,8 @@ export const Hero = () => (
         className={`flex-1 flex-row
      items-center   ${styles.flexCenter}  md:my-0 my-1`}
       >
-        <div className="  flex-col md:w-[90%] w-[100%]  ">
-          <div className="w-[671px] h-[297px] ">
+        <div className=" bg-red-500  w-full  ">
+          {/* <div className="w-[671px] h-[297px] ">
             <h1
               className="flex-1 font-zodiak 
      text-[64px] font-normal
@@ -40,23 +40,23 @@ export const Hero = () => (
               <span> To Perfect</span> <br />
               Dining...
             </h1>
-          </div>
+          </div> */}
           {/* img div */}
           <div
-            className="w-[450px] h-[80px]    rounded-lg
+            className="w-full h-[80px]    rounded-lg
         "
             style={{ position: "relative" }}
           >
             <img
               alt="Image"
               src="../tasty.png"
-              className="w-full h-full rounded-lg"
+              className="w-full h-[100px] rounded-lg"
             />
             <div
               style={{
                 position: "absolute",
                 top: "55%",
-                left: "46%",
+                left: "20%",
                 transform: "translate(-50%, -50%)",
                 textAlign: "center",
               }}
@@ -114,7 +114,7 @@ export const Hero = () => (
       </div>
     </div>
     {/* the seoncd img */}
-    <div
+    {/* <div
       className={`flex-1 flex  
          ${styles.flexCenter} md:my-0 my-10 relative`}
     >
@@ -124,13 +124,13 @@ export const Hero = () => (
         className=" md:w-[90%] w-[100%] h-[344px]
           relative z-[5]  "
       />
-    </div>
+    </div> */}
 
     {/* gradient */}
-    <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+    {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
     <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
     <div className="absolute z-[0] w-[50%] right-20 bottom-20 blue__gradient" />
-    {/* gradient end */}
-    <div className={`ss`}></div>
+    gradient end
+    <div className={`ss`}></div> */}
   </section>
 );

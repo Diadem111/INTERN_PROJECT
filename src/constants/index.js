@@ -222,65 +222,66 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Discover",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Outdoor Dining",
+        link: "http://127.0.0.1:5173/",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Breakfast Menu",
+        link: "http://127.0.0.1:5173/",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
+        name: "Festive Bonus",
+        link: "http://127.0.0.1:5173/",
       },
       {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        name: "New Restaurants",
+        link: "http://127.0.0.1:5173/",
       },
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Special Offers",
+        link: "http://127.0.0.1:5173/",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Company",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "About Us",
+        link: "http://127.0.0.1:5173/",
       },
       {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        name: "Blogs",
+        link: "http://127.0.0.1:5173/",
       },
       {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        name: "Affiliate Programs",
+        link: "http://127.0.0.1:5173/",
       },
       {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        name: "Join Us",
+        link: "http://127.0.0.1:5173/",
       },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
+      
     ],
   },
   {
-    title: "Partner",
+    title: "Support",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Contact Us",
+        link: "http://127.0.0.1:5173/",
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "Terms of Use",
+        link: "http://127.0.0.1:5173/",
+      },
+      {
+        name: "Privacy",
+        link: "http://127.0.0.1:5173/",
       },
     ],
   },
