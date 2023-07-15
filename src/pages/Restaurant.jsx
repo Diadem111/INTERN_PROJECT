@@ -4,7 +4,7 @@ import RestaurantInfo from "../components/restaurant/RestaurantInfo";
 
 export default function Restaurant() {
   return (
-    <div className="bg-[#FEFCF2] h-screen flex flex-col">
+    <div className="bg-[#FEFCF2] h-full flex flex-col">
       <RestaurantHero />
       <RestaurantInfo />
     </div>

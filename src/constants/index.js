@@ -13,6 +13,9 @@ import {
   send,
   shield,
   star,
+  GroupDining,
+  birthday,
+  spaghetti,
 } from "../assets";
 export const navLinks = [
   {
@@ -265,7 +268,6 @@ export const footerLinks = [
         name: "Join Us",
         link: "http://127.0.0.1:5173/",
       },
-      
     ],
   },
   {
@@ -326,5 +328,32 @@ export const clients = [
   {
     id: "client-4",
     logo: dropbox,
+  },
+];
+
+export const Menus = [
+  {
+    heading: "Group Dining Menu",
+    price: "2000",
+    dateRange: "5 June - 22 December",
+    foodDecription:
+      "Enjoy 2 courses for NGN 2,000 per person and 3 courses for NGN 3,000 per person on our Group Menu, available for 12 or more people.",
+    img: GroupDining,
+  },
+  {
+    heading: "Birthday Menu",
+    price: "2000",
+    dateRange: "5 June - 22 December",
+    foodDecription:
+      "Enjoy 2 courses for NGN 2,000 per person and 3 courses for NGN 3,000 per person on our Group Menu, available for 12 or more people.",
+    img: birthday,
+  },
+  {
+    heading: "Dinier Menu",
+    price: "3000",
+    dateRange: "5 June - 22 December",
+    foodDecription:
+      "Enjoy 2 courses for NGN 3,000 per person and 3 courses for NGN 3,500 per person on our Group Menu, available for 12 or more people.",
+    img: spaghetti,
   },
 ];
