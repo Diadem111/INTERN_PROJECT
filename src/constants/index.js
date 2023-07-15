@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
   people01,
   people02,
@@ -18,24 +17,6 @@ import {
   birthday,
   spaghetti,
 } from "../assets";
-=======
-// import {
-//   people01,
-//   people02,
-//   people03,
-//   facebook,
-//   instagram,
-//   linkedin,
-//   twitter,
-//   airbnb,
-//   binance,
-//   coinbase,
-//   dropbox,
-//   send,
-//   shield,
-//   star,
-// } from "../assets";
->>>>>>> f2569b246a89c359ce95e2e46f13de0650d90113
 export const navLinks = [
   {
     id: "Restaurants",
