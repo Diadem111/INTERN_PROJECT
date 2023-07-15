@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports ={
+module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   mode: "jit",
   theme: {
@@ -9,9 +9,12 @@ module.exports ={
         secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        coreYellow: "#EDC453",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        zodiak: ["Zodiak", "san-serif"],
+        lato: ["Lato", "sans-serif"],
       },
     },
     screens: {
@@ -24,5 +27,4 @@ module.exports ={
     },
   },
   plugins: [],
-}
-
+};
