@@ -29,7 +29,6 @@ function Homepage() {
           <Outdoor />
           <Cards />
           <Beforefooter />
-        
         </div>
       </div>
     </div>

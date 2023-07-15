@@ -32,8 +32,7 @@ const Cards = () => {
             className={` shadow-2xl 
           rounded-b-xl hover:scale-105 rounded-[20px]
           duration-300 h-[200px] 
-        ${index !== item.length - 0 ?	"mt-10" : "mt-0" }  `
-        }
+        ${index !== item.length - 0 ? "mt-10" : "mt-0"}  `}
             // style={{
             //   marginTop: index !== foods.length - 1 ? "mt-6" : "mb-0",
             // }}
