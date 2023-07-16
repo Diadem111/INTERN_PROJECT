@@ -16,6 +16,8 @@ import {
   GroupDining,
   birthday,
   spaghetti,
+  Linda,
+  Adeola,
 } from "../assets";
 export const navLinks = [
   {
@@ -355,5 +357,21 @@ export const Menus = [
     foodDecription:
       "Enjoy 2 courses for NGN 3,000 per person and 3 courses for NGN 3,500 per person on our Group Menu, available for 12 or more people.",
     img: spaghetti,
+  },
+];
+export const RestaurantReviewData = [
+  {
+    name: "Adeola Oyinka",
+    location: "Lagos island",
+    img: Adeola,
+    review:
+      "We went for my daughter's 18th. She has has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
+  },
+  {
+    name: "Linda Akinyemi",
+    location: "Lagos island",
+    img: Linda,
+    review:
+      "My recent dining experience at this restaurant was absolutely fantastic. From the moment I stepped through the door, I was greeted with warm hospitality and a charming ambiance.",
   },
 ];

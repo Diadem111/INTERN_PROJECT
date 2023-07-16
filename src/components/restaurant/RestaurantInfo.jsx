@@ -3,6 +3,7 @@ import RestaurantDescription from "./RestaurantDescription";
 import Experiences from "./Experiances";
 import RestaurantGallery from "./RestaurantGallery";
 import RestaurantMenu from "./RestaurantMenu";
+import RestaurantReviews from "./RestaurantReviews";
 
 export default function RestaurantInfo() {
   return (
@@ -11,6 +12,7 @@ export default function RestaurantInfo() {
       <Experiences />
       <RestaurantGallery />
       <RestaurantMenu />
+      <RestaurantReviews />
     </section>
   );
 }
