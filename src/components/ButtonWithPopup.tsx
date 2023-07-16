@@ -1,5 +1,4 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 
@@ -20,10 +19,13 @@ export default function BasicPopover() {
   const id = open ? "simple-popover" : undefined;
 
   return (
-    <div>
-      <Button aria-describedby={id} variant="contained" onClick={handleClick}>
-        Open Popover
-      </Button>
+    <div className="w-full flex justify-center">
+      <button
+        className="w-1/2 py-10 active:bg-slate-300 text-lg"
+        onClick={handleClick}
+      >
+        View More
+      </button>
       <Popover
         id={id}
         open={open}
@@ -31,10 +33,14 @@ export default function BasicPopover() {
         onClose={handleClose}
         anchorOrigin={{
           vertical: "bottom",
-          horizontal: "left",
+          horizontal: "center",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "center",
         }}
       >
-        <Typography sx={{ p: 2 }}>The content of the Popover.</Typography>
+        <Typography sx={{ p: 2 }}>Coming soon...</Typography>
       </Popover>
     </div>
   );
