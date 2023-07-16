@@ -28,7 +28,9 @@ import restaurantHall from "./restaurant-hall.png";
 import coupleHavingDiner from "./couple-have-dinner.png";
 import banquet from "./banquet-table-with-snacks.png";
 import homemadeRoast from "./homemade-roasted-chicken.png";
-import blurryFood from "./Rectangle255.png";
+import englishBreakfast from "./english-breakfast.png";
+import angleTable from "./high-angle-table.png";
+import closeUpToast from "./close-up-toast.png";
 
 export {
   logo,
@@ -61,5 +63,7 @@ export {
   coupleHavingDiner,
   banquet,
   homemadeRoast,
-  blurryFood,
+  englishBreakfast,
+  angleTable,
+  closeUpToast,
 };

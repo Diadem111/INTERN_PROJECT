@@ -2,6 +2,7 @@ import React from "react";
 import RestaurantDescription from "./RestaurantDescription";
 import Experiences from "./Experiances";
 import RestaurantGallery from "./RestaurantGallery";
+import RestaurantMenu from "./RestaurantMenu";
 
 export default function RestaurantInfo() {
   return (
@@ -9,6 +10,7 @@ export default function RestaurantInfo() {
       <RestaurantDescription />
       <Experiences />
       <RestaurantGallery />
+      <RestaurantMenu />
     </section>
   );
 }

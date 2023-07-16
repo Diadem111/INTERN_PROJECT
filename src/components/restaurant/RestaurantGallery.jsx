@@ -1,7 +1,6 @@
 import React from "react";
 import {
   banquet,
-  blurryFood,
   coupleHavingDiner,
   homemadeRoast,
   restaurantHall,
