@@ -24,6 +24,11 @@ import calender from "./ic-calender.svg";
 import GroupDining from "./group-dining-menu.png";
 import birthday from "./couples-celebrating-birthday 1.png";
 import spaghetti from "./spaghetti-pasta.png";
+import restaurantHall from "./restaurant-hall.png";
+import coupleHavingDiner from "./couple-have-dinner.png";
+import banquet from "./banquet-table-with-snacks.png";
+import homemadeRoast from "./homemade-roasted-chicken.png";
+import blurryFood from "./Rectangle255.png";
 
 export {
   logo,
@@ -52,4 +57,9 @@ export {
   GroupDining,
   birthday,
   spaghetti,
+  restaurantHall,
+  coupleHavingDiner,
+  banquet,
+  homemadeRoast,
+  blurryFood,
 };

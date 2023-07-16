@@ -296,3 +296,7 @@ input[type="radio"] {
 .bg-restaurant {
   background-image: url(./assets/coco-asian.png);
 }
+.bg-gallery4 {
+  background-image: url(./assets/couple-enjoying-food-restaurant.png);
+  filter: brightness(0.8);
+}

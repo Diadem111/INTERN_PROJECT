@@ -5,12 +5,6 @@ export default function RestaurantHero() {
   return (
     <section className=" bg-restaurant bg-cover bg-no-repeat h-[45rem]">
       <div className="z-10">
-        {/* <img
-          className="absolute z-0 w-full h-auto top-1/2 left-1/2"
-          style={{ transform: "translate(-50%, -25%)" }}
-          src={cocoAsian}
-          alt="Restaurant image"
-        /> */}
         <div className="text-white z-50 flex flex-col items-center gap-8 pt-[14%] w-full h-full ">
           <h1 className=" text-6xl font-zodiak font-bold text-center">
             Coco Asia
