@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Navigate, useNavigate } from "react-router";
 import styles from "../../style";
 import { restaurants } from "../../constants";
 import "../../index.css";
@@ -9,6 +10,7 @@ const NewRestaurant = () => {
   const [foods, setFoods] = useState(restaurants);
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
+  const navigate = useNavigate();
   return (
     <section className="p-4 py-10 m-auto ">
       <div className="flex flex-col lg:flex-row justify-between">
@@ -62,7 +64,14 @@ const NewRestaurant = () => {
                 })}
               </span>
               <p className="tes pt-1">{item.text}</p>
-              <button className="butq mt-2 mb-2">{item.category}</button>
+              <button
+                onClick={() => {
+                  navigate("restaurants");
+                }}
+                className="butq mt-2 mb-2"
+              >
+                {item.category}
+              </button>
             </div>
           </div>
         ))}

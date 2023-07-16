@@ -7,20 +7,16 @@ import { LandingPage } from "./pages/LandingPage";
 import Arrangement from "./pages/Arrangement";
 function App() {
   return (
-
     <div>
       <Navbar />
       <Routes>
-      <Route path="/" exact element={<LandingPage />} />
+        <Route path="/" exact element={<LandingPage />} />
         <Route path="/gallery" exact element={<Homepage />} />
-        <Route path="/restaurants" exact element={<Restaurant />} />
+        <Route path="/gallery/restaurants" exact element={<Restaurant />} />
         <Route path="/arrangement" exact element={<Arrangement />} />
-         
-      
       </Routes>
       <Footer />
     </div>
-
   );
 }
 
