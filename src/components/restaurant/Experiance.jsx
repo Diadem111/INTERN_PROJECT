@@ -1,8 +1,7 @@
-import React from "react";
 import MenuCard from "./MenuCard";
 import { Menus } from "../../constants";
 
-export default function Experiance() {
+export default function Experience() {
   return (
     <div>
       <div className="mb-4 font-bold  text-xl">Experiences</div>
