@@ -31,6 +31,7 @@ import homemadeRoast from "./homemade-roasted-chicken.png";
 import englishBreakfast from "./english-breakfast.png";
 import angleTable from "./high-angle-table.png";
 import closeUpToast from "./close-up-toast.png";
+import Logo from "./project.png";
 import Adeola from "./Adeola.png";
 import Linda from "./linda.png";
 
@@ -70,4 +71,5 @@ export {
   closeUpToast,
   Adeola,
   Linda,
+  Logo,
 };

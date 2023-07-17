@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../style";
 import "../index.css";
-import { close, logo, menu } from "../assets";
+import { Logo, close, logo, menu } from "../assets";
 // import {seconddesign, thirddesign} from "../assets";
 import { navLinks } from "../constants";
 
@@ -11,11 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#FEFCF2] px-[8%] w-full flex py-6 justify-between items-center navbar border-b-purple-300">
       <div className="flex justify-center items-center ">
-        <img
-          src="../project.png"
-          alt="scribelogo"
-          className="w-[50px] h-[32px] px-1"
-        />
+        <img src={Logo} alt="scribelogo" className="w-[50px] h-[32px] px-1" />
         <div>
           <h3 className="logo">TableScribe</h3>
         </div>
