@@ -8,10 +8,13 @@ export default function RestaurantMenu() {
       <div className="mb-4 font-bold  text-xl">Menu</div>
       <hr className="mb-[6%] bg-slate-500 w-full" />
       <div className="flex flex-col">
-        {" "}
         <div className="w-full flex justify-between mb-4">
           <div className=" w-fit h-full p-2 border rounded-lg border-black flex gap-4 items-center">
-            <select className="appearance-none rounded-lg" name="menu" id="">
+            <select
+              className="appearance-none rounded-lg outline-none"
+              name="menu"
+              id=""
+            >
               <option value="Breakfast">Breakfast</option>
               <option value="Lunch">Lunch</option>
               <option value="Dinner">Dinner</option>

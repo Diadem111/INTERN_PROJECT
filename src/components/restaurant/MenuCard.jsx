@@ -1,5 +1,6 @@
 import React from "react";
 import { calender, cash } from "../../assets";
+import { useNavigate } from "react-router";
 
 export default function MenuCard({
   heading,
@@ -8,6 +9,7 @@ export default function MenuCard({
   foodDescription,
   img,
 }) {
+  const navigate = useNavigate();
   return (
     <div className="h-full grid grid-cols-10 p-5 border border-[#64748B] my-12">
       <div className="flex flex-col col-start-1 col-span-5 gap-3">
@@ -29,7 +31,11 @@ export default function MenuCard({
           </span>
         </div>
         <p className="my-4">{foodDescription}</p>
-        <button id="but" className="w-2/5">
+        <button
+          onClick={() => navigate("reservation")}
+          id="but"
+          className="w-2/5"
+        >
           Book a Table
         </button>
       </div>

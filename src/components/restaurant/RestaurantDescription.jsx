@@ -60,11 +60,11 @@ export default function RestaurantDescription() {
         </span>
       </div>
       <p className=" font-medium text-lg mt-6 mb-12">
-        Coco Asia, located in the heart of Rushden Lakes shopping development,
-        is a calm oasis for shoppers to take a break and enjoy breakfast, lunch,
-        dinner and everything in between. From cosy booths to larger sharing
-        tables, the atmosphere is warm and friendly and you’ll be well looked
-        after from the moment you walk through the door
+        Circa.Nonparceil, located in the heart of Rushden Lakes shopping
+        development, is a calm oasis for shoppers to take a break and enjoy
+        breakfast, lunch, dinner and everything in between. From cosy booths to
+        larger sharing tables, the atmosphere is warm and friendly and you’ll be
+        well looked after from the moment you walk through the door
       </p>
     </div>
   );
