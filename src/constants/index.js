@@ -375,3 +375,41 @@ export const RestaurantReviewData = [
       "My recent dining experience at this restaurant was absolutely fantastic. From the moment I stepped through the door, I was greeted with warm hospitality and a charming ambiance.",
   },
 ];
+export const MenusOptions = ["Breakfast", "Lunch", "Dinner"];
+export const Months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+export const Days = [
+  { day: "Sat", number: "1" },
+  { day: "Sun", number: "2" },
+  { day: "Mon", number: "3" },
+  { day: "Tue", number: "4" },
+  { day: "Wed", number: "5" },
+  { day: "Thur", number: "6" },
+  { day: "Fri", number: "7" },
+];
+export const Times = [
+  "11:30",
+  "12:00",
+  "12:30",
+  "13:00",
+  "13:30",
+  "14:00",
+  "14:30",
+  "15:00",
+  "15:30",
+  "16:00",
+  "16:30",
+  "17:00",
+];

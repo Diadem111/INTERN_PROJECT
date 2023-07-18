@@ -1,5 +1,7 @@
 import React from "react";
-import { PiCaretDownBold, PiCaretRightThin } from "react-icons/pi";
+import { MenusOptions } from "../../constants/index.js";
+import { PiCaretRightThin } from "react-icons/pi";
+import Dropdown from "../Dropdown.jsx";
 import { angleTable, closeUpToast, englishBreakfast } from "../../assets";
 
 export default function RestaurantMenu() {
@@ -9,20 +11,7 @@ export default function RestaurantMenu() {
       <hr className="mb-[6%] bg-slate-500 w-full" />
       <div className="flex flex-col">
         <div className="w-full flex justify-between mb-4">
-          <div className=" w-fit h-full p-2 border rounded-lg border-black flex gap-4 items-center">
-            <select
-              className="appearance-none rounded-lg outline-none"
-              name="menu"
-              id=""
-            >
-              <option value="Breakfast">Breakfast</option>
-              <option value="Lunch">Lunch</option>
-              <option value="Dinner">Dinner</option>
-            </select>
-            <div className="h-full flex items-center">
-              <PiCaretDownBold />
-            </div>
-          </div>
+          <Dropdown array={MenusOptions} textSize="base" padding={2} />
           <PiCaretRightThin size={30} />
         </div>
         <div className="grid grid-cols-3">

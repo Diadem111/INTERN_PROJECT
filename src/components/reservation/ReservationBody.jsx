@@ -1,4 +1,7 @@
 import React from "react";
+import DatePicker from "./DatePicker";
+import Time from "./Time";
+import Seating from "./Seating";
 
 export default function ReservationBody() {
   return (
@@ -7,12 +10,24 @@ export default function ReservationBody() {
         <h1 className="text-2xl font-bold pt-4 mb-4">Book a table</h1>
         <hr className="mb-2 border border-[#010101] w-full" />
       </div>
-      <div className="border border-[#010101] p-6 flex justify-between items-center rounded-lg">
+      <div className="border border-[#010101] p-6 flex justify-between items-center rounded-lg mb-[5%]">
         <span className="text-xl font-bold">Guest</span> <Counter />
+      </div>
+      <DatePicker />
+      <Time />
+      <Seating />
+      <div className="flex items-center justify-between">
+        <button className="bg-white py-2 border rounded-md w-[45%]">
+          Cancel
+        </button>
+        <button className="bg-coreYellow py-2 border-none rounded-md w-[45%]">
+          Reserve
+        </button>
       </div>
     </section>
   );
 }
+// Counter component for the number of guests
 function Counter() {
   const [count, setCount] = React.useState(1);
   function add() {
