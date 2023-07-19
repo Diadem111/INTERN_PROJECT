@@ -4,7 +4,7 @@ import ArrangementHero from '../components/arrangement/arrangementHero';
 const Arrangement = () => {
   return (
     <div className='w-full overflow-hidden' >
-        <div className={`${styles.boxWidth}`}>
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
          <ArrangementHero/>
        </div>
     </div>
