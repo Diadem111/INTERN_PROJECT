@@ -1,5 +1,6 @@
 import React from 'react';
 import  {ModalData} from '../components';
+import styles from "../style";
 
 export const Modal = () => {
   return (
