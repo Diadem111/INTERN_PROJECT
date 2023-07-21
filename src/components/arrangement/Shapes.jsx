@@ -3,10 +3,9 @@ import { Card } from './Card';
 
 export const CircleShape = () => {
   return (
-    <div className='absolute w-8 h-8 bg-blue-500 rounded-full'>
-    </div>
+    <div className='absolute w-8 h-8 bg-green-500 rounded-full'>fff</div>
   )
-};
+}
 
 export const SquareShape = () => {
     return (
@@ -56,8 +55,8 @@ export const BigCard = () => {
         <Card>
             <CircleShape style={{top:"50%", left:"5%"}}/>
             <SquareShape style={{top:"50%", right:"5%"}}/>
-            <CircleShape style={{top:"5%", left:"50%"}}/>
-            <SquareShape style={{bottom: "5%", right:"50%"}}/>
+            <CircleShape style={{top:"55%", left:"5%"}}/>
+            <SquareShape style={{bottom: "50%", right:"5%"}}/>
         </Card>
     )
 }
