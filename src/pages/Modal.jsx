@@ -5,7 +5,7 @@ import styles from "../style";
 export const Modal = () => {
   return (
     
-         <div className='w-full overflow-hidden bg-primary' >
+         <div className=' overflow-hidden bg-primary' >
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
        
          <ModalData/>
