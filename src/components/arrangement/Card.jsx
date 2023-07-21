@@ -2,14 +2,16 @@ import React from "react";
 
 export const Card = () => {
   return (
+    
     <div
-      className="bg-gray-600 p-8 rounded-lg 
-    shadow-lg relative h-[95%] w-[80%]"
+      className=" p-8 rounded-lg 
+     relative h-[94%] w-[80%] " 
     >
+      
       <section className="flex">
         <section>
           <p
-            className="absolute -left-64 -bottom-2  
+            className="absolute -left-64 bottom-28
          transform rotate-90 -translate-y-1/2 h-[200px]
         w-[300px] font-lato text-[24px] text-bolder "
           >
@@ -29,7 +31,7 @@ export const Card = () => {
         w-[170px] bg-primary rounded-full"
             ></div>
             <p
-              className="absolute left-52 bottom-14
+              className="absolute left-52 bottom-40
          transform -translate-y-1/2 h-[170px]
         w-[170px]  rounded-full text-bolder font-lato
          text-[24px]"
@@ -38,30 +40,36 @@ export const Card = () => {
             </p>
           </section>
         </div>
-        <div
+       <section>
+       <div
           className="absolute right-0 top-52
        transform -translate-y-1/2 h-[200px]
       w-[100px] bg-primary rounded-full "
         ></div>
+        <p className="absolute -right-52 bottom-60
+       transform -translate-y-1/2 h-[200px]
+        w-[200px] -rotate-90  font-lato text-[26px]
+         text-bolder">Wall area</p>
+       </section>
       </section>
 
       {/* second column */}
       <section className="flex">
         <div
-          className="absolute left-14 bottom-10
+          className="absolute left-14 bottom-40
       transform -translate-x-1/2 h-[200px] w-[100px] 
       bg-primary rounded-full"
         ></div>
         <section>
           <div
-            className="absolute left-1/2 bottom-16 
+            className="absolute left-1/2 bottom-40 
       transform -translate-x-1/2 h-[170px] w-[170px]
       bg-primary rounded-full"
           ></div>
           {/* <p className=''>Center</p> */}
         </section>
         <div
-          className="absolute right-0 bottom-10 
+          className="absolute right-0 bottom-40 
       transform -translate-x-1 h-[200px] w-[100px]
       bg-primary rounded-full"
         ></div>
@@ -87,12 +95,22 @@ export const Card = () => {
        bg-primary rounded-full"
           ></div>
         </section>
-        <div
-          className="absolute left-1/2 -bottom-32 
+       <section className="text-center">
+        <p className="absolute left-1/2 -bottom-56
+      transform -translate-x-1/2 h-[260px] w-[150px]
+      text-bolder font-lato
+       text-[24px]
+      ">
+          Rooftop
+        </p>
+       <div
+          className="absolute left-1/2 -bottom-14
       transform -translate-x-1/2 h-[260px] w-[70px]
       bg-primary rotate-90 rounded-full"
         ></div>
-      </section>
+
+        </section>
+             </section>
       {/* shapes to d left */}
 
       {/* shapes to the right */}
