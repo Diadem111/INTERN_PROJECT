@@ -4,7 +4,8 @@ import "./modal.css";
 import { Document, Page, pdfjs } from "react-pdf";
 import confirm from "../../assets/confirm.pdf";
 import { Navigate, useNavigate } from "react-router";
-
+// import "react-pdf/dist/esm/Page/TextLayer.css";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export const ModalwithInfo = ({ pdfUrl }) => {
@@ -41,7 +42,7 @@ export const ModalwithInfo = ({ pdfUrl }) => {
             renderMode="canvas"
             className="  animate-pulse"
           >
-            <Page pageNumber={1} width={200} height={50} />
+            <Page pageNumber={1} width={200} height={50} renderTextLayer={false}/>
           </Document>
           {/* <svg
                 className="w-14 h-14 text-primary"
