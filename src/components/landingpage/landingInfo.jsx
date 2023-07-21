@@ -22,7 +22,6 @@ export const LandingpageImg = () => {
               }}
               className="w-[20%] md:w-[10%] 
               but2 text-sm p-3 mt-4 text-primary font-lato text-[18px] font-semibold leading-5"
-              
             >
               Book a Table
             </button>

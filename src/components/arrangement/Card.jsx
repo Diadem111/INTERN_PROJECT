@@ -24,10 +24,10 @@ export const Card = () => {
             className="absolute lg:left-2 -left-40 top-52
          transform -translate-y-1/2  h-[200px]
         w-[100px] bg-yellow-500 rounded-full "
-        onClick={() => {
-          navigate("/arrangement/success");
-        }}
-         ></div>
+            onClick={() => {
+              navigate("/arrangement/success");
+            }}
+          ></div>
         </section>
         {/* first circle  */}
         <div className="justify-center items-center text-center">
@@ -37,9 +37,9 @@ export const Card = () => {
                -left-14 top-52
          transform -translate-y-1/2 h-[170px] 
         w-[170px] bg-primary rounded-full"
-        onClick={() => {
-          navigate("/arrangement/success");
-        }}
+              onClick={() => {
+                navigate("/arrangement/success");
+              }}
             ></div>
             <p
               className="absolute lg:left-52
@@ -59,9 +59,9 @@ export const Card = () => {
              -right-40 top-52
        transform -translate-y-1/2 h-[200px]
       w-[100px] bg-primary rounded-full "
-      onClick={() => {
-        navigate("/arrangement/success");
-      }}
+            onClick={() => {
+              navigate("/arrangement/success");
+            }}
           ></div>
           <p
             className="absolute lg:left-[630px] 
@@ -91,9 +91,9 @@ export const Card = () => {
              lg:left-[295px] bottom-28
       transform -translate-x-1/2 h-[170px] w-[170px]
       bg-primary rounded-full"
-      onClick={() => {
-        navigate("/arrangement/success");
-      }}
+            onClick={() => {
+              navigate("/arrangement/success");
+            }}
           ></div>
           {/* <p className=''>Center</p> */}
         </section>
@@ -102,9 +102,9 @@ export const Card = () => {
            bottom-20
       transform -translate-x-1 h-[200px] w-[100px]
       bg-primary rounded-full"
-      onClick={() => {
-        navigate("/arrangement/success");
-      }}
+          onClick={() => {
+            navigate("/arrangement/success");
+          }}
         ></div>
       </section>
 
@@ -128,9 +128,9 @@ export const Card = () => {
       transform rotate-90 -translate-x-1/2 h-[260px]
        w-[70px]
        bg-primary rounded-full "
-       onClick={() => {
-        navigate("/arrangement/success");
-      }}
+            onClick={() => {
+              navigate("/arrangement/success");
+            }}
           ></div>
         </section>
         <section className="text-center">
@@ -150,12 +150,12 @@ export const Card = () => {
           -bottom-20
       transform -translate-x-1/2 h-[260px] w-[70px]
       bg-primary rotate-90 rounded-full"
-      onClick={() => {
-        navigate("/arrangement/success");
-      }}
+            onClick={() => {
+              navigate("/arrangement/success");
+            }}
           ></div>
         </section>
       </section>
-          </div>
+    </div>
   );
 };

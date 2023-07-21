@@ -1,19 +1,19 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./modal.css";
 // import Pdf from "../../Pdf";
-import {Document, Page,pdfjs } from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf";
 import confirm from "../../assets/confirm.pdf";
 import { Navigate, useNavigate } from "react-router";
 
-
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-export const ModalwithInfo = ({pdfUrl}) => {
+export const ModalwithInfo = ({ pdfUrl }) => {
+  
   const [numPages, setNumPages] = useState(null);
   const navigate = useNavigate();
   // const [pageNumber, setPageNumber] = useState(1);
-   
-    return (
+
+  return (
     <div className=" w-full   h-screen flex items-center justify-center">
       <div
         className="max-w-md w-full bg-white
@@ -35,11 +35,15 @@ export const ModalwithInfo = ({pdfUrl}) => {
             mt-14 w-44 h-44 mx-auto mb-4">
             <div className="absolute top-1/2 left-1/2
              transform -translate-x-1/2 translate-y-1/2"> */}
-             {/* <Pdf/> */}
-             <Document file={confirm} renderMode="canvas" className="  animate-pulse">
-                <Page pageNumber={1} width={200} height={50} />
-             </Document>
-                           {/* <svg
+          {/* <Pdf/> */}
+          <Document
+            file={confirm}
+            renderMode="canvas"
+            className="  animate-pulse"
+          >
+            <Page pageNumber={1} width={200} height={50} />
+          </Document>
+          {/* <svg
                 className="w-14 h-14 text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -52,7 +56,7 @@ export const ModalwithInfo = ({pdfUrl}) => {
                   d="M5 13l4 4L19 7"
                 />
               </svg> */}
-            {/* </div> */}
+          {/* </div> */}
           {/* </div> */}
         </div>
         <div className=" text-center lg:mt-48 mt-52 z-10">
@@ -66,12 +70,14 @@ export const ModalwithInfo = ({pdfUrl}) => {
         </div>
 
         <div className="lg:mt-1 mt-5 z-10">
-          <button className="text-center font-lato p-3
+          <button
+            className="text-center font-lato p-3
           500 hover:bg-gray-100 active:bg-gray-100 focus:outline-none 
           focus:ring focus:ring-gray-300 cursor-pointer"
-          onClick={() => {
-            navigate("/arrangement/success");
-          }}>
+            onClick={() => {
+              navigate("/arrangement/success");
+            }}
+          >
             Back to homepage
           </button>
         </div>

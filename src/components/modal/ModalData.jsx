@@ -12,7 +12,7 @@ export const ModalData = () => {
       style={{ marginTop: "10px", marginBottom: "10px" }}
     >
       <div className="">
-        <ModalwithInfo  pdfUrl = {confirm}/>
+        <ModalwithInfo pdfUrl={confirm} />
       </div>
     </section>
   );
