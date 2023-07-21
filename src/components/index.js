@@ -6,6 +6,7 @@ import NewRestaurant from "./home/NewRestaurant";
 import Outdoor from "./home/Outdoor";
 import Cards from "./home/Cards";
 import { Beforefooter } from "./Beforefooter";
+import  { ModalData } from "./modal/ModalData";
 export {
   Navbar,
   Footer,
@@ -15,4 +16,5 @@ export {
   Breakfast,
   Cards,
   Beforefooter,
+  ModalData,
 };
