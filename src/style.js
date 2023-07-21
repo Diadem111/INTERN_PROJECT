@@ -29,4 +29,5 @@ export const layout = {
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
 };
 
+export const restaurantStyles = {};
 export default styles;

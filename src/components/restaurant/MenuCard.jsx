@@ -11,7 +11,7 @@ export default function MenuCard({
 }) {
   const navigate = useNavigate();
   return (
-    <div className="h-full grid grid-cols-10 p-5 border border-[#64748B] my-12">
+    <div className="grid grid-cols-10 p-5 border border-[#64748B] my-12">
       <div className="flex flex-col col-start-1 col-span-5 gap-3">
         <h3 className="text-xl font-bold">{heading}</h3>
         <div className="grid grid-cols-8 col-start-3 items-center p-1">

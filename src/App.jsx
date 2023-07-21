@@ -14,7 +14,11 @@ function App() {
         <Route path="/" exact element={<LandingPage />} />
         <Route path="/gallery" exact element={<Homepage />} />
         <Route path="/gallery/restaurants" exact element={<Restaurant />} />
-        <Route path="/arrangement" exact element={<Arrangement />} />
+        <Route
+          path="/gallery/restaurants/reservation/arrangement"
+          exact
+          element={<Arrangement />}
+        />
         <Route
           path="/gallery/restaurants/reservation"
           exact
