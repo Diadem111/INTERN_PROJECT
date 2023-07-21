@@ -17,7 +17,10 @@ export default function ReservationBody() {
       <Time />
       <Seating />
       <div className="flex items-center justify-between">
-        <button className="bg-white py-2 border rounded-md w-[45%]">
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-white py-2 border rounded-md w-[45%]"
+        >
           Cancel
         </button>
         <button className="bg-coreYellow py-2 border-none rounded-md w-[45%]">
@@ -27,6 +30,7 @@ export default function ReservationBody() {
     </section>
   );
 }
+
 // Counter component for the number of guests
 function Counter() {
   const [count, setCount] = React.useState(1);
