@@ -3,11 +3,14 @@ import "./modal.css";
 // import Pdf from "../../Pdf";
 import {Document, Page,pdfjs } from "react-pdf";
 import confirm from "../../assets/confirm.pdf";
+import { Navigate, useNavigate } from "react-router";
+
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export const ModalwithInfo = ({pdfUrl}) => {
-  const [numPages, setNumPages] = useState(null)
+  const [numPages, setNumPages] = useState(null);
+  const navigate = useNavigate();
   // const [pageNumber, setPageNumber] = useState(1);
    
     return (
@@ -65,7 +68,10 @@ export const ModalwithInfo = ({pdfUrl}) => {
         <div className="lg:mt-1 mt-5 z-10">
           <button className="text-center font-lato p-3
           500 hover:bg-gray-100 active:bg-gray-100 focus:outline-none 
-          focus:ring focus:ring-gray-300 cursor-pointer">
+          focus:ring focus:ring-gray-300 cursor-pointer"
+          onClick={() => {
+            navigate("/arrangement/success");
+          }}>
             Back to homepage
           </button>
         </div>

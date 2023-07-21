@@ -1,6 +1,8 @@
 import React from "react";
+import { Navigate, useNavigate } from "react-router";
 
 export const Card = () => {
+  const navigate = useNavigate();
   return (
     <div
       className=" p-8 rounded-lg bg-white
@@ -10,30 +12,38 @@ export const Card = () => {
         {/* yellow square */}
         <section>
           <p
-            className="absolute lg:-left-64 right-52 lg:z-0 z-10
-             lg:bottom-28 -bottom-20 lg:text-primary text-white
+            className="absolute lg:-left-64 right-24
+            lg:z-0 z-10
+             lg:bottom-10 -bottom-20 lg:text-primary text-white
          transform rotate-90 -translate-y-1/2 h-[200px]
         w-[300px] font-lato text-[24px] text-bolder "
           >
             Window area
           </p>
           <div
-            className="absolute lg:left-2 -left-14 top-52
+            className="absolute lg:left-2 -left-40 top-52
          transform -translate-y-1/2  h-[200px]
         w-[100px] bg-yellow-500 rounded-full "
-          ></div>
+        onClick={() => {
+          navigate("/arrangement/success");
+        }}
+         ></div>
         </section>
         {/* first circle  */}
         <div className="justify-center items-center text-center">
           <section>
             <div
-              className="absolute lg:left-[210px] left-14 top-52
+              className="absolute lg:left-[210px]
+               -left-14 top-52
          transform -translate-y-1/2 h-[170px] 
         w-[170px] bg-primary rounded-full"
+        onClick={() => {
+          navigate("/arrangement/success");
+        }}
             ></div>
             <p
-              className="absolute lg:left-52 
-              left-14 -bottom-10 lg:z-0 z-10 lg:text-primary text-white
+              className="absolute lg:left-52
+              -left-14 lg:bottom-24 -bottom-10 lg:z-0 z-10 lg:text-primary text-white
          transform -translate-y-1/2 h-[170px]
         w-[170px]  rounded-full text-bolder font-lato
          text-[24px]"
@@ -45,14 +55,18 @@ export const Card = () => {
         {/* third sqaure */}
         <section>
           <div
-            className="absolute lg:right-0 -right-14 top-52
+            className="absolute lg:right-0
+             -right-40 top-52
        transform -translate-y-1/2 h-[200px]
       w-[100px] bg-primary rounded-full "
+      onClick={() => {
+        navigate("/arrangement/success");
+      }}
           ></div>
           <p
             className="absolute lg:left-[630px] 
-        left-[260px]
-          lg:bottom-60 
+        left-[150px]
+          lg:bottom-40 lg:z-0
         bottom-10 z-10 lg:text-primary text-white
        transform -translate-y-1/2 h-[200px]
         w-[200px] -rotate-90  font-lato text-[26px]
@@ -77,6 +91,9 @@ export const Card = () => {
              lg:left-[295px] bottom-28
       transform -translate-x-1/2 h-[170px] w-[170px]
       bg-primary rounded-full"
+      onClick={() => {
+        navigate("/arrangement/success");
+      }}
           ></div>
           {/* <p className=''>Center</p> */}
         </section>
@@ -85,6 +102,9 @@ export const Card = () => {
            bottom-20
       transform -translate-x-1 h-[200px] w-[100px]
       bg-primary rounded-full"
+      onClick={() => {
+        navigate("/arrangement/success");
+      }}
         ></div>
       </section>
 
@@ -108,12 +128,15 @@ export const Card = () => {
       transform rotate-90 -translate-x-1/2 h-[260px]
        w-[70px]
        bg-primary rounded-full "
+       onClick={() => {
+        navigate("/arrangement/success");
+      }}
           ></div>
         </section>
         <section className="text-center">
           <p
-            className="absolute lg:left-1/2 left-[130px]
-         -bottom-48 z-10 lg:z-0
+            className="absolute lg:left-1/2 left-[30px]
+         lg:-bottom-64 -bottom-48 z-10 lg:z-0
           lg:text-primary text-white
       transform -translate-x-1/2 h-[260px] w-[150px]
       text-bolder font-lato
@@ -127,18 +150,12 @@ export const Card = () => {
           -bottom-20
       transform -translate-x-1/2 h-[260px] w-[70px]
       bg-primary rotate-90 rounded-full"
+      onClick={() => {
+        navigate("/arrangement/success");
+      }}
           ></div>
         </section>
       </section>
-      {/* shapes to d left */}
-
-      {/* shapes to the right */}
-
-      {/* shapes at the top */}
-
-      {/* shapes at the bottom  */}
-
-      <p className="text-xl font-bold text-center">Your content goes here</p>
-    </div>
+          </div>
   );
 };
