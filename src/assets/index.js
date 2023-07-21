@@ -34,7 +34,7 @@ import closeUpToast from "./close-up-toast.png";
 import Logo from "./project.png";
 import Adeola from "./Adeola.png";
 import Linda from "./linda.png";
-
+import notfound from "./notfound.svg";
 export {
   logo,
   menu,
@@ -72,4 +72,5 @@ export {
   Adeola,
   Linda,
   Logo,
+  notfound
 };
