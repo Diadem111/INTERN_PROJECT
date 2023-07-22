@@ -21,7 +21,7 @@ export const Footer = () => {
         className='w-[200px] h-[72px] object-contain'/> */}
           <h1 className="text-[26px] font-bold">TableScribe</h1>
           <p
-            className={`${styles.para} mt-2 max-w-[310px] font-poppins text-sm`}
+            className={`${styles.paragraph} mt-2 max-w-[310px] font-poppins text-sm`}
           >
             Follow us on our social <br />
             platforms
@@ -39,7 +39,7 @@ export const Footer = () => {
         >
           {footerLinks.map((footerLink) => (
             <div
-              key={footerLink.key}
+              key={footerLink.title}
               className="flex flex-col 
           ss:my-0 my-4 min-w-[150px]"
             >
