@@ -43,7 +43,7 @@ export const Card = () => {
             ></div>
             <p
               className="absolute lg:left-52
-              -left-14 lg:bottom-24 -bottom-10 lg:z-0 z-10 lg:text-primary text-white
+              -left-14 lg:bottom-20 -bottom-10 lg:z-0 z-10 lg:text-primary text-white
          transform -translate-y-1/2 h-[170px]
         w-[170px]  rounded-full text-bolder font-lato
          text-[24px]"
@@ -57,7 +57,7 @@ export const Card = () => {
           <div
             className="absolute lg:right-0
              -right-40 top-52
-       transform -translate-y-1/2 h-[200px]
+       transform -translate-y-1/2 h-[200px] hover:bg-primary-600
       w-[100px] bg-primary rounded-full "
             onClick={() => {
               navigate("/arrangement/success");
