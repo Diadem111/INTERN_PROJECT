@@ -31,7 +31,7 @@ export const navLinks = [
 export const restaurants = [
   {
     id: "1",
-    name: "Coca Asia",
+    name: "Circa.Nonparceil",
     text: "Coco Asia located in the heart of Rushden Lakes shopping development, calm oasis for shoppers to take a break and enjoy breakfast, lunch...",
     image: "../Rectangle 203.png",
     category: "Book Now",
@@ -149,7 +149,6 @@ export const cards = [
     category: "Mama Pot",
   },
 ];
-
 
 export const footerLinks = [
   {
