@@ -4,10 +4,11 @@ import "../index.css";
 import { Logo, close, logo, menu } from "../assets";
 // import {seconddesign, thirddesign} from "../assets";
 import { navLinks } from "../constants";
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <nav className="bg-[#FEFCF2] px-[8%] w-full flex py-6 justify-between items-center navbar border-b-purple-300">
       <div className="flex justify-center items-center ">
@@ -16,7 +17,7 @@ const Navbar = () => {
           <h3 className="logo">TableScribe</h3>
         </div>
       </div>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1  text-black ">
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1 gap-3 text-black ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -36,7 +37,7 @@ const Navbar = () => {
                   ? "all 0.3s ease 0s"
                   : "all 0.3s ease 0s",
             }}
-            className={`font-lato font-bold cursor-pointer text-[18px] text-black
+            className={`font-lato cursor-pointer text-[18px] text-black
        ${index === navLinks.length - 1 ? "mr-0" : "mr-4"}
        text-white`}
           >

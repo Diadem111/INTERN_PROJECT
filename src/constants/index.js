@@ -19,12 +19,16 @@ export const navLinks = [
     title: "Restaurants",
   },
   {
-    id: "Login",
-    title: "Login",
+    id: "Gallery",
+    title: "Gallery",
   },
   {
-    id: "Signup",
-    title: "Signup",
+    id: "Reviews",
+    title: "Reviews",
+  },
+  {
+    id: "Book a Table",
+    title: "Book a Table",
   },
 ];
 
