@@ -10,8 +10,9 @@ export default function ReservationBody() {
         <h1 className="text-2xl font-bold pt-4 mb-4">Book a table</h1>
         <hr className="mb-2 border border-[#010101] w-full" />
       </div>
-      <div className="border border-[#010101] p-6 flex justify-between items-center rounded-lg mb-[5%]">
-        <span className="text-xl font-bold">Guest</span> <Counter />
+      <div className="border border-[#010101] p-6 max-sm:p-3 flex justify-between items-center rounded-lg mb-[5%]">
+        <span className="max-sm:text-lg text-xl font-bold">Guests</span>{" "}
+        <Counter />
       </div>
       <DatePicker />
       <Time />
@@ -50,11 +51,14 @@ function Counter() {
   }
   return (
     <div className="border rounded-lg border-[#010101]">
-      <button className="border-none text-3xl" onClick={subtract}>
+      <button
+        className="max-sm:text-xl border-none text-3xl"
+        onClick={subtract}
+      >
         -
       </button>
-      <span className="text-2xl">{count}</span>
-      <button className="border-none text-2xl" onClick={add}>
+      <span className="max-sm:text-lg text-2xl">{count}</span>
+      <button className="max-sm:text-lg border-none text-2xl" onClick={add}>
         +
       </button>
     </div>
