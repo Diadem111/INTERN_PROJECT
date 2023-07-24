@@ -76,7 +76,7 @@ export const ModalwithInfo = ({ pdfUrl }) => {
           500 hover:bg-gray-100 active:bg-gray-100 focus:outline-none 
           focus:ring focus:ring-gray-300 cursor-pointer"
             onClick={() => {
-              navigate("/arrangement/success");
+              navigate("/");
             }}
           >
             Back to homepage

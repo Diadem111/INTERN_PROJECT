@@ -20,7 +20,7 @@ export const LandingpageImg = () => {
               onClick={() => {
                 navigate("/gallery");
               }}
-              className="w-[20%] md:w-[10%] 
+              className="w-[40%] md:w-[10%] 
               but2 text-sm p-3 mt-4 text-primary font-lato text-[18px] font-semibold leading-5"
             >
               Book a Table

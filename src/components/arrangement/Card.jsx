@@ -23,7 +23,7 @@ export const Card = () => {
           <div
             className="absolute lg:left-2 -left-40 top-52
          transform -translate-y-1/2  h-[200px]
-        w-[100px] bg-yellow-500 rounded-full "
+        w-[100px] bg-yellow-500 rounded-full  hover:bg-primary "
             onClick={() => {
               navigate("/arrangement/success");
             }}
@@ -36,14 +36,14 @@ export const Card = () => {
               className="absolute lg:left-[210px]
                -left-14 top-52
          transform -translate-y-1/2 h-[170px] 
-        w-[170px] bg-primary rounded-full"
+        w-[170px] bg-primary rounded-full  hover:bg-gray-400"
               onClick={() => {
                 navigate("/arrangement/success");
               }}
             ></div>
             <p
               className="absolute lg:left-52
-              -left-14 lg:bottom-24 -bottom-10 lg:z-0 z-10 lg:text-primary text-white
+              -left-14 lg:bottom-20 -bottom-10 lg:z-0 z-10 lg:text-primary text-white
          transform -translate-y-1/2 h-[170px]
         w-[170px]  rounded-full text-bolder font-lato
          text-[24px]"
@@ -57,7 +57,7 @@ export const Card = () => {
           <div
             className="absolute lg:right-0
              -right-40 top-52
-       transform -translate-y-1/2 h-[200px]
+       transform -translate-y-1/2 h-[200px] hover:bg-gray-400
       w-[100px] bg-primary rounded-full "
             onClick={() => {
               navigate("/arrangement/success");
@@ -82,7 +82,7 @@ export const Card = () => {
         <div
           className="absolute lg:left-14 -left-2 bottom-20
       transform -translate-x-1/2 h-[200px] w-[100px] 
-      bg-primary rounded-full"
+      bg-primary rounded-full  hover:bg-gray-400"
         ></div>
         {/* second circle */}
         <section>
@@ -90,7 +90,7 @@ export const Card = () => {
             className="absolute left-1/2
              lg:left-[295px] bottom-28
       transform -translate-x-1/2 h-[170px] w-[170px]
-      bg-primary rounded-full"
+      bg-primary rounded-full  hover:bg-gray-400"
             onClick={() => {
               navigate("/arrangement/success");
             }}
@@ -100,7 +100,7 @@ export const Card = () => {
         <div
           className="absolute lg:right-0 -right-[60px]
            bottom-20
-      transform -translate-x-1 h-[200px] w-[100px]
+      transform -translate-x-1 h-[200px] w-[100px]  hover:bg-gray-400
       bg-primary rounded-full"
           onClick={() => {
             navigate("/arrangement/success");
@@ -127,7 +127,7 @@ export const Card = () => {
             className="absolute left-1/2 -top-20
       transform rotate-90 -translate-x-1/2 h-[260px]
        w-[70px]
-       bg-primary rounded-full "
+       bg-primary rounded-full  hover:bg-gray-400 "
             onClick={() => {
               navigate("/arrangement/success");
             }}
@@ -149,7 +149,7 @@ export const Card = () => {
             className="absolute left-1/2 
           -bottom-20
       transform -translate-x-1/2 h-[260px] w-[70px]
-      bg-primary rotate-90 rounded-full"
+      bg-primary rotate-90 rounded-full  hover:bg-gray-400"
             onClick={() => {
               navigate("/arrangement/success");
             }}
