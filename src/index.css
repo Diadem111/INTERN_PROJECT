@@ -257,3 +257,9 @@ input[type="radio"] {
   background-image: url(./assets/couple-enjoying-food-restaurant.png);
   filter: brightness(0.8);
 }
+.bg-Adeola {
+  background-image: url(./assets/Adeola.png);
+}
+.bg-Linda {
+  background-image: url(./assets/linda.png);
+}

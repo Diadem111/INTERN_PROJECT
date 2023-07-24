@@ -8,10 +8,10 @@ import {
 
 export default function RestaurantGallery() {
   return (
-    <div className="mb-[10%]">
+    <div className="mb-[7%]">
       <div className="mb-4 font-bold  text-xl">Gallery</div>
-      <hr className="mb-2 bg-slate-500 w-full" />
-      <div className=" grid grid-cols-2 mt-[7%]">
+      <hr className="mb-4 bg-slate-500 w-full" />
+      <div className=" grid grid-cols-2 ">
         <div className="w-full h-full">
           <img
             className="rounded-lg w-full h-auto p-1"

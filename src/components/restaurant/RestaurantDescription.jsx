@@ -6,9 +6,9 @@ import { cash, cutlery, magnifyingGlass } from "../../assets";
 export default function RestaurantDescription() {
   let index = 1; //Index of each star staring from 1
   return (
-    <div>
+    <div className=" max-ss:text-sm">
       <nav className="flex flex-col items-center">
-        <div className="grid grid-cols-5 my-2 w-full">
+        <div className="flex justify-center flex-wrap my-2 w-full">
           <button className={styles.restaurantNav}>Overview</button>
           <button className={styles.restaurantNav}>Experiences</button>
           <button className={styles.restaurantNav}>Gallery</button>
@@ -17,8 +17,8 @@ export default function RestaurantDescription() {
         </div>
         <hr className="mb-2 bg-slate-500 w-full" />
       </nav>
-      <div className="grid grid-cols-4">
-        <span className="text-[#BCA78C] grid grid-cols-11 justify-center items-center">
+      <div className="flex justify-center text-center max-ss:justify-between max-xs:justify-center gap-2 flex-wrap">
+        <span className="text-[#BCA78C] flex gap-2 justify-center items-center">
           <span className="flex col-start-2 items-center">
             {[...Array(5)].map((key) => {
               return (
@@ -30,7 +30,7 @@ export default function RestaurantDescription() {
           </span>
           <span className="col-start-8">4.0</span>
         </span>
-        <span className="grid grid-cols-4 col-start-2 items-center p-1">
+        <span className="grid grid-cols-4  items-center p-1">
           <span className="grid col-start-1 justify-center">
             <img className="h-full w-11/12" src={cutlery} alt="Cutlery" />
           </span>
@@ -38,7 +38,7 @@ export default function RestaurantDescription() {
             Special Dishes
           </span>
         </span>
-        <span className="grid grid-cols-4 col-start-3 items-center p-1">
+        <span className="grid grid-cols-4  items-center p-1">
           <span className="grid col-start-1 justify-center">
             <img className="h-full w-11/12" src={cash} alt="Cash" />
           </span>
@@ -46,7 +46,7 @@ export default function RestaurantDescription() {
             Less Than 5k
           </span>
         </span>
-        <span className="grid grid-cols-4 col-start-4 items-center">
+        <span className="grid grid-cols-4  items-center">
           <span className="grid col-start-1 justify-center">
             <img
               className="h-full w-11/12"

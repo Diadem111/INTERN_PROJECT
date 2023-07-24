@@ -4,13 +4,13 @@ import { useNavigate } from "react-router";
 export default function RestaurantHero() {
   const navigate = useNavigate();
   return (
-    <section className=" bg-restaurant bg-cover bg-no-repeat h-[45rem]">
+    <section className=" bg-restaurant bg-cover bg-no-repeat h-[45rem] max-xs:h-[35rem]">
       <div className="z-10">
         <div className="text-white z-50 flex flex-col items-center gap-8 pt-[14%] w-full h-full ">
-          <h1 className=" text-6xl font-zodiak font-bold text-center">
+          <h1 className="max-xs:text-4xl xs:text-4xl sm:text-6xl font-zodiak font-bold text-center">
             Circa.Nonparceil
           </h1>
-          <p className=" w-1/2 text-center text-base font-lato">
+          <p className=" w-1/2 text-center max-xs:text-sm xs:text-base font-lato">
             Circa.Nonparceil located in the heart of Rushden Lakes shopping
             development, calm oasis for shoppers to take a break and enjoy
             breakfast, lunch and dinner

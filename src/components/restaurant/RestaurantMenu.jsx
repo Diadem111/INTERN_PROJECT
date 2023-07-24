@@ -6,9 +6,9 @@ import { angleTable, closeUpToast, englishBreakfast } from "../../assets";
 
 export default function RestaurantMenu() {
   return (
-    <div className="mb-[10%]">
+    <div className="mb-[7%]">
       <div className="mb-4 font-bold  text-xl">Menu</div>
-      <hr className="mb-[6%] bg-slate-500 w-full" />
+      <hr className="mb-4 bg-slate-500 w-full" />
       <div className="flex flex-col">
         <div className="w-full flex justify-between mb-4">
           <Dropdown array={MenusOptions} textSize="base" padding={2} />

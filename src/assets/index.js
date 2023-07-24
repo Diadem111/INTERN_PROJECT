@@ -25,7 +25,7 @@ import englishBreakfast from "./english-breakfast.png";
 import angleTable from "./high-angle-table.png";
 import closeUpToast from "./close-up-toast.png";
 import Logo from "./project.png";
-import Adeola from "./Adeola.png";
+import Adeola from "./Adeola1.png";
 import Linda from "./linda.png";
 import notfound from "./notfound.svg";
 export {
@@ -58,5 +58,5 @@ export {
   Adeola,
   Linda,
   Logo,
-  notfound
+  notfound,
 };

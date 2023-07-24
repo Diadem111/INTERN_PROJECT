@@ -10,7 +10,7 @@ export default function RestaurantReviews() {
       <div className="mb-4 font-bold  text-xl">Reviews</div>
       <hr className="mb-[6%] bg-slate-500 w-full" />
       <div className="grid grid-cols-5 grid-rows-2">
-        <div className="col-start-1 col-span-3 row-start-1">
+        <div className="col-start-1 sm:col-span-3 col-span-5 row-start-1">
           <ReviewCard
             name={review1.name}
             location={review1.location}
@@ -18,7 +18,7 @@ export default function RestaurantReviews() {
             review={review1.review}
           />
         </div>
-        <div className="col-start-3 col-span-3 row-start-2">
+        <div className="sm:col-start-3 sm:col-span-3 col-span-5 row-start-2">
           <ReviewCard
             name={review2.name}
             location={review2.location}
