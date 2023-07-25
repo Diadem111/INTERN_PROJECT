@@ -36,10 +36,10 @@ const outdoor = () => {
             <div className="mx-2 pt-1">
               <p>{item.name}</p>
               <span className="flex pt-2">
-                {[...Array(5)].map((star) => {
+                {[...Array(5)].map((star, index) => {
                   const currentRating = index + 1;
                   return (
-                    <label>
+                    <label key={index}>
                       <input
                         type="radio"
                         name="rating"
@@ -54,7 +54,7 @@ const outdoor = () => {
                             ? "#BCA78C"
                             : "#BCA78C"
                         }
-                        onmouseEnter={() => setHover(currentRating)}
+                        onMouseEnter={() => setHover(currentRating)}
                         onMouseLeave={() => setHover(null)}
                       />
                     </label>

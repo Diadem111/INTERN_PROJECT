@@ -20,9 +20,9 @@ export default function RestaurantDescription() {
       <div className="flex justify-center text-center max-ss:justify-between max-xs:justify-center gap-2 flex-wrap">
         <span className="text-[#BCA78C] flex gap-2 justify-center items-center">
           <span className="flex col-start-2 items-center">
-            {[...Array(5)].map((key) => {
+            {[...Array(5)].map((star, index) => {
               return (
-                <label key={key}>
+                <label key={index}>
                   <FaStar size={17} className="star" color="#BCA78C" />
                 </label>
               );
