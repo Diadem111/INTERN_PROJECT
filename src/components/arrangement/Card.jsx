@@ -1,10 +1,21 @@
 import React from "react";
 import { Navigate, useNavigate } from "react-router";
 
-export const Card = () => {
+export const Card = ({ isOpen, closeModal, children }) => {
   const navigate = useNavigate();
+  if (!isOpen) return null;
   return (
-    <div
+    <section
+      className="bg-white overflow-hidden
+    lg:h-[120vh] h-[80vh] z-10 shadow-lg lg:w-[60%] w-[95%]
+     md:w-[90%] sm:px-4 px-4
+      justify-center items-center
+     flex "
+      style={{ marginTop: "10px", marginBottom: "10px" }}
+    >
+      <div className="fixed inset-0 flex items-center justify-center z-50 ">
+      <div className="fixed inset-0 bg-gray-800 opacity-75"></div>
+       <div
       className=" p-8 rounded-lg bg-white
      relative lg:h-[85%] lg:w-[80%] h-[60%]  "
     >
@@ -157,5 +168,11 @@ export const Card = () => {
         </section>
       </section>
     </div>
-  );
+
+      </div>
+    {/* </div> */}
+    </section>
+
+  
+      );
 };

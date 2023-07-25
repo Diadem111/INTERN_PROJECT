@@ -3,12 +3,14 @@ import styles from "../../style";
 import { outDoor } from "../../constants";
 import "../../index.css";
 import { FaStar } from "react-icons/fa";
+import { Navigate, useNavigate } from "react-router";
 
 const outdoor = () => {
   // console.log(restaurants);
   const [foods, setFoods] = useState(outDoor);
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
+  const navigate = useNavigate();
   return (
     <section className="p-4 py-5 m-auto ">
       <div className="flex flex-col lg:flex-row justify-between">
@@ -61,8 +63,14 @@ const outdoor = () => {
                   );
                 })}
               </span>
-              <p className="tes pt-1">{item.text}</p>
-              <button className="butq mt-2 mb-2">{item.category}</button>
+            <div className="h-[130px]">
+            <p className="tes pt-1">{item.text}</p>
+            </div>
+              <button className="butq mt-2 mb-2" 
+               onClick={() => {
+                navigate("restaurants");
+              }}
+              >{item.category}</button>
             </div>
           </div>
         ))}

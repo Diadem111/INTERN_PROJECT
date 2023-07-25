@@ -3,12 +3,16 @@ import styles from "../../style";
 import { breakfast } from "../../constants";
 import "../../index.css";
 import { FaStar } from "react-icons/fa";
+import { Navigate, useNavigate } from "react-router";
+
 
 const Breakfast = () => {
   // console.log(restaurants);
   const [foods, setFoods] = useState(breakfast);
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
+  const navigate = useNavigate();
+
   return (
     <section className="p-4 py-5 m-auto ">
       <div className="flex flex-col lg:flex-row justify-between">
@@ -24,7 +28,7 @@ const Breakfast = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4">
         {foods.map((item, index) => (
           <div
-            key={index}
+            key={index.name}
             className=" shadow-2xl 
           rounded-lg hover:scale-105 duration-300"
           >
@@ -64,7 +68,11 @@ const Breakfast = () => {
              <div className="h-[120px]">
              <p className="tes pt-1">{item.text}</p>
              </div>
-              <button className="butq mt-2 mb-2">{item.category}</button>
+              <button className="butq mt-2 mb-2" 
+              onClick={() => {
+                navigate("restaurants");
+              }}
+              >{item.category}</button>
             </div>
           </div>
         ))}

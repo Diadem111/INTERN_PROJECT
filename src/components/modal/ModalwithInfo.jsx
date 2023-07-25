@@ -8,18 +8,20 @@ import { Navigate, useNavigate } from "react-router";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-export const ModalwithInfo = ({ pdfUrl }) => {
+export const ModalwithInfo = ({ pdfUrl,}) => {
   
+
   const [numPages, setNumPages] = useState(null);
   const navigate = useNavigate();
   // const [pageNumber, setPageNumber] = useState(1);
 
   return (
-    <div className=" w-full   h-screen flex items-center justify-center">
+    
+    <div className="  h-screen flex items-center justify-center">
       <div
         className="max-w-md w-full bg-white
           rounded-lg shadow-lg p-6  h-[70%]
-           flex flex-col items-center"
+           flex flex-col items-center "
       >
         <div>
           <h1
