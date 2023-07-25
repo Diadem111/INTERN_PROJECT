@@ -61,7 +61,9 @@ const Breakfast = () => {
                   );
                 })}
               </span>
-              <p className="tes pt-1">{item.text}</p>
+             <div className="h-[120px]">
+             <p className="tes pt-1">{item.text}</p>
+             </div>
               <button className="butq mt-2 mb-2">{item.category}</button>
             </div>
           </div>

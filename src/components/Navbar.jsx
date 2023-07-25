@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex justify-center items-center ">
         <img src={Logo} alt="scribelogo" className="w-[50px] h-[32px] px-1" />
         <div>
-          <h3 className="logo text-[32px]  font-bold">TableScribe</h3>
+          <h3 className="logo text-[32px]  font-bold ">TableScribe</h3>
         </div>
       </div>
       <ul className="list-none sm:flex hidden

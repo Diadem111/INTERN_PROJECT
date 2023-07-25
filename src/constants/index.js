@@ -49,14 +49,14 @@ export const restaurants = [
   },
   {
     id: "3",
-    name: "Big Easy",
+    name: "OX Restaurant & Lounge",
     text: "Big Eazy restaurant with a fresh outtake on a mixture of Mediterranean and Italian cuisines. Our ethos ‘Flavours of the Sun’ sounds...",
     image: "../Rectangle 203 (2).png",
     category: "Book Now",
   },
   {
     id: "4",
-    name: "Meal Meat",
+    name: "Xover Lounge",
     text: "Meal Meat restaurant in the heart of Covent Garden and the West End, serving the best seafood, fish, shellfish and oysters on the...",
     image: "../Rectangle 203 (3).png",
     category: "Book Now",

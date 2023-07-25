@@ -65,7 +65,10 @@ const NewRestaurant = () => {
                   );
                 })}
               </span>
-              <p className="tes pt-1">{item.text}</p>
+             <div className="h-[130px]">
+             <p className="tes pt-1">{item.text}</p>
+             </div>
+              <section className=" ">
               <button
                 onClick={() => {
                   navigate("restaurants");
@@ -74,7 +77,10 @@ const NewRestaurant = () => {
               >
                 {item.category}
               </button>
-            </div>
+
+              </section>
+
+                          </div>
           </div>
         ))}
       </div>

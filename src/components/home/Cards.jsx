@@ -13,12 +13,12 @@ const Cards = () => {
     <section className="p-4 py-10 m-auto ">
       <div className="flex flex-col justify-between">
         <div>
-          <h2 className="res hover:bg-yellow-200 font-bold">
+          <h2 className="res hover:bg-gray-700 font-bold">
             See which restaurants people are raving about
           </h2>
         </div>
         <div>
-          <p className="res11 hover:bg-yellow-200 font-light">
+          <p className="res11 hover:bg-gray-700 font-light ">
             From verified diners like you
           </p>
         </div>
@@ -31,7 +31,7 @@ const Cards = () => {
             key={index}
             className={` shadow-2xl 
           rounded-b-xl hover:scale-105 rounded-[20px]
-          duration-300 h-[200px] 
+          duration-300 h-[300px] 
         ${index !== item.length - 0 ? "mt-10" : "mt-0"}  `}
             // style={{
             //   marginTop: index !== foods.length - 1 ? "mt-6" : "mb-0",
