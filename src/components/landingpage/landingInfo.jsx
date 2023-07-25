@@ -8,9 +8,10 @@ export const LandingpageImg = () => {
     <section className="mx-auto">
       <div className="relative max-h-[500px]">
         {/* overlay */}
-        <div className="absolute w-full h-full  max-h-[500px] bg-black/10 flex flex-col justify-center text-center">
+        <div className="absolute w-full h-full  max-h-[950px]
+         bg-black/20 flex flex-col justify-center text-center">
           <h1
-            className="px-4 text-4xl md:text-[54px] font-zodiak
+            className="px-4  mt-10 text-4xl md:text-[70px] font-zodiak
           font-bold leading-relaxed   tracking-wide   text-white 
            "
           >
@@ -21,7 +22,8 @@ export const LandingpageImg = () => {
                 navigate("/gallery");
               }}
               className="w-[40%] md:w-[10%] 
-              but2 text-sm p-3 mt-4 text-primary font-lato text-[18px] font-semibold leading-5"
+              but2 text-sm p-3 mt-4 text-primary font-lato text-[24px]
+               font-semibold leading-5"
             >
               Book a Table
             </button>
@@ -29,7 +31,7 @@ export const LandingpageImg = () => {
         </div>
 
         <img
-          className="w-full max-h-[600px] object-cover "
+          className="w-full max-h-[900px] object-cover "
           src={design}
           alt="image"
         />

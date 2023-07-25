@@ -18,7 +18,8 @@ const NewRestaurant = () => {
           <h2 className="res hover:bg-yellow-200">New Restaurants</h2>
         </div>
         <div>
-          <p className="res2 hover:bg-yellow-200">see Menu</p>
+          <p className="res2  hover:bg-yellow-200 font-lato font-normal
+      text-[20px] leading-5  ">see Menu</p>
         </div>
       </div>
       {/* done with res part */}
@@ -26,16 +27,17 @@ const NewRestaurant = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4">
         {foods.map((item, index) => (
           <div
-            key={index}
+            key={index.name}
             className=" shadow-2xl 
           rounded-lg hover:scale-105 duration-300"
           >
             <img
               src={item.image}
               alt={item.name}
-              className="w-[292px] h-[162px] object-cover rounded-t-lg lightgray 50%"
+              className="w-[292px] h-[162px] object-cover
+               rounded-t-lg lightgray 50%"
             />
-            <div className="mx-2 pt-1">
+            <div className="mx-2 pt-1 font-semibold text-[20px]">
               <p>{item.name}</p>
               <span className="flex pt-2">
                 {[...Array(5)].map((star) => {

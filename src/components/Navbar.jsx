@@ -15,11 +15,11 @@ const Navbar = () => {
       <div className="flex justify-center items-center ">
         <img src={Logo} alt="scribelogo" className="w-[50px] h-[32px] px-1" />
         <div>
-          <h3 className="logo text-gradient text-3xl font-bold">TableScribe</h3>
+          <h3 className="logo text-[32px]  font-bold">TableScribe</h3>
         </div>
       </div>
       <ul className="list-none sm:flex hidden
-       justify-end items-center flex-1 text-bold gap-5 text-black ">
+       justify-end items-center flex-1  gap-4 text-black ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -34,16 +34,19 @@ const Navbar = () => {
               padding: index === navLinks.length - 1 ? "8px" : "0",
               fontFamily: index === navLinks.length - 1 ? "Lato" : "Lato",
               cursor: index === navLinks.length - 1 ? "pointer" : "pointer",
+              // Font: index === navLinks.length - 1 ? "bold" : "bold",
+              
               transition:
                 index === navLinks.length - 1
                   ? "all 0.3s ease 0s"
                   : "all 0.3s ease 0s",
             }}
-            className={`font-lato cursor-pointer text-bold text-[18px] text-black
-       ${index === navLinks.length - 1 ? "mr-0" : "mr-4"}
+            className={`font-lato cursor-pointer 
+            text-[18px] text-black 
+       ${index === navLinks.length - 1 ? "mr-0" : "mr-7"}
        text-white`}
           >
-            <a href={`#${nav.id}`} className="text-black">
+            <a href={`#${nav.id}`} className="text-black ">
               {nav.title}
             </a>
           </li>
@@ -63,7 +66,7 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-black-gradient absolute top-20
+          } p-6  absolute top-20
            right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
         >
           <ul className="list-none flex flex-col
@@ -73,9 +76,9 @@ const Navbar = () => {
                 key={nav.id}
                 className={`font-normal font-poppins cursor-pointer text-[16px]
                 text-bold text-white
-              ${index === navLinks.length - 1 ? "mr-0" : "mb-4 "}text-white`}
+              ${index === navLinks.length - 1 ? "mr-0" : "mb-4 " }text-primary`}
               >
-                <a href={`#${nav.id}`} className="text-white">
+                <a href={`#${nav.id}`} className="text-primary">
                   {nav.title}
                 </a>
               </li>

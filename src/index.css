@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Patua+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://api.fontshare.com/v2/css?f[]=zodiak@700,400&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=chillax@600,400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,13 +30,13 @@
 
 .text-gradient {
   background: radial-gradient(
-    2.18% 14.18% at 91.16% 75.69%,
+    9.18% 9.18% at 81.16%,
     #def9fa 0.89%,
     #9eb4b4 17.23%,
-    rgb(220, 226, 226) 42.04%,
+    rgb(220, 226, 226) 22.04%,
     #e4f0f0 55.12%,
     #f0f6f7 71.54%,
-    #f8d50b 100%
+    #a57d4a 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,9 +83,9 @@
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 } */
 .logo {
-  font-family:"";
+  font-family:"Chillax", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   color: #a57d4a;
 
@@ -151,10 +152,10 @@ input[type="radio"] {
 .tes {
   color: #010101;
   font-family: Lato;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 25px;
 }
 .butq {
   display: inline-flex;
