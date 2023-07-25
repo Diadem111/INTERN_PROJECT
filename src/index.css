@@ -29,7 +29,7 @@
 
 .text-gradient {
   background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
+    2.18% 14.18% at 91.16% 75.69%,
     #def9fa 0.89%,
     #9eb4b4 17.23%,
     rgb(220, 226, 226) 42.04%,
@@ -82,12 +82,12 @@
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 } */
 .logo {
-  font-size: 20px;
-  font-family: "Josefin Sans";
+  font-family:"";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal;
   color: #a57d4a;
+
 }
 #Signup {
   border-radius: 40px;

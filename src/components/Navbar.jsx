@@ -10,14 +10,16 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
   return (
-    <nav className="bg-[#FEFCF2] px-[8%] w-full flex py-6 justify-between items-center navbar border-b-purple-300">
+    <nav className="bg-[#FEFCF2] px-[8%] w-full flex py-6 justify-between
+     items-center navbar border-b-primary">
       <div className="flex justify-center items-center ">
         <img src={Logo} alt="scribelogo" className="w-[50px] h-[32px] px-1" />
         <div>
-          <h3 className="logo">TableScribe</h3>
+          <h3 className="logo text-gradient text-3xl font-bold">TableScribe</h3>
         </div>
       </div>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1 gap-3 text-black ">
+      <ul className="list-none sm:flex hidden
+       justify-end items-center flex-1 text-bold gap-5 text-black ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -37,7 +39,7 @@ const Navbar = () => {
                   ? "all 0.3s ease 0s"
                   : "all 0.3s ease 0s",
             }}
-            className={`font-lato cursor-pointer text-[18px] text-black
+            className={`font-lato cursor-pointer text-bold text-[18px] text-black
        ${index === navLinks.length - 1 ? "mr-0" : "mr-4"}
        text-white`}
           >
@@ -61,13 +63,16 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
+          } p-6 bg-black-gradient absolute top-20
+           right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
         >
-          <ul className="list-none flex flex-col justify-end items-center flex-1 text-white">
+          <ul className="list-none flex flex-col
+           justify-end items-center flex-1 text-white">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-normal font-poppins cursor-pointer text-[16px] text-white
+                className={`font-normal font-poppins cursor-pointer text-[16px]
+                text-bold text-white
               ${index === navLinks.length - 1 ? "mr-0" : "mb-4 "}text-white`}
               >
                 <a href={`#${nav.id}`} className="text-white">
