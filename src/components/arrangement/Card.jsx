@@ -46,6 +46,9 @@ export const Card = ({ isOpen, closeModal, children }) => {
                 onClick={() => {
                   navigate("/arrangement/success");
                 }}
+                ontouchstart={() => {
+                  navigate("/arrangement/success");  
+                }}
               ></div>
             </section>
             {/* first circle  */}
@@ -62,6 +65,9 @@ export const Card = ({ isOpen, closeModal, children }) => {
           hover:bg-gray-400"
                   onClick={() => {
                     navigate("/arrangement/success");
+                  }}
+                  ontouchstart={() => {
+                    navigate("/arrangement/success");  
                   }}
                 ></div>
                 <p
@@ -85,6 +91,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
       w-[100px] bg-primary rounded-full "
                 onClick={() => {
                   navigate("/arrangement/success");
+                  
+                }}
+                ontouchstart={() => {
+                  navigate("/arrangement/success");  
                 }}
               ></div>
               <p
@@ -118,6 +128,9 @@ export const Card = ({ isOpen, closeModal, children }) => {
                 onClick={() => {
                   navigate("/arrangement/success");
                 }}
+                ontouchstart={() => {
+                  navigate("/arrangement/success");  
+                }}
               ></div>
               {/* <p className=''>Center</p> */}
             </section>
@@ -128,6 +141,9 @@ export const Card = ({ isOpen, closeModal, children }) => {
       bg-primary rounded-full"
               onClick={() => {
                 navigate("/arrangement/success");
+              }}
+              ontouchstart={() => {
+                navigate("/arrangement/success");  
               }}
             ></div>
           </section>
@@ -155,6 +171,9 @@ export const Card = ({ isOpen, closeModal, children }) => {
                 onClick={() => {
                   navigate("/arrangement/success");
                 }}
+                ontouchstart={() => {
+                  navigate("/arrangement/success");  
+                }}
               ></div>
             </section>
             <section className="text-center">
@@ -177,7 +196,9 @@ export const Card = ({ isOpen, closeModal, children }) => {
                 onClick={() => {
                   navigate("/arrangement/success");
                 }}
-                
+                ontouchstart={() => {
+                  navigate("/arrangement/success");  
+                }}
               ></div>
             </section>
           </section>
