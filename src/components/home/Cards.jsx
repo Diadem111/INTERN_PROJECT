@@ -62,10 +62,10 @@ const Cards = () => {
             <div className=" pt-1">
               {/* <p>{item.name}</p> */}
               <span className="flex pt-2 mx-2">
-                {[...Array(5)].map((star) => {
+                {[...Array(5)].map((star, index) => {
                   const currentRating = index + 1;
                   return (
-                    <label>
+                    <label key={index}>
                       <input
                         type="radio"
                         name="rating"
@@ -80,7 +80,7 @@ const Cards = () => {
                             ? "#BCA78C"
                             : "#BCA78C"
                         }
-                        onmouseEnter={() => setHover(currentRating)}
+                        onMouseEnter={() => setHover(currentRating)}
                         onMouseLeave={() => setHover(null)}
                       />
                     </label>

@@ -19,9 +19,9 @@ export default function ReviewCard({ name, location, img, review }) {
       </div>
       <div>
         <span className="flex col-start-2 items-center my-4">
-          {[...Array(5)].map((key) => {
+          {[...Array(5)].map((star, index) => {
             return (
-              <label key={key}>
+              <label key={index}>
                 <FaStar size={22} className="star" color="#BCA78C" />
               </label>
             );
