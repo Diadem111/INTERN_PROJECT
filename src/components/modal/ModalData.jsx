@@ -6,7 +6,7 @@ export const ModalData = () => {
     <section
       className=" bg-white
     rounded-lg 
-    overflow-hidden shadow-lg lg:h-[80vh] h-[25vh]
+    overflow-hidden shadow-lg lg:h-[80vh] h-[65vh]
      flex justify-center items-center
      "
       style={{ marginTop: "10px", marginBottom: "10px" }}

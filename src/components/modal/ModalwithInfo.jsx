@@ -17,10 +17,11 @@ export const ModalwithInfo = ({ pdfUrl }) => {
 
   return (
     
-    <div className="  h-screen flex items-center justify-center">
+    <div className=" flex items-center 
+    justify-center">
       <div
         className="max-w-md w-full bg-white
-          rounded-lg shadow-lg p-6  h-[70%]
+          rounded-lg shadow-lg p-6  
            flex flex-col items-center "
       >
         <div>

@@ -31,7 +31,7 @@ export const Card = ({ isOpen, closeModal, children }) => {
               <p
                 className="absolute lg:-left-52 -left-48
             lg:z-0 z-10
-             lg:bottom-10 -bottom-4 lg:text-primary text-white
+             lg:bottom-10 -bottom-20 lg:text-primary text-white
          transform rotate-90 -translate-y-1/2 h-[200px]
         w-[300px] font-lato text-[24px] text-bolder "
               >
@@ -56,7 +56,7 @@ export const Card = ({ isOpen, closeModal, children }) => {
               <section>
                 <div
                   className="absolute lg:left-[250px]
-               left-[105px] lg:top-52 top-60
+               left-[90px] lg:top-52 top-60
          transform -translate-y-1/2 h-[170px] 
         w-[170px] bg-primary rounded-full
           hover:bg-gray-400"
@@ -66,7 +66,7 @@ export const Card = ({ isOpen, closeModal, children }) => {
                 ></div>
                 <p
                   className="absolute lg:left-[250px]
-              left-[105px] lg:bottom-28 bottom-10
+              left-[90px] lg:bottom-28 -bottom-4
               lg:z-0 z-10 lg:text-primary text-white
          transform -translate-y-1/2 h-[170px]
         w-[170px]  rounded-full text-bolder font-lato
@@ -89,9 +89,9 @@ export const Card = ({ isOpen, closeModal, children }) => {
               ></div>
               <p
                 className="absolute lg:left-[630px] 
-        left-[330px]
+        left-[290px]
           lg:bottom-40 lg:z-0
-        bottom-28 z-10 lg:text-primary text-white
+        bottom-14 z-10 lg:text-primary text-white
        transform -translate-y-1/2 h-[200px]
         w-[200px] -rotate-90  font-lato text-[26px]
          text-bolder"
@@ -159,8 +159,8 @@ export const Card = ({ isOpen, closeModal, children }) => {
             </section>
             <section className="text-center">
               <p
-                className="absolute lg:left-1/2 left-48
-         lg:-bottom-[210px] -bottom-[150px] z-10 lg:z-0
+                className="absolute lg:left-1/2 left-44
+         lg:-bottom-[210px] -bottom-[190px] z-10 lg:z-0
           lg:text-primary text-white
       transform -translate-x-1/2 h-[260px] w-[150px]
       text-bolder font-lato
@@ -171,7 +171,7 @@ export const Card = ({ isOpen, closeModal, children }) => {
               </p>
               <div
                 className="absolute left-1/2 
-          -bottom-10
+         lg:-bottom-10 -bottom-20
       transform -translate-x-1/2 h-[260px] w-[70px]
       bg-primary rotate-90 rounded-full  hover:bg-gray-400"
                 onClick={() => {
