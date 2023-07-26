@@ -28,7 +28,7 @@ const Cards = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-4 ">
         {foods.map((item, index) => (
           <div
-            key={index.name}
+            key={index}
             className={` shadow-2xl 
           rounded-b-xl hover:scale-105 rounded-[20px]
           duration-300 h-[300px] 

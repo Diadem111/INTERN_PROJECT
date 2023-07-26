@@ -28,7 +28,7 @@ const Breakfast = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4">
         {foods.map((item, index) => (
           <div
-            key={index.name}
+            key={index}
             className=" shadow-2xl 
           rounded-lg hover:scale-105 duration-300"
           >
