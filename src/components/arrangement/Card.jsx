@@ -102,7 +102,7 @@ export const Card = ({ isOpen, closeModal, children }) => {
           </section>
 
           {/* second column */}
-          <section className=" hidden md:block flex">
+          <section className=" hidden md:block ">
             <div
               className="absolute lg:left-28 -left-2 bottom-20
       transform -translate-x-1/2 h-[200px] w-[100px] 

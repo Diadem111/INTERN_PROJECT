@@ -73,8 +73,7 @@ const Breakfast = () => {
                 navigate("restaurants");
               }}
               >{item.category}</button>
-              <p className="tes pt-1">{item.text}</p>
-              <button className="butq button mt-2 mb-2">{item.category}</button>
+           
             </div>
           </div>
         ))}
