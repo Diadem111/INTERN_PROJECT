@@ -39,7 +39,7 @@ export default function MenuCard({
           id="but"
 
           
-          className="button w-2/5 mds:self-start self-center"
+          className="button lg:w-2/5 mds:self-start self-center"
 
   
         >
