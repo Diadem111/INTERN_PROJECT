@@ -9,10 +9,12 @@ export const LandingpageImg = () => {
       <div className="relative max-h-[500px]">
         {/* overlay */}
         <div className="absolute w-full h-full  max-h-[950px]
-         bg-black/20 flex flex-col justify-center text-center">
+         bg-black/20 flex flex-col justify-center 
+         text-center ">
           <h1
             className="px-4  mt-10 text-4xl md:text-[70px] font-zodiak
-          font-bold leading-relaxed   tracking-wide   text-white 
+          font-bold leading-relaxed   
+          tracking-wide   text-white 
            "
           >
             Your One Touch To <br /> Perfect Dining...

@@ -54,7 +54,7 @@ const Navbar = () => {
       </ul>
 
       {/* create for mobile */}
-      <div className="sm:hidden flex flex-1 justify-end items-center ">
+      <div className="sm:hidden flex flex-1 justify-end items-center  z-10">
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -70,11 +70,11 @@ const Navbar = () => {
            right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
         >
           <ul className="list-none flex flex-col
-           justify-end items-center flex-1 text-white">
+           justify-end items-center flex-1 text-white  bg-white p-2">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-normal font-poppins cursor-pointer text-[16px]
+                className={`font-normal font-poppins cursor-pointer hover:text-yellow-400 text-[16px]
                 text-bold text-white
               ${index === navLinks.length - 1 ? "mr-0" : "mb-4 " }text-primary`}
               >
