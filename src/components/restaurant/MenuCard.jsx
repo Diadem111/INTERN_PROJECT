@@ -37,7 +37,7 @@ export default function MenuCard({
         <button
           onClick={() => navigate("reservation")}
           id="but"
-          className="w-2/5 mds:self-start self-center"
+          className="button w-2/5 mds:self-start self-center"
         >
           Book a Table
         </button>

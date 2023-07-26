@@ -68,7 +68,7 @@ const NewRestaurant = () => {
                 onClick={() => {
                   navigate("restaurants");
                 }}
-                className="butq mt-2 mb-2"
+                className="butq button mt-2 mb-2"
               >
                 {item.category}
               </button>

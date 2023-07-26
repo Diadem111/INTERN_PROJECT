@@ -16,7 +16,7 @@ export default function Time() {
 
 function TimeButton({ time }) {
   return (
-    <button className="py-2 max-sm:py-1 max-sm:px-2 m-2 max-sm:m-1 text-2xl flex-grow max-sm:flex-grow-0 max-sm:text-lg max-ss:sm text-center font-bold hover:bg-coreYellow">
+    <button className="button py-2 max-sm:py-1 max-sm:px-2 m-2 max-sm:m-1 text-2xl flex-grow max-sm:flex-grow-0 max-sm:text-lg max-ss:sm text-center font-bold hover:bg-coreYellow">
       {time}
     </button>
   );

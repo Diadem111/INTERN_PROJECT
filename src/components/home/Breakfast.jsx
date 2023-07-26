@@ -62,7 +62,7 @@ const Breakfast = () => {
                 })}
               </span>
               <p className="tes pt-1">{item.text}</p>
-              <button className="butq mt-2 mb-2">{item.category}</button>
+              <button className="butq button mt-2 mb-2">{item.category}</button>
             </div>
           </div>
         ))}

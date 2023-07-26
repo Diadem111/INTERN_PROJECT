@@ -16,7 +16,7 @@ const styles = {
   marginX: "sm:mx-16 mx-6",
   marginY: "sm:my-16 my-6",
   restaurantNav:
-    "text-center border-none font-lato font-bold cursor-pointer text-black focus:text-coreYellow",
+    "button text-center border-none font-lato font-bold cursor-pointer text-black focus:text-coreYellow",
 };
 
 export const layout = {

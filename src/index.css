@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 @layer base {
-  button {
+  .button {
     @apply border border-black rounded-xl
      px-5 py-1;
   }

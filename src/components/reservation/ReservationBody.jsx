@@ -20,11 +20,11 @@ export default function ReservationBody() {
       <div className="flex items-center justify-between">
         <button
           onClick={() => navigate(-1)}
-          className="bg-white py-2 border rounded-md w-[45%]"
+          className="button bg-white py-2 border rounded-md w-[45%]"
         >
           Cancel
         </button>
-        <button className="bg-coreYellow py-2 border-none rounded-md w-[45%]">
+        <button className="button bg-coreYellow py-2 border-none rounded-md w-[45%]">
           Reserve
         </button>
       </div>
@@ -52,13 +52,16 @@ function Counter() {
   return (
     <div className="border rounded-lg border-[#010101]">
       <button
-        className="max-sm:text-xl border-none text-3xl"
+        className="button max-sm:text-xl border-none text-3xl"
         onClick={subtract}
       >
         -
       </button>
       <span className="max-sm:text-lg text-2xl">{count}</span>
-      <button className="max-sm:text-lg border-none text-2xl" onClick={add}>
+      <button
+        className="button max-sm:text-lg border-none text-2xl"
+        onClick={add}
+      >
         +
       </button>
     </div>
