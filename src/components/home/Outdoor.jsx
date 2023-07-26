@@ -71,6 +71,8 @@ const outdoor = () => {
                 navigate("restaurants");
               }}
               >{item.category}</button>
+              <p className="tes pt-1">{item.text}</p>
+              <button className="button butq mt-2 mb-2">{item.category}</button>
             </div>
           </div>
         ))}

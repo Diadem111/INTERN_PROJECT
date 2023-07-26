@@ -8,9 +8,9 @@ import { Navigate, useNavigate } from "react-router";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-export const ModalwithInfo = ({ pdfUrl,}) => {
   
 
+export const ModalwithInfo = ({ pdfUrl }) => {
   const [numPages, setNumPages] = useState(null);
   const navigate = useNavigate();
   // const [pageNumber, setPageNumber] = useState(1);
@@ -44,7 +44,12 @@ export const ModalwithInfo = ({ pdfUrl,}) => {
             renderMode="canvas"
             className="  animate-pulse"
           >
-            <Page pageNumber={1} width={200} height={50} renderTextLayer={false}/>
+            <Page
+              pageNumber={1}
+              width={200}
+              height={50}
+              renderTextLayer={false}
+            />
           </Document>
           {/* <svg
                 className="w-14 h-14 text-primary"
@@ -74,7 +79,7 @@ export const ModalwithInfo = ({ pdfUrl,}) => {
 
         <div className="lg:mt-1 mt-5 z-10">
           <button
-            className="text-center font-lato p-3
+            className="button text-center font-lato p-3
           500 hover:bg-gray-100 active:bg-gray-100 focus:outline-none 
           focus:ring focus:ring-gray-300 cursor-pointer"
             onClick={() => {

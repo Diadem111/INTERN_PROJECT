@@ -23,9 +23,14 @@ export const LandingpageImg = () => {
               onClick={() => {
                 navigate("/gallery");
               }}
+<<<<<<< HEAD
               className="w-[40%] md:w-[10%] 
               but2 text-sm p-3 mt-4 text-primary font-lato text-[24px]
                font-semibold leading-5"
+=======
+              className="button w-[40%] md:w-[10%] 
+              but2 text-sm p-3 mt-4 text-primary font-lato text-[18px] font-semibold leading-5"
+>>>>>>> 32f5120d262b0f062251cc7eb19a8a4bcf004959
             >
               Book a Table
             </button>

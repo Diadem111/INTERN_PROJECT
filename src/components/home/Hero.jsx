@@ -103,7 +103,7 @@ export const Hero = () => (
                     }}
                   />
                 </div>
-                <button id="but" className="ml-5 ">
+                <button id="but button" className="ml-5 ">
                   Search
                 </button>
               </section>

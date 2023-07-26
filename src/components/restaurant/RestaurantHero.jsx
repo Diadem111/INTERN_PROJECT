@@ -18,7 +18,7 @@ export default function RestaurantHero() {
           <button
             onClick={() => navigate("reservation")}
             id="but"
-            className="text-black"
+            className="button text-black"
           >
             Book Now
           </button>

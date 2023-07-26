@@ -21,7 +21,7 @@ export default function BasicPopover() {
   return (
     <div className="w-full flex justify-center">
       <button
-        className="w-1/2 py-5 active:bg-slate-300 text-lg"
+        className="button w-1/2 py-5 active:bg-slate-300 text-lg"
         onClick={handleClick}
       >
         View More
