@@ -10,16 +10,20 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
   return (
-    <nav className="bg-[#FEFCF2] px-[8%] w-full flex py-6 justify-between
-     items-center navbar border-b-primary">
+    <nav
+      className="bg-[#FEFCF2] px-[8%] w-full flex py-6 justify-between
+     items-center navbar border-b-primary"
+    >
       <div className="flex justify-center items-center ">
         <img src={Logo} alt="scribelogo" className="w-[50px] h-[32px] px-1" />
         <div>
           <h3 className="logo text-[32px]  font-bold ">TableScribe</h3>
         </div>
       </div>
-      <ul className="list-none sm:flex hidden
-       justify-end items-center flex-1  gap-4 text-black ">
+      <ul
+        className="list-none sm:flex hidden
+       justify-end items-center flex-1  gap-4 text-black  hover:text-yellow-400 "
+      >
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -35,7 +39,7 @@ const Navbar = () => {
               fontFamily: index === navLinks.length - 1 ? "Lato" : "Lato",
               cursor: index === navLinks.length - 1 ? "pointer" : "pointer",
               // Font: index === navLinks.length - 1 ? "bold" : "bold",
-              
+
               transition:
                 index === navLinks.length - 1
                   ? "all 0.3s ease 0s"
@@ -46,7 +50,10 @@ const Navbar = () => {
        ${index === navLinks.length - 1 ? "mr-0" : "mr-7"}
        text-white`}
           >
-            <a href={`#${nav.id}`} className="text-black ">
+            <a
+              href={`#${nav.id}`}
+              className="text-black hover:text-yellow-400 "
+            >
               {nav.title}
             </a>
           </li>
@@ -64,21 +71,24 @@ const Navbar = () => {
         />
 
         <div
-          className={`${
-            toggle ? "flex" : "hidden"
-          } p-6  absolute top-20
+          className={`${toggle ? "flex" : "hidden"} p-6  absolute top-20
            right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar `}
         >
-          <ul className="list-none flex flex-col
-           justify-end items-center flex-1 text-white  bg-white p-2">
+          <ul
+            className="list-none flex flex-col
+           justify-end items-center flex-1 text-white  hover:text-yellow-400  bg-white p-2"
+          >
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-normal font-poppins cursor-pointer hover:text-yellow-400 text-[16px]
                 text-bold text-white
-              ${index === navLinks.length - 1 ? "mr-0" : "mb-4 " }text-primary`}
+              ${index === navLinks.length - 1 ? "mr-0" : "mb-4 "}text-primary`}
               >
-                <a href={`#${nav.id}`} className="text-primary">
+                <a
+                  href={`#${nav.id}`}
+                  className="text-primary hover:text-yellow-400"
+                >
                   {nav.title}
                 </a>
               </li>
