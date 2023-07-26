@@ -31,7 +31,7 @@ export const Card = ({ isOpen, closeModal, children }) => {
               <p
                 className="absolute lg:-left-52 -left-48
             lg:z-0 z-10
-             lg:bottom-10 -bottom-20 lg:text-primary text-white
+             lg:bottom-10 -bottom-24 lg:text-primary text-white
          transform rotate-90 -translate-y-1/2 h-[200px]
         w-[300px] font-lato text-[24px] text-bolder "
               >
@@ -66,7 +66,7 @@ export const Card = ({ isOpen, closeModal, children }) => {
                 ></div>
                 <p
                   className="absolute lg:left-[250px]
-              left-[90px] lg:bottom-28 -bottom-4
+              left-[90px] lg:bottom-28 -bottom-10
               lg:z-0 z-10 lg:text-primary text-white
          transform -translate-y-1/2 h-[170px]
         w-[170px]  rounded-full text-bolder font-lato
@@ -89,9 +89,9 @@ export const Card = ({ isOpen, closeModal, children }) => {
               ></div>
               <p
                 className="absolute lg:left-[630px] 
-        left-[290px]
+      left-72
           lg:bottom-40 lg:z-0
-        bottom-14 z-10 lg:text-primary text-white
+        bottom-10 z-10 lg:text-primary text-white
        transform -translate-y-1/2 h-[200px]
         w-[200px] -rotate-90  font-lato text-[26px]
          text-bolder"
