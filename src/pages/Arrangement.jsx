@@ -6,7 +6,7 @@ const Arrangement = () => {
   return (
     <div className="w-full overflow-hidden bg-primary">
       <div className={` ${styles.flexCenter}`}>
-        <SeatingModal />
+        {/* <SeatingModal /> */}
       </div>
     </div>
   );

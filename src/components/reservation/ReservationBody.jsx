@@ -37,7 +37,7 @@ export default function ReservationBody() {
         >
           Reserve
         </button>
-        <ModalwithInfo isOpen={isOpen} handleClose={handleClose} />
+        {/* <ModalwithInfo isOpen={isOpen} handleClose={handleClose} /> */}
       </div>
     </section>
   );
