@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./modal.css";
 // import Pdf from "../../Pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import confirm from "../../assets/confirm.pdf";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 // import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;

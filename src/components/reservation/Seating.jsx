@@ -1,11 +1,16 @@
 import React from "react";
 import SeatingModal from "../modal/SeatingModal";
-import { useNavigate } from "react-router";
+import { SelectedSeat } from "../../Atoms";
+import { useRecoilValue } from "recoil";
 
 export default function Seating() {
-  const navigate = useNavigate();
+  const Seat = useRecoilValue(SelectedSeat);
+  const [seatIsSelected, setSeatIsSelected] = React.useState(false);
   const [isOpen, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+  const handleOpen = () => {
+    setSeatIsSelected(true);
+    setOpen(true);
+  };
   const handleClose = () => setOpen(false);
   return (
     <div className="border border-[#010101] p-4 flex max-ss:flex-col justify-between items-center rounded-lg mb-[5%]">
@@ -16,10 +21,14 @@ export default function Seating() {
         handleClose={handleClose}
       />
       <button
-        className="button bg-coreYellow py-3 border-none rounded-md h-full"
+        className={
+          seatIsSelected
+            ? ""
+            : "py-3 border-none rounded-md h-full  bg-coreYellow button"
+        }
         onClick={handleOpen}
       >
-        Choose your Seat
+        {Seat}
       </button>
     </div>
   );
