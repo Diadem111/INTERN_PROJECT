@@ -3,7 +3,7 @@ import Modal from "@mui/material/Modal";
 import { SelectedSeat } from "../../Atoms";
 import { useSetRecoilState } from "recoil";
 
-const style = {
+export const ModalStyle = {
   position: "absolute" as "absolute",
   top: "50%",
   left: "50%",
@@ -18,7 +18,7 @@ const style = {
   gridTemplateColumns: "30% 40% 30%",
   gridTemplateRows: "20% 60% 20%",
 };
-interface props {
+export interface props {
   isOpen: boolean;
   handleClose: VoidFunction;
 }
@@ -41,7 +41,7 @@ export default function BasicModal({ isOpen, handleClose }: props) {
         aria-describedby="modal-modal-description"
       >
         <Box
-          sx={style}
+          sx={ModalStyle}
           className="grid grid-cols-[30%_40%_30%] grid-rows-[2em_6em_2em] gap-2"
         >
           <div className="col-start-2 flex flex-col justify-center items-center gap-3">
