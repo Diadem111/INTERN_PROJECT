@@ -28,7 +28,7 @@ export default function DatePicker() {
 }
 function Day({ day, number }) {
   return (
-    <button className="flex flex-col items-center md:text-xl max-sm:w-[5%] max-sm:text-sm justify-center m-2 h-32 hover:bg-coreYellow border-none">
+    <button className="button flex flex-col items-center md:text-xl max-sm:w-[5%] max-sm:text-sm justify-center m-2 h-32 hover:bg-coreYellow border-none">
       <div className="mb-3">{day}</div>
       <div className="font-bold">{number}</div>
     </button>

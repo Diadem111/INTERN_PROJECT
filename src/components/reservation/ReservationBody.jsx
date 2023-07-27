@@ -1,9 +1,15 @@
 import React from "react";
 import DatePicker from "./DatePicker";
 import Time from "./Time";
+import { ModalwithInfo } from "../modal/ModalwithInfo";
 import Seating from "./Seating";
 
 export default function ReservationBody() {
+  const [isOpen, setOpen] = React.useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => setOpen(false);
   return (
     <section className=" bg-white w-[80%] mx-[10%]
      rounded-t-md mt-[-30%] mb-[10%] px-[10%] pt-4 pb-[5%] font-lato">
@@ -25,9 +31,13 @@ export default function ReservationBody() {
         >
           Cancel
         </button>
-        <button className="button bg-coreYellow py-2 border-none rounded-md w-[45%]">
+        <button
+          onClick={handleOpen}
+          className="button bg-coreYellow py-2 border-none rounded-md w-[45%]"
+        >
           Reserve
         </button>
+        <ModalwithInfo isOpen={isOpen} handleClose={handleClose} />
       </div>
     </section>
   );
