@@ -8,6 +8,8 @@ import { LandingPage } from "./pages/LandingPage";
 import Reservation from "./pages/Reservation";
 import { Modal } from "./pages/Modal";
 import NotFound from "./components/NotFound";
+import seatingModal from "./components/modal/SeatingModal"
+import Arrangement from "./pages/Arrangement";
 
 function App() {
   return (
@@ -18,15 +20,17 @@ function App() {
         <Route path="/gallery" exact element={<Homepage />} />
         <Route path="/gallery/restaurants" exact element={<Restaurant />} />
 
-        {/* <Route
-          path="/gallery/restaurants/reservation/arrangement"
-          exact
-          element={<Arrangement />}
-        /> */}
+       
         <Route
           path="/gallery/restaurants/reservation"
           exact
           element={<Reservation />}
+          
+        />
+         <Route
+          path="/seating"
+          exact
+          element={<Arrangement />}
         />
         {/* <Route
           path="/reservation/arrangement"
@@ -35,6 +39,7 @@ function App() {
         /> */}
         <Route path="/arrangement/success"
          exact element={<Modal />} />
+
         <Route path="*" exact element={<NotFound />} />
       </Routes>
       <Footer />

@@ -15,7 +15,7 @@ export const Card = ({ isOpen, closeModal, children }) => {
     >
       <div
         className="fixed inset-0 flex
-       items-center justify-center z-50 "
+       items-center justify-center z-50 "  
       >
         <div
           className="fixed inset-0 bg-gray-800 
@@ -35,10 +35,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
          transform rotate-90 -translate-y-1/2 h-[200px]
         w-[300px] font-lato text-[24px] text-bolder "
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               >
                 Window area
@@ -50,10 +50,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
          
        lg:w-[100px] w-[90px] bg-yellow-500 rounded-full  hover:bg-primary "
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               ></div>
             </section>
@@ -70,10 +70,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
         w-[170px] bg-primary rounded-full
           hover:bg-gray-400"
                   onClick={() => {
-                    navigate("/arrangement/success");
+                    // navigate("/arrangement/success");
                   }}
                   ontouchstart={() => {
-                    navigate("/arrangement/success");
+                    // navigate("/arrangement/success");
                   }}
                 ></div>
                 <p
@@ -84,10 +84,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
         w-[170px]  rounded-full text-bolder font-lato
          text-[24px]"
                   onClick={() => {
-                    navigate("/arrangement/success");
+                    // navigate("/arrangement/success");
                   }}
                   ontouchstart={() => {
-                    navigate("/arrangement/success");
+                    // navigate("/arrangement/success");
                   }}
                 >
                   Center area
@@ -102,10 +102,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
        transform -translate-y-1/2 h-[200px] hover:bg-gray-400
       w-[100px] bg-primary rounded-full "
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               ></div>
               <p
@@ -117,10 +117,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
         w-[200px] -rotate-90  font-lato text-[26px]
          text-bolder"
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               >
                 Wall area
@@ -143,10 +143,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
       transform -translate-x-1/2 h-[170px] w-[170px]
       bg-primary rounded-full  hover:bg-gray-400"
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               ></div>
               {/* <p className=''>Center</p> */}
@@ -157,10 +157,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
       transform -translate-x-1 h-[200px] w-[100px]  hover:bg-gray-400
       bg-primary rounded-full"
               onClick={() => {
-                navigate("/arrangement/success");
+                // navigate("/arrangement/success");
               }}
               ontouchstart={() => {
-                navigate("/arrangement/success");
+                // navigate("/arrangement/success");
               }}
             ></div>
           </section>
@@ -177,10 +177,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
        text-[24px]
        "
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               >
                 Outdoor area
@@ -192,10 +192,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
        w-[70px]
        bg-primary rounded-full  hover:bg-gray-400 "
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               ></div>
             </section>
@@ -209,10 +209,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
        text-[24px]
       "
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               >
                 Rooftop
@@ -223,10 +223,10 @@ export const Card = ({ isOpen, closeModal, children }) => {
       transform -translate-x-1/2 h-[260px] w-[70px]
       bg-primary rotate-90 rounded-full  hover:bg-gray-400"
                 onClick={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
                 ontouchstart={() => {
-                  navigate("/arrangement/success");
+                  // navigate("/arrangement/success");
                 }}
               ></div>
             </section>

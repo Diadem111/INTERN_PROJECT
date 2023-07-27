@@ -6,13 +6,22 @@ import SeatingModal from "../modal/SeatingModal";
 export default function Seating() {
   const navigate = useNavigate();
    const [isModalOpen, setIsModalOpen] = useState(false);
+  //  const [selectedShape, setSelectedShape] = useState("");
+  //  const [shapeValue, setShapeValue] = useState("");
+
 
    const openModal = () => {
     setIsModalOpen(true);
    }
 
+  //  const handleShapeClick = (shape) => {
+  //   setSelectedShape(shape);
+
+  //  }
+
    const closeModal =() => {
     setIsModalOpen(false);
+    setShapeValue(selectedShape);
    }
 
   return (
