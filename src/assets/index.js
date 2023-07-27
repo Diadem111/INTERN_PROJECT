@@ -28,6 +28,7 @@ import Logo from "./project.png";
 import Adeola from "./Adeola1.png";
 import Linda from "./linda.png";
 import notfound from "./notfound.svg";
+import success from "./success.gif";
 export {
   logo,
   menu,
@@ -59,4 +60,5 @@ export {
   Linda,
   Logo,
   notfound,
+  success,
 };

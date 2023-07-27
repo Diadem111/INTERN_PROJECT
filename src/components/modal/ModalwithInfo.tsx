@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import { ModalStyle } from "./SeatingModal.js";
+// import { ModalStyle } from "./SeatingModal.js";
 import { props } from "./SeatingModal.jsx";
 import "./modal.css";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -9,6 +9,19 @@ import { useNavigate } from "react-router";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import React from "react";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "45%",
+  height: "auto",
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 0,
+  aspectRatio: 1 / 1,
+  display: "grid",
+};
 
 export const ModalwithInfo = ({ isOpen, handleClose }: props) => {
   const navigate = useNavigate();
@@ -32,8 +45,8 @@ export const ModalwithInfo = ({ isOpen, handleClose }: props) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={ModalStyle} className=" w-max">
-          <div className=" w-full h-full flex items-center justify-center col-start-2">
+        <Box sx={style} className=" w-max">
+          <div className=" w-full h-full flex items-center justify-center row-start-2 col-start-2">
             <div className="w-full bg-white rounded-lg shadow-lg p-6 h-[70%] flex flex-col items-center">
               <h1 className="font-lato text-xl font-bold text-center">
                 Wed, 12 Jun 2 guest 17.30pm

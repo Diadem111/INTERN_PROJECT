@@ -1,7 +1,7 @@
 import React from "react";
 import DatePicker from "./DatePicker";
 import Time from "./Time";
-import { ModalwithInfo } from "../modal/ModalwithInfo";
+import SuccessModal from "../modal/SuccessModal";
 import Seating from "./Seating";
 
 export default function ReservationBody() {
@@ -36,7 +36,8 @@ export default function ReservationBody() {
         >
           Reserve
         </button>
-        <ModalwithInfo isOpen={isOpen} handleClose={handleClose} />
+        {/* <ModalwithInfo isOpen={isOpen} handleClose={handleClose} /> */}
+        <SuccessModal isOpen={isOpen} handleClose={handleClose} />
       </div>
     </section>
   );
