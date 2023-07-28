@@ -1,28 +1,8 @@
-import Box from "@mui/material/Box";
 import success from "../../assets/success.gif";
 import Modal from "@mui/material/Modal";
 import { props } from "./SeatingModal";
 import { useNavigate } from "react-router";
 import React from "react";
-
-const screenSize = screen.width;
-function setWidth(width: number): string {
-  return width > 800 ? "45%" : width < 800 && width > 500 ? "70%" : "95%";
-}
-const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: setWidth(screenSize),
-  height: "auto",
-  bgcolor: "background.paper",
-  boxShadow: 24,
-  p: 0,
-  aspectRatio: 1 / 1,
-  gridTemplateRows: "20% 40% 5% 13% 22%",
-  gridTemplateColumns: "20% 60% 20%",
-};
 
 export default function SuccessModal({ isOpen, handleClose }: props) {
   const navigate = useNavigate();
@@ -39,13 +19,14 @@ export default function SuccessModal({ isOpen, handleClose }: props) {
       window.removeEventListener("resize", handleWindowResize);
       setImageWidth((): number => {
         return screenWidth > 800
-          ? screenWidth * 0.15
+          ? screenWidth * 0.13
           : screenWidth < 800 && screenWidth > 500
-          ? screenWidth * 0.1
-          : screenWidth * 0.3;
+          ? screenWidth * 0.12
+          : screenWidth * 0.6;
       });
     };
   }, []);
+  console.log(imageWidth);
 
   return (
     <div>
@@ -54,27 +35,33 @@ export default function SuccessModal({ isOpen, handleClose }: props) {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
-        <Box
-          sx={style}
-          className="grid font-lato justify-center items-center w-[45%] max-mds:w-50%"
-        >
-          <h1 className="text-center text-xl font-semibold col-start-2">
+        <div className="grid grid-cols-[20%_60%_20%] grid-rows-[20%_40%_5%_13%_22%] bg-white gap-8 p-6 w-5/12 aspect-[3/5]">
+          <h1
+            className={
+              "text-xl text-center font-semibold row-start-1 mt-5 md:text-sm"
+            }
+          >
             Wed, 12 Jun 2 guest 17.30pm
           </h1>
-          <div className="flex justify-center w-1/4 row-start-2 col-start-2">
-            <img style={{ width: screenWidth * 0.15 }} src={success} alt="" />
+          <div className="flex justify-center w-1/4 row-start-2 ">
+            <img style={{ width: imageWidth }} src={success} alt="" />
           </div>
-          <div className="row-start-3 col-start-2 text-center text-2xl  font-semibold">
+          <div className="row-start-3 text-center text-2xl  font-semibold">
             Booking successful
           </div>
-          <div className="row-start-4 col-start-2 text-center text-lg">
+          <div className="row-start-4 text-center text-lg">
             <p className="items-center">
               Soon you will receive an SMS or email confirming your booking
               details
             </p>
           </div>
-          <div className="flex justify-center col-start-2 row-start-5 ">
+          <div className="flex justify-center row-start-5 ">
             <button
               className="border border-black rounded-md w-max text-center font-lato p-3 500 hover:bg-gray-100 active:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 cursor-pointer"
               onClick={() => {
@@ -84,7 +71,7 @@ export default function SuccessModal({ isOpen, handleClose }: props) {
               Back to homepage
             </button>
           </div>
-        </Box>
+        </div>
       </Modal>
     </div>
   );
