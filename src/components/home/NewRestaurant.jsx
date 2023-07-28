@@ -18,8 +18,12 @@ const NewRestaurant = () => {
           <h2 className="res hover:bg-yellow-200">New Restaurants</h2>
         </div>
         <div>
-          <p className="res2  hover:bg-yellow-200 font-lato font-normal
-      text-[20px] leading-5  ">see Menu</p>
+          <p
+            className="res2  hover:bg-yellow-200 font-lato font-normal
+      text-[20px] leading-5  "
+          >
+            see Menu
+          </p>
         </div>
       </div>
       {/* done with res part */}
@@ -29,7 +33,7 @@ const NewRestaurant = () => {
           <div
             key={index}
             className=" shadow-2xl 
-          rounded-lg hover:scale-105 duration-300"
+          rounded-lg hover:scale-105 duration-300 bg-white"
           >
             <img
               src={item.image}
@@ -65,22 +69,20 @@ const NewRestaurant = () => {
                   );
                 })}
               </span>
-             <div className="h-[130px]">
-             <p className="tes pt-1">{item.text}</p>
-             </div>
+              <div className="h-[130px]">
+                <p className="tes pt-1">{item.text}</p>
+              </div>
               <section className=" ">
-              <button
-                onClick={() => {
-                  navigate("restaurants");
-                }}
-                className="butq button mt-2 mb-2"
-              >
-                {item.category}
-              </button>
-
+                <button
+                  onClick={() => {
+                    navigate("restaurants");
+                  }}
+                  className="butq button mt-2 mb-2"
+                >
+                  {item.category}
+                </button>
               </section>
-
-                          </div>
+            </div>
           </div>
         ))}
       </div>

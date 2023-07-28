@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import styles from "../../style";
 import { cards } from "../../constants";
 import "../../index.css";
@@ -6,21 +7,20 @@ import { FaStar } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
 const Cards = () => {
   // console.log(restaurants);
+  const smallScreenBreakPoint = useMediaQuery("(min-width:1200px)");
   const [foods, setFoods] = useState(cards);
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
   return (
-    <section className="p-4 py-10 m-auto ">
+    <section className="pt-4 py-10 m-auto ">
       <div className="flex flex-col justify-between">
         <div>
-          <h2 className="res hover:bg-gray-700 font-bold">
+          <h2 className="res font-bold">
             See which restaurants people are raving about
           </h2>
         </div>
         <div>
-          <p className="res11 hover:bg-gray-700 font-light ">
-            From verified diners like you
-          </p>
+          <p className="res11  font-light ">From verified diners like you</p>
         </div>
       </div>
       {/* done with res part */}
@@ -29,16 +29,18 @@ const Cards = () => {
         {foods.map((item, index) => (
           <div
             key={index}
-            className={` shadow-2xl 
-          rounded-b-xl hover:scale-105 rounded-[20px]
-          duration-300 h-[300px] 
-        ${index !== item.length - 0 ? "mt-10" : "mt-0"}  `}
+            className={` shadow-2xl  bg-white
+          rounded-b-xl hover:scale-105 rounded-[20px] h-max
+          duration-300
+        ${index !== item.length - 0 ? "mt-10" : "mt-0"} ${
+              index == 1 && smallScreenBreakPoint ? " mt-28" : ""
+            } `}
             // style={{
             //   marginTop: index !== foods.length - 1 ? "mt-6" : "mb-0",
             // }}
           >
-            <div className="flex  ">
-              <div className="imgdiv flex item-center  gap-3">
+            <div className="flex">
+              <div className="imgdiv flex item-center gap-3 pt-4 pl-4">
                 <img
                   src={item.image}
                   alt={item.name}
@@ -59,7 +61,7 @@ const Cards = () => {
                 </div>
               </div>
             </div>
-            <div className=" pt-1">
+            <div className=" pt-1 p-4">
               {/* <p>{item.name}</p> */}
               <span className="flex pt-2 mx-2">
                 {[...Array(5)].map((star, index) => {
@@ -88,11 +90,11 @@ const Cards = () => {
                 })}
               </span>
               <p className="mx-2 tes pt-1">{item.text}</p>
-              <div className="dd2 mt-2 mb-2 rounded-b-lg  flex flex-row justify-between">
-                <p className="dd mx-5 mt-2">{item.category}</p>
-                <div>
-                  <BsHeart size={25} className="mx-5 mt-2" />
-                </div>
+            </div>
+            <div className="dd2 mt-2 rounded-b-lg flex flex-row justify-between">
+              <p className="dd mx-5 mt-2">{item.category}</p>
+              <div>
+                <BsHeart size={25} className="mx-5 mt-2" />
               </div>
             </div>
           </div>
