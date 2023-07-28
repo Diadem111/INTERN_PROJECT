@@ -42,11 +42,7 @@ export const Hero = () => (
             className="w-full md:h-[100px] h-[150px]    rounded-lg"
             style={{ position: "relative" }}
           >
-            <img
-              alt="Image"
-              src="../tasty.png"
-              className="w-full md:h-[6.8rem] h-[12rem]  rounded-lg  bg-black/2"
-            />
+            <div className="w-full md:h-[6.8rem] h-[12rem] bg-cover bg-gallerySearch  rounded-lg  bg-black/2"></div>
             <div
               className="absolute  md:left-36 left-28 md: -translate-x-28
             md:-translate-y-28
@@ -75,7 +71,7 @@ export const Hero = () => (
             >
               <section
                 className="flex 
-                w-full  flex-wrap  "
+                w-full  flex-wrap  items-center"
               >
                 <div
                   className="md:w-[18rem] w-[16rem] lg:w-[510px]   
@@ -103,7 +99,7 @@ export const Hero = () => (
                     }}
                   />
                 </div>
-                <button id="but button" className="ml-5 ">
+                <button className="ml-5 py-1 px-3 h-min rounded-md text-lg font-semibold bg-coreYellow">
                   Search
                 </button>
               </section>

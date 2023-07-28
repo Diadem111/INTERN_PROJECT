@@ -26,6 +26,7 @@ import angleTable from "./high-angle-table.png";
 import closeUpToast from "./close-up-toast.png";
 import Logo from "./project.png";
 import Adeola from "./Adeola1.png";
+import topBackground from "./tasty.png";
 import Linda from "./linda.png";
 import notfound from "./notfound.svg";
 import success from "./success.gif";
@@ -53,6 +54,7 @@ export {
   coupleHavingDiner,
   banquet,
   homemadeRoast,
+  topBackground,
   englishBreakfast,
   angleTable,
   closeUpToast,
