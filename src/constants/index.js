@@ -36,7 +36,7 @@ export const restaurants = [
   {
     id: "1",
     name: "Circa.Nonparceil",
-    text: "Coco Asia located in the heart of Rushden Lakes shopping development, calm oasis for shoppers to take a break and enjoy breakfast, lunch...",
+    text: "Circa.Nonparceil located in the heart of Rushden Lakes shopping development, calm oasis for shoppers to take a break and enjoy breakfast, lunch...",
     image: "../Rectangle 203.png",
     category: "Book Now",
   },
