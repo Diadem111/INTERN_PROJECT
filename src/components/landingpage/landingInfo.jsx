@@ -25,7 +25,7 @@ export const LandingpageImg = () => {
                 navigate("/gallery");
               }}
               className="w-[40%] md:w-[10%] 
-              but2 text-sm p-3 mt-4 text-primary font-lato text-[24px]
+              but2 text-sm p-3 mt-4 text-primary font-lato text-[24px] hover:text-yellow-400
                font-semibold leading-5"
             >
               Book a Table
