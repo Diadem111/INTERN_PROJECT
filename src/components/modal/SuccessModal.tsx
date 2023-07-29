@@ -2,7 +2,6 @@ import success from "../../assets/success.gif";
 import Modal from "@mui/material/Modal";
 import { props } from "./SeatingModal";
 import { useNavigate } from "react-router";
-import React from "react";
 import Box from "@mui/material/Box";
 
 const ModalStyle = {
@@ -21,27 +20,6 @@ const ModalStyle = {
 
 export default function SuccessModal({ isOpen, handleClose }: props) {
   const navigate = useNavigate();
-  const [screenWidth, setWindowSize] = React.useState(window.innerWidth);
-  const [imageWidth, setImageWidth] = React.useState(1);
-
-  React.useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-      setImageWidth((): number => {
-        return screenWidth > 800
-          ? screenWidth * 0.13
-          : screenWidth < 800 && screenWidth > 500
-          ? screenWidth * 0.12
-          : screenWidth * 0.6;
-      });
-    };
-  }, []);
 
   return (
     <div>
@@ -65,11 +43,8 @@ export default function SuccessModal({ isOpen, handleClose }: props) {
             >
               Wed, 12 Jun 2 guest 17.30pm
             </h1>
-            <div
-              style={{ width: imageWidth }}
-              className="flex justify-center h-5/6 self-center row-start-2 "
-            >
-              <img style={{ width: imageWidth }} src={success} alt="" />
+            <div className="flex justify-center w-1/4 self-center row-start-2 ">
+              <img className=" w-1/2" src={success} alt="" />
             </div>
             <div className="row-start-3 text-center text-2xl  font-semibold">
               Booking successful
