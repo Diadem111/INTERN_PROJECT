@@ -5,7 +5,6 @@ import "../../index.css";
 import { FaStar } from "react-icons/fa";
 import { Navigate, useNavigate } from "react-router";
 
-
 const Breakfast = () => {
   // console.log(restaurants);
   const [foods, setFoods] = useState(breakfast);
@@ -30,15 +29,15 @@ const Breakfast = () => {
           <div
             key={index}
             className=" shadow-2xl 
-          rounded-lg hover:scale-105 duration-300"
+          rounded-lg hover:scale-105 duration-300 bg-white"
           >
             <img
               src={item.image}
               alt={item.name}
               className="w-[292px] h-[162px] object-cover rounded-t-lg lightgray 50%"
             />
-            <div className="mx-2 pt-1">
-              <p>{item.name}</p>
+            <div className="mx-2 pt-1 font-semibold text-[20px]">
+              <p className="font-semibold">{item.name}</p>
               <span className="flex pt-2">
                 {[...Array(5)].map((star, index) => {
                   const currentRating = index + 1;
@@ -65,15 +64,17 @@ const Breakfast = () => {
                   );
                 })}
               </span>
-             <div className="h-[120px]">
-             <p className="tes pt-1">{item.text}</p>
-             </div>
-              <button className="butq mt-2 mb-2" 
-              onClick={() => {
-                navigate("restaurants");
-              }}
-              >{item.category}</button>
-           
+              <div className="h-[120px]">
+                <p className="tes pt-1">{item.text}</p>
+              </div>
+              <button
+                className="butq mt-2 mb-2"
+                onClick={() => {
+                  navigate("restaurants");
+                }}
+              >
+                {item.category}
+              </button>
             </div>
           </div>
         ))}

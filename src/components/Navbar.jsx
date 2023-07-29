@@ -1,23 +1,39 @@
-import React, { useState, useEffect } from "react";
-import styles from "../style";
 import "../index.css";
 import { Logo, close, logo, menu } from "../assets";
-// import {seconddesign, thirddesign} from "../assets";
+import * as React from "react";
+import Popover from "@mui/material/Popover";
+import Typography from "@mui/material/Typography";
 import { navLinks } from "../constants";
 import { useNavigate } from "react-router";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = React.useState(false);
   const navigate = useNavigate();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
   return (
     <nav
       className="bg-[#FEFCF2] px-[8%] w-full flex py-6 justify-between
      items-center navbar border-b-primary"
     >
-      <div className="flex justify-center items-center ">
-        <img src={Logo} alt="scribelogo" className="w-[50px] h-[32px] px-1" />
+      <div className="flex justify-center items-center gap-1">
+        <img
+          src={Logo}
+          alt="TableScribe logo"
+          className="w-[50px] h-[49px] px-1"
+        />
         <div>
-          <h3 className="logo text-[32px]  font-bold ">TableScribe</h3>
+          <h3 className="logo text-[32px] font-bold ">TableScribe</h3>
         </div>
       </div>
       <ul
@@ -25,7 +41,7 @@ const Navbar = () => {
        justify-end items-center flex-1  gap-4 text-black  hover:text-yellow-400 "
       >
         {navLinks.map((nav, index) => (
-          <li
+          <div
             key={nav.id}
             style={{
               border:
@@ -39,7 +55,6 @@ const Navbar = () => {
               fontFamily: index === navLinks.length - 1 ? "Lato" : "Lato",
               cursor: index === navLinks.length - 1 ? "pointer" : "pointer",
               // Font: index === navLinks.length - 1 ? "bold" : "bold",
-
               transition:
                 index === navLinks.length - 1
                   ? "all 0.3s ease 0s"
@@ -50,13 +65,40 @@ const Navbar = () => {
        ${index === navLinks.length - 1 ? "mr-0" : "mr-7"}
        text-white`}
           >
-            <a
-              href={`#${nav.id}`}
-              className="text-black hover:text-yellow-400 "
+            <button
+              className={
+                "text-black  " +
+                (nav.id == "Book a Table"
+                  ? "hover:text-white"
+                  : "hover:text-yellow-400")
+              }
+              onClick={(event) => {
+                nav.id == "Book a Table"
+                  ? navigate("/gallery")
+                  : nav.id == "Gallery"
+                  ? navigate("/gallery")
+                  : handleClick(event);
+              }}
             >
               {nav.title}
-            </a>
-          </li>
+            </button>
+            <Popover
+              id={id}
+              open={open}
+              anchorEl={anchorEl}
+              onClose={handleClose}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "center",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "center",
+              }}
+            >
+              <Typography sx={{ p: 2 }}>Coming soon...</Typography>
+            </Popover>
+          </div>
         ))}
       </ul>
 
@@ -66,7 +108,7 @@ const Navbar = () => {
           src={toggle ? close : menu}
           alt="menu"
           className="w-[28px] h-[28px] 
-        object-contain bg-black text-primary "
+        object-contain bg-white text-primary "
           onClick={() => setToggle((prev) => !prev)}
         />
 

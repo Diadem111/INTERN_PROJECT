@@ -1,7 +1,7 @@
 import React from "react";
 import DatePicker from "./DatePicker";
 import Time from "./Time";
-import { ModalwithInfo } from "../modal/ModalwithInfo";
+import SuccessModal from "../modal/SuccessModal";
 import Seating from "./Seating";
 
 export default function ReservationBody() {
@@ -11,8 +11,10 @@ export default function ReservationBody() {
   };
   const handleClose = () => setOpen(false);
   return (
-    <section className=" bg-white w-[80%] mx-[10%]
-     rounded-t-md mt-[-30%] mb-[10%] px-[10%] pt-4 pb-[5%] font-lato">
+    <section
+      className=" bg-white w-[80%] mx-[10%]
+     rounded-t-md mt-[-30%] mb-[10%] px-[10%] pt-4 pb-[5%] font-lato"
+    >
       <div className="w-max mb-[8%]">
         <h1 className="text-2xl font-bold pt-4 mb-4">Book a table</h1>
         <hr className="mb-2 border border-[#010101] w-full" />
@@ -37,7 +39,7 @@ export default function ReservationBody() {
         >
           Reserve
         </button>
-        {/* <ModalwithInfo isOpen={isOpen} handleClose={handleClose} /> */}
+        <SuccessModal isOpen={isOpen} handleClose={handleClose} />
       </div>
     </section>
   );

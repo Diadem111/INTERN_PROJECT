@@ -78,22 +78,13 @@
   box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
-/* .sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-} */
 .logo {
-  font-family:"Chillax", sans-serif;
+  font-family: "Chillax", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   color: #a57d4a;
-  /* content: attr(data-content);
-  display: inline-block;
-  position: relative;
-  white-space: pre;
-  background-color: rgba(255, 255, 255, 1); Replace this with your desired opacity color */
-
+  
 }
 #Signup {
   border-radius: 40px;
@@ -260,12 +251,16 @@ input[type="radio"] {
   background-image: url(./assets/coco-asian.webp);
 }
 .bg-gallery4 {
-  background-image: url(./assets/couple-enjoying-food-restaurant.png);
+  background-image: url(./assets/couple-enjoying-food-restaurant.webp);
   filter: brightness(0.8);
 }
+.bg-gallerySearch {
+  background-image: url(./assets/tasty.webp);
+  background-repeat: no-repeat;
+}
 .bg-Adeola {
-  background-image: url(./assets/Adeola.png);
+  background-image: url(./assets/Adeola.webp);
 }
 .bg-Linda {
-  background-image: url(./assets/linda.png);
+  background-image: url(./assets/linda.webp);
 }

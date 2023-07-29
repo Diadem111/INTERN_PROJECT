@@ -1,0 +1,6 @@
+.SeatingBtn {
+  background-color: black;
+}
+.SeatingBtn:hover {
+  background-color: #edc453;
+}

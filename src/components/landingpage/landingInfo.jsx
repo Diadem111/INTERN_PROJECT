@@ -1,16 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router";
 import { design } from "../../assets/index";
-import { Navigate } from "react-router";
 export const LandingpageImg = () => {
   const navigate = useNavigate();
   return (
     <section className="mx-auto">
-      <div className="relative max-h-[500px]">
+      <div className="relative max-sm:h-[50vh] max-h-[500px]">
         {/* overlay */}
-        <div className="absolute w-full h-full  max-h-[950px]
+        <div
+          className="absolute w-full h-full  max-h-[950px]
          bg-black/20 flex flex-col justify-center 
-         text-center ">
+         text-center "
+        >
           <h1
             className="px-4  mt-10 text-4xl md:text-[70px] font-zodiak
           font-bold leading-relaxed   
@@ -32,11 +33,7 @@ export const LandingpageImg = () => {
           </h1>
         </div>
 
-        <img
-          className="w-full max-h-[900px] object-cover "
-          src={design}
-          alt="image"
-        />
+        <img className="w-full h-full object-cover " src={design} alt="image" />
       </div>
     </section>
   );

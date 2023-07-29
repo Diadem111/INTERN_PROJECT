@@ -42,13 +42,9 @@ export const Hero = () => (
             className="w-full md:h-[100px] h-[150px]    rounded-lg"
             style={{ position: "relative" }}
           >
-            <img
-              alt="Image"
-              src="../tasty.png"
-              className="w-full md:h-[6.8rem] h-[12rem]  rounded-lg  bg-black/2"
-            />
+            <div className="w-full md:h-[6.8rem] h-[12rem] bg-cover bg-gallerySearch  rounded-lg  bg-black/2"></div>
             <div
-              className="absolute  md:left-36 left-28 md: -translate-x-28
+              className="absolute  md:left-36 left-28 md:
             md:-translate-y-28
             text-center -translate-x-28 -translate-y-44 mx-auto "
             >
@@ -75,7 +71,7 @@ export const Hero = () => (
             >
               <section
                 className="flex 
-                w-full  flex-wrap  "
+                w-full  flex-wrap  items-center"
               >
                 <div
                   className="md:w-[18rem] w-[16rem] lg:w-[510px]   
@@ -88,7 +84,7 @@ export const Hero = () => (
                     px-10 font-bold font-lato text-[17px] "
                   />
                   <img
-                    src="../search.png"
+                    src="../search.webp"
                     alt="Search Logo"
                     className="md:top-[40%] top-6 
                     md:-translate-y-42 -translate-y-42"
@@ -103,7 +99,7 @@ export const Hero = () => (
                     }}
                   />
                 </div>
-                <button id="but button" className="ml-5 ">
+                <button className="ml-5 py-1 px-3 h-min rounded-md text-lg font-semibold bg-coreYellow">
                   Search
                 </button>
               </section>
@@ -118,7 +114,7 @@ export const Hero = () => (
          ${styles.flexCenter} md:my-0 my-10 relative`}
     >
       <img
-        src="../design.png"
+        src="../design.webp"
         alt="image"
         className=" md:w-[90%] w-[100%] h-[344px]
           relative z-[5]  "
