@@ -108,7 +108,7 @@ const Navbar = () => {
           src={toggle ? close : menu}
           alt="menu"
           className="w-[28px] h-[28px] 
-        object-contain bg-black text-primary "
+        object-contain bg-white text-primary "
           onClick={() => setToggle((prev) => !prev)}
         />
 
