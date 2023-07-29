@@ -39,6 +39,7 @@ export default function ReservationBody() {
         >
           Reserve
         </button>
+        <SuccessModal isOpen={isOpen} handleClose={handleClose} />
       </div>
     </section>
   );
