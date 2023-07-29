@@ -21,7 +21,7 @@ export const Beforefooter = () => {
 
         <img
           className="w-full lg:h-[300px] h-[350px] object-cover rounded-2xl"
-          src="../next.png"
+          src="../next.webp"
           alt="image"
         />
       </div>

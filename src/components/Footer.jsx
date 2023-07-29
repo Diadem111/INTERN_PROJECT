@@ -17,7 +17,7 @@ export const Footer = () => {
       flex-col mb-8 w-full`}
       >
         <div className="flex-1 flex flex-col justify-start ml-10 mt-8">
-          {/* <img src='../project.png' alt="image" 
+          {/* <img src='../project.webp' alt="image" 
         className='w-[200px] h-[72px] object-contain'/> */}
           <h1 className="text-[26px] font-bold">TableScribe</h1>
           <p

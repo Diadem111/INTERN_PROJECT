@@ -36,8 +36,8 @@ const Breakfast = () => {
               alt={item.name}
               className="w-[292px] h-[162px] object-cover rounded-t-lg lightgray 50%"
             />
-            <div className="mx-2 pt-1">
-              <p>{item.name}</p>
+            <div className="mx-2 pt-1 font-semibold text-[20px]">
+              <p className="font-semibold">{item.name}</p>
               <span className="flex pt-2">
                 {[...Array(5)].map((star, index) => {
                   const currentRating = index + 1;

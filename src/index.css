@@ -259,16 +259,16 @@ input[type="radio"] {
   background-image: url(./assets/coco-asian.webp);
 }
 .bg-gallery4 {
-  background-image: url(./assets/couple-enjoying-food-restaurant.png);
+  background-image: url(./assets/couple-enjoying-food-restaurant.webp);
   filter: brightness(0.8);
 }
 .bg-gallerySearch {
-  background-image: url(./assets/tasty.png);
+  background-image: url(./assets/tasty.webp);
   background-repeat: no-repeat;
 }
 .bg-Adeola {
-  background-image: url(./assets/Adeola.png);
+  background-image: url(./assets/Adeola.webp);
 }
 .bg-Linda {
-  background-image: url(./assets/linda.png);
+  background-image: url(./assets/linda.webp);
 }

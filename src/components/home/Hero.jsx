@@ -114,7 +114,7 @@ export const Hero = () => (
          ${styles.flexCenter} md:my-0 my-10 relative`}
     >
       <img
-        src="../design.png"
+        src="../design.webp"
         alt="image"
         className=" md:w-[90%] w-[100%] h-[344px]
           relative z-[5]  "
