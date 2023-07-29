@@ -84,7 +84,7 @@ export const Hero = () => (
                     px-10 font-bold font-lato text-[17px] "
                   />
                   <img
-                    src="../search.png"
+                    src="../search.webp"
                     alt="Search Logo"
                     className="md:top-[40%] top-6 
                     md:-translate-y-42 -translate-y-42"
