@@ -1,3 +1,4 @@
+import "./Modal.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { SelectedSeat } from "../../Atoms";
@@ -37,7 +38,7 @@ export default function BasicModal({ isOpen, handleClose }: props) {
     bgcolor: "background.paper",
     boxShadow: 24,
     paddingTop: 1.5,
-    paddingBottom: 1.3,
+    paddingBottom: sm ? 3 : 1.5,
     paddingLeft: 1.5,
     paddingRight: 1.5,
     aspectRatio: 1 / 1,
@@ -70,7 +71,7 @@ export default function BasicModal({ isOpen, handleClose }: props) {
             <button
               value="Outdoor area"
               onClick={(e) => SetSeat(e)}
-              className="w-full text-sm p-8 rounded-full bg-black hover:bg-coreYellow block"
+              className="w-full text-sm p-8 rounded-full SeatingBtn block"
             ></button>
           </div>
           {/* Selectors for the Window area */}
@@ -78,16 +79,16 @@ export default function BasicModal({ isOpen, handleClose }: props) {
             <div className=" -rotate-90 whitespace-nowrap w-1/3">
               Window Area
             </div>
-            <div className="grid grid-rows-2 justify-between gap-2 h-full">
+            <div className="grid grid-rows-2 justify-between  gap-2 h-full">
               <button
                 value="Window Area"
                 onClick={(e) => SetSeat(e)}
-                className="-rotate-180 text-sm p-8 rounded-full bg-black hover:bg-coreYellow block"
+                className="-rotate-180 text-sm p-8 rounded-full SeatingBtn block"
               ></button>
               <button
                 value="Window Area"
                 onClick={(e) => SetSeat(e)}
-                className="-rotate-180 text-sm p-8 rounded-full bg-black hover:bg-coreYellow block"
+                className="-rotate-180 text-sm p-8 rounded-full SeatingBtn block"
               ></button>
             </div>
           </div>
@@ -99,7 +100,7 @@ export default function BasicModal({ isOpen, handleClose }: props) {
                   style={{ width: "100%", height: width * 0.8 }}
                   value="Centre Area"
                   onClick={(e) => SetSeat(e)}
-                  className="w-full h-4/5 rounded-full bg-black hover:bg-coreYellow block"
+                  className="w-full h-4/5 rounded-full SeatingBtn block"
                 ></button>
               </div>
               <div>Centre Area</div>
@@ -108,7 +109,7 @@ export default function BasicModal({ isOpen, handleClose }: props) {
                   style={{ width: "100%", height: width * 0.8 }}
                   value="Centre Area"
                   onClick={(e) => SetSeat(e)}
-                  className="w-full h-full rounded-full bg-black hover:bg-coreYellow block"
+                  className="w-full h-full rounded-full SeatingBtn block"
                 ></button>
               </div>
             </div>
@@ -119,12 +120,12 @@ export default function BasicModal({ isOpen, handleClose }: props) {
               <button
                 value="Wall Area"
                 onClick={(e) => SetSeat(e)}
-                className="-rotate-180 text-sm p-8 rounded-full bg-black hover:bg-coreYellow block"
+                className="-rotate-180 text-sm p-8 rounded-full SeatingBtn block"
               ></button>
               <button
                 value="Wall Area"
                 onClick={(e) => SetSeat(e)}
-                className="-rotate-180 text-sm p-8 rounded-full bg-black hover:bg-coreYellow block"
+                className="-rotate-180 text-sm p-8 rounded-full SeatingBtn block"
               ></button>
             </div>
             <div className="-rotate-90 whitespace-nowrap">Wall Area</div>
@@ -134,7 +135,7 @@ export default function BasicModal({ isOpen, handleClose }: props) {
             <button
               value="Rooftop"
               onClick={(e) => SetSeat(e)}
-              className="w-full text-sm p-8 rounded-full bg-black hover:bg-coreYellow block"
+              className="w-full text-sm p-8 rounded-full SeatingBtn block"
             ></button>
             <div>Rooftop</div>
           </div>

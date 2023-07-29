@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Navigate, useNavigate } from "react-router";
-import { Card } from "../arrangement/Card";
 import SeatingModal from "../modal/SeatingModal";
 import { SelectedSeat } from "../../Atoms";
 import { useRecoilValue } from "recoil";
@@ -23,7 +22,7 @@ export default function Seating() {
         className={
           seatIsSelected
             ? ""
-            : "py-3 border-none rounded-md h-full  bg-coreYellow button"
+            : "py-3 border-none rounded-md h-full bg-coreYellow button"
         }
         onClick={handleOpen}
       >
