@@ -44,7 +44,7 @@ export const Footer = () => {
           ss:my-0 my-4 min-w-[150px]"
             >
               <h1
-                className="font-poppins font-medium text-[20px]
+                className="font-poppins text-[20px]
            leading-[30px] text-black font-bold"
               >
                 {footerLink.title}

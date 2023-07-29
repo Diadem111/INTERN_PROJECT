@@ -65,7 +65,10 @@ export default function SuccessModal({ isOpen, handleClose }: props) {
             >
               Wed, 12 Jun 2 guest 17.30pm
             </h1>
-            <div className="flex justify-center w-1/4 row-start-2 ">
+            <div
+              style={{ width: imageWidth }}
+              className="flex justify-center self-center row-start-2 "
+            >
               <img style={{ width: imageWidth }} src={success} alt="" />
             </div>
             <div className="row-start-3 text-center text-2xl  font-semibold">

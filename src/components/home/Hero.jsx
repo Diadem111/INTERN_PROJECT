@@ -44,7 +44,7 @@ export const Hero = () => (
           >
             <div className="w-full md:h-[6.8rem] h-[12rem] bg-cover bg-gallerySearch  rounded-lg  bg-black/2"></div>
             <div
-              className="absolute  md:left-36 left-28 md: -translate-x-28
+              className="absolute  md:left-36 left-28 md:
             md:-translate-y-28
             text-center -translate-x-28 -translate-y-44 mx-auto "
             >
