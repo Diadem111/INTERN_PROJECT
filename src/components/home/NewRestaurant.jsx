@@ -12,7 +12,7 @@ const NewRestaurant = () => {
   const [hover, setHover] = useState(null);
   const navigate = useNavigate();
   return (
-    <section className="p-4 py-10 m-auto ">
+    <section className="p-4 py-16 m-auto ">
       <div className="flex flex-col lg:flex-row justify-between">
         <div>
           <h2 className="res hover:bg-yellow-200">New Restaurants</h2>
