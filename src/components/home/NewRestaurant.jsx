@@ -15,14 +15,15 @@ const NewRestaurant = () => {
     <section className="p-4 py-16 m-auto ">
       <div className="flex flex-col lg:flex-row justify-between">
         <div>
-          <h2 className="res hover:bg-yellow-200">New Restaurants</h2>
+          <h2 className="res hover:text-yellow-400">New Restaurants</h2>
         </div>
         <div>
           <p
-            className="res2  hover:bg-yellow-200 font-lato font-normal
-      text-[20px] leading-5  "
+            className="res2  hover:text-yellow-400  
+            text-bolder font-lato
+      text-[20px]  "
           >
-            see Menu
+            See More
           </p>
         </div>
       </div>
@@ -32,8 +33,8 @@ const NewRestaurant = () => {
         {foods.map((item, index) => (
           <div
             key={index}
-            className=" shadow-2xl 
-          rounded-lg hover:scale-105 duration-300 bg-white"
+            className=" 
+          rounded-lg hover:scale-105 duration-300"
           >
             <img
               src={item.image}

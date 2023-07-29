@@ -28,55 +28,7 @@
   scroll-behavior: smooth;
 }
 
-.text-gradient {
-  background: radial-gradient(
-    9.18% 9.18% at 81.16%,
-    #def9fa 0.89%,
-    #9eb4b4 17.23%,
-    rgb(220, 226, 226) 22.04%,
-    #e4f0f0 55.12%,
-    #f0f6f7 71.54%,
-    #a57d4a 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* text-fill-color: transparent; */
-}
 
-.bg-black-gradient {
-  background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-}
-
-.bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-}
-
-.bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
-}
-
-.bg-discount-gradient {
-  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
-}
-
-.box-shadow {
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-}
 
 .logo {
   font-family: "Chillax", sans-serif;
@@ -125,7 +77,7 @@
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight:400;
   line-height: normal;
   text-decoration-line: underline;
 }
@@ -148,14 +100,14 @@ input[type="radio"] {
 .tes {
   color: #010101;
   font-family: Lato;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 21px;
 }
 .butq {
   display: inline-flex;
-  padding: 4px 14px;
+  padding: 1px 2px;
   justify-content: center;
   align-items: center;
   gap: 4px;
