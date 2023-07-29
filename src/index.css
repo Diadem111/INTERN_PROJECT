@@ -107,7 +107,7 @@ input[type="radio"] {
 }
 .butq {
   display: inline-flex;
-  padding: 1px 2px;
+  padding: 8px 12px;
   justify-content: center;
   align-items: center;
   gap: 4px;
@@ -115,6 +115,10 @@ input[type="radio"] {
   border: 1px solid #edc453;
   background: #edc453;
   cursor: pointer;
+  font-family: lato;
+  line-height: normal;
+  font-weight:bold;
+  font-style: normal;
 }
 .but2 {
   /* display: inline-flex; */
