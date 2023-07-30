@@ -15,7 +15,7 @@ const outdoor = () => {
     <section className="p-4 py-5 m-auto ">
       <div className="flex flex-col lg:flex-row justify-between">
         <div>
-          <h2 className="res hover:bg-text-yellow-400">Outdoor Dining</h2>
+          <h2 className="res hover:text-yellow-400">Outdoor Dining</h2>
         </div>
         <div>
           <p className="res2  hover:text-yellow-400  

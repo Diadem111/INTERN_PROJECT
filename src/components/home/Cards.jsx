@@ -48,13 +48,13 @@ const Cards = () => {
                 />
                 <div>
                   <div className="w-[150px] flex flex-row text-center mt-6 ">
-                    <p className="font-light dd">{item.name}</p>
+                    <p className="font-light dd font-lato">{item.name}</p>
                   </div>
                   <div className="flex flex-row gap-2 pt-2">
-                    <small className="#BCA78C font-light dd1">
+                    <small className="#BCA78C font-light dd1 font-lato">
                       {item.title}
                     </small>
-                    <small className="#BCA78C font-normal dd1">
+                    <small className="#BCA78C font-normal dd1 font-lato">
                       {item.reviews}
                     </small>
                   </div>
@@ -92,7 +92,7 @@ const Cards = () => {
               <p className="mx-2 tes pt-4 foot">{item.text}</p>
             </div>
             <div className="dd2 mt-2 rounded-b-lg flex flex-row justify-between">
-              <p className="dd mx-5 mt-2">{item.category}</p>
+              <p className="dd mx-5 mt-2 font-lato">{item.category}</p>
               <div>
                 <BsHeart size={25} className="mx-5 mt-2" />
               </div>

@@ -10,7 +10,7 @@ export const Beforefooter = () => {
             Restauranteurs Join Us
           </h1>
           <h1 className="px-4 text-[20px] text-white md:text-3xl lg:text-xl pt-3 ">
-            Join the more than 5,000 restaurants which fills sit <br />
+            Join the more than 5,000 restaurants which fills seats <br />
             and manage booking with TableScribe
             <br />
             <button className="button lg:w-[10%] w-[30]  but2 text-sm p-3 mt-4 text-primary font-bold">
