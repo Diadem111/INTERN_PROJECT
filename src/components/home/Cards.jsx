@@ -12,15 +12,15 @@ const Cards = () => {
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
   return (
-    <section className="pt-4 py-10 m-auto ">
+    <section className="pt-10 py-10 m-auto ">
       <div className="flex flex-col justify-between">
         <div>
-          <h2 className="res font-bold">
+          <h2 className="res122 font-bold">
             See which restaurants people are raving about
           </h2>
         </div>
         <div>
-          <p className="res11  font-light ">From verified diners like you</p>
+          <p className="resa1 pt-1  font-light ">From verified diners like you</p>
         </div>
       </div>
       {/* done with res part */}
@@ -50,7 +50,7 @@ const Cards = () => {
                   <div className="w-[150px] flex flex-row text-center mt-6 ">
                     <p className="font-light dd">{item.name}</p>
                   </div>
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-row gap-2 pt-2">
                     <small className="#BCA78C font-light dd1">
                       {item.title}
                     </small>
@@ -89,7 +89,7 @@ const Cards = () => {
                   );
                 })}
               </span>
-              <p className="mx-2 tes pt-1">{item.text}</p>
+              <p className="mx-2 tes pt-4 foot">{item.text}</p>
             </div>
             <div className="dd2 mt-2 rounded-b-lg flex flex-row justify-between">
               <p className="dd mx-5 mt-2">{item.category}</p>
