@@ -9,6 +9,8 @@ import { LandingPage } from "./pages/LandingPage";
 import Reservation from "./pages/Reservation";
 // import { Modal } from "./pages/Modal";
 import NotFound from "./components/NotFound";
+import seatingModal from "./components/modal/SeatingModal"
+import Arrangement from "./pages/Arrangement";
 
 function App() {
   return (

@@ -12,17 +12,18 @@ const NewRestaurant = () => {
   const [hover, setHover] = useState(null);
   const navigate = useNavigate();
   return (
-    <section className="p-4 py-10 m-auto ">
+    <section className="p-4 py-16 m-auto ">
       <div className="flex flex-col lg:flex-row justify-between">
         <div>
-          <h2 className="res hover:bg-yellow-200">New Restaurants</h2>
+          <h2 className="res hover:text-yellow-400">New Restaurants</h2>
         </div>
         <div>
           <p
-            className="res2  hover:bg-yellow-200 font-lato font-normal
-      text-[20px] leading-5  "
+            className="res2  hover:text-yellow-400  
+            text-bolder font-lato
+      text-[20px]  "
           >
-            see Menu
+            See More
           </p>
         </div>
       </div>
@@ -32,8 +33,8 @@ const NewRestaurant = () => {
         {foods.map((item, index) => (
           <div
             key={index}
-            className=" shadow-2xl 
-          rounded-lg hover:scale-105 duration-300 bg-white"
+            className=" 
+          rounded-lg hover:scale-105 duration-300 hover:rounded-b-2xl hover:shadow-2xl"
           >
             <img
               src={item.image}
@@ -41,9 +42,10 @@ const NewRestaurant = () => {
               className="w-[292px] h-[162px] object-cover
                rounded-t-lg lightgray 50%"
             />
-            <div className="mx-2 pt-1 font-semibold text-[20px]">
-              <p>{item.name}</p>
-              <span className="flex pt-2">
+            <div className="mx-2 pt-1 font-600 text-[18px] font-lato  ">
+              <p className="font-bold">{item.name}</p>
+              <span className="pt-2  flex flex-row justify-between">
+                <div className="justify-center flex">
                 {[...Array(5)].map((star, index) => {
                   const currentRating = index + 1;
                   return (
@@ -68,16 +70,18 @@ const NewRestaurant = () => {
                     </label>
                   );
                 })}
+                </div>
+                <p className="text-end tex text-[12px]  ">{item.review}</p>
               </span>
-              <div className="h-[130px]">
-                <p className="tes pt-1">{item.text}</p>
+              <div className="h-[110px] mt-4">
+                <p className="tes pt-1 ">{item.text}</p>
               </div>
               <section className=" ">
                 <button
                   onClick={() => {
                     navigate("restaurants");
                   }}
-                  className="butq button mt-2 mb-2"
+                  className="butq button mb-2 text-[12px] hover:text-yellow-100"
                 >
                   {item.category}
                 </button>

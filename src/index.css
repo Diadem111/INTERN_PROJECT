@@ -28,71 +28,15 @@
   scroll-behavior: smooth;
 }
 
-.text-gradient {
-  background: radial-gradient(
-    9.18% 9.18% at 81.16%,
-    #def9fa 0.89%,
-    #9eb4b4 17.23%,
-    rgb(220, 226, 226) 22.04%,
-    #e4f0f0 55.12%,
-    #f0f6f7 71.54%,
-    #a57d4a 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  /* text-fill-color: transparent; */
-}
 
-.bg-black-gradient {
-  background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-}
 
-.bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-}
-
-.bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
-}
-
-.bg-discount-gradient {
-  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
-}
-
-.box-shadow {
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-}
-
-/* .sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-} */
 .logo {
   font-family: "Chillax", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   color: #a57d4a;
-  /* content: attr(data-content);
-  display: inline-block;
-  position: relative;
-  white-space: pre;
-  background-color: rgba(255, 255, 255, 1); Replace this with your desired opacity color */
+  
 }
 #Signup {
   border-radius: 40px;
@@ -133,7 +77,7 @@
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight:400;
   line-height: normal;
   text-decoration-line: underline;
 }
@@ -156,14 +100,14 @@ input[type="radio"] {
 .tes {
   color: #010101;
   font-family: Lato;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 21px;
 }
 .butq {
   display: inline-flex;
-  padding: 4px 14px;
+  padding: 8px 12px;
   justify-content: center;
   align-items: center;
   gap: 4px;
@@ -171,7 +115,20 @@ input[type="radio"] {
   border: 1px solid #edc453;
   background: #edc453;
   cursor: pointer;
+  font-family: lato;
+  line-height: normal;
+  font-weight:bold;
+  font-style: normal;
 }
+.tex{
+  color: #D5C8B7;
+  font-family: Lato;
+  /* font-size: "0px"; */
+  font-style:normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .but2 {
   /* display: inline-flex; */
   /* padding: 4px 14px; */
@@ -232,6 +189,30 @@ input[type="radio"] {
   border: 1px solid #bca78c;
   border-bottom: 2px solid #bca78c;
   cursor: pointer;
+}
+.res122{
+  color: #010101;
+font-family: Lato;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.resa1{
+  color: #010101;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.foot{
+  color: #010101;
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
 }
 @-webkit-keyframes slide-top {
   0% {
