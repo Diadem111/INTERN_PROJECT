@@ -5,7 +5,7 @@ export const LandingpageImg = () => {
   const navigate = useNavigate();
   return (
     <section className="mx-auto">
-      <div className="relative max-sm:h-[50vh] max-h-[500px]">
+      <div className="relative max-sm:h-[100vh] max-h-[500px]">
         {/* overlay */}
         <div
           className="absolute w-full h-full  max-h-[950px]
