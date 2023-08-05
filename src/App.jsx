@@ -28,7 +28,7 @@ function App() {
             element={<Arrangement />}
           /> */}
           <Route
-            path="/gallery/restaurants/reservation"
+            path="/gallery/restaurants/:cardId/reservation"
             exact
             element={<Reservation />}
           />

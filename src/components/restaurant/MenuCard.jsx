@@ -1,6 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import { calender, cash } from "../../assets";
 import { useNavigate } from "react-router";
+import { useParams } from "react-router-dom";
+import { restaurants } from "../../constants/index";
+import { Link } from "react-router-dom";
 
 export default function MenuCard({
   heading,
@@ -10,6 +13,12 @@ export default function MenuCard({
   img,
 }) {
   const navigate = useNavigate();
+  const [foods, setFoods] = useState(restaurants);
+  const {cardId} = useParams();
+  // console.log(foods);
+  const card = restaurants.find((c) => c.id === parseInt(cardId));
+  console.log(card);
+
   return (
     <div className="grid grid-cols-10 p-5 border border-[#64748B] my-4">
       <div className="flex flex-col col-start-1 mds:col-span-5 col-span-10 gap-3  ">
@@ -34,8 +43,9 @@ export default function MenuCard({
           </div>
         </div>
         <p className="my-4">{foodDescription}</p>
+        <Link to={`/gallery/restaurants/${card.id}/reservation`}>
         <button
-          onClick={() => navigate("reservation")}
+
           id="but"
 
           
@@ -45,7 +55,9 @@ export default function MenuCard({
         >
           Book a Table
         </button>
-      </div>
+
+        </Link>
+             </div>
       <div className="col-start-7 col-span-4 mds:inline hidden">
         <img
           className="h-full w-11/12 rounded-md"
