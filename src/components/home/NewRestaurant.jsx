@@ -4,7 +4,7 @@ import styles from "../../style";
 import { restaurants } from "../../constants";
 import "../../index.css";
 import { FaStar } from "react-icons/fa";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NewRestaurant = () => {
   // console.log(restaurants);
@@ -35,7 +35,7 @@ const NewRestaurant = () => {
           <div
             key={card.id}
             className=" 
-          rounded-lg hover:scale-105 duration-300 hover:rounded-b-2xl hover:shadow-2xl"
+          rounded-lg hover:scale-105 duration-300 hover:rounded-b-2xl hover:shadow-2xl bg-white"
           >
             <img
               src={card.image}
@@ -47,30 +47,30 @@ const NewRestaurant = () => {
               <p className="font-bold">{card.name}</p>
               <span className="pt-2  flex flex-row justify-between">
                 <div className="justify-center flex">
-                {[...Array(5)].map((star, index) => {
-                  const currentRating = index + 1;
-                  return (
-                    <label key={index}>
-                      <input
-                        type="radio"
-                        name="rating"
-                        value={currentRating}
-                        onClick={() => setRating(currentRating)}
-                      />
-                      <FaStar
-                        size={11}
-                        className="star"
-                        color={
-                          currentRating <= (hover || rating)
-                            ? "#BCA78C"
-                            : "#BCA78C"
-                        }
-                        onMouseEnter={() => setHover(currentRating)}
-                        onMouseLeave={() => setHover(null)}
-                      />
-                    </label>
-                  );
-                })}
+                  {[...Array(5)].map((star, index) => {
+                    const currentRating = index + 1;
+                    return (
+                      <label key={index}>
+                        <input
+                          type="radio"
+                          name="rating"
+                          value={currentRating}
+                          onClick={() => setRating(currentRating)}
+                        />
+                        <FaStar
+                          size={11}
+                          className="star"
+                          color={
+                            currentRating <= (hover || rating)
+                              ? "#BCA78C"
+                              : "#BCA78C"
+                          }
+                          onMouseEnter={() => setHover(currentRating)}
+                          onMouseLeave={() => setHover(null)}
+                        />
+                      </label>
+                    );
+                  })}
                 </div>
                 <p className="text-end tex text-[12px]  ">{card.review}</p>
               </span>
@@ -79,14 +79,10 @@ const NewRestaurant = () => {
               </div>
               <section className=" ">
                 <Link to={`/gallery/restaurants/${card.id}`}>
-                <button
-                 className="butq button mb-2 text-[12px] hover:text-yellow-100"
-                >
-                  {card.category}
-                </button>
-                
+                  <button className="butq button mb-2 text-[12px] hover:text-yellow-100">
+                    {card.category}
+                  </button>
                 </Link>
-                
               </section>
             </div>
           </div>
