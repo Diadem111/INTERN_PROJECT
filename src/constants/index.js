@@ -34,7 +34,7 @@ export const navLinks = [
 
 export const restaurants = [
   {
-    id: "1",
+    id: 1,
     name: "Circa.Nonparceil",
     text: "Circa.Nonparceil located in the heart of Rushden Lakes shopping development, calm oasis for shoppers to take a break and enjoy breakfast, lunch...",
     image: "../Rectangle 203.webp",
@@ -43,7 +43,7 @@ export const restaurants = [
     review: "8 reviews",
   },
   {
-    id: "2",
+    id: 2,
     name: "Mama Pot",
     text: "Mama Pot simply the perfect country destination for all who love good food and a relaxed drink in the beautiful village of Underwood ...",
     image: "../Rectangle 203 (1).webp",
@@ -52,7 +52,7 @@ export const restaurants = [
     review: "6 reviews"
   },
   {
-    id: "3",
+    id: 3,
     name: "OX Restaurant & Lounge",
     text: "Big Eazy restaurant with a fresh outtake on a mixture of Mediterranean and Italian cuisines. Our ethos ‘Flavours of the Sun’ sounds...",
     image: "../Rectangle 203 (2).webp",
@@ -62,7 +62,7 @@ export const restaurants = [
     review: "12 reviews"
   },
   {
-    id: "4",
+    id: 4,
     name: "Xover Lounge",
     text: "Meal Meat restaurant in the heart of Covent Garden and the West End, serving the best seafood, fish, shellfish and oysters on the...",
     image: "../Rectangle 203 (3).webp",

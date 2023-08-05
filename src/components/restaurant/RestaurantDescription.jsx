@@ -2,9 +2,16 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import styles from "../../style";
 import { cash, cutlery, magnifyingGlass } from "../../assets";
+import { useParams } from "react-router-dom";
+import { restaurants } from "../../constants/index";
 
-export default function RestaurantDescription() {
+export default function RestaurantDescription({data}) {
   let index = 1; //Index of each star staring from 1
+  //  console.log(cardId);
+  if (!data ) {
+    return <div>Card not found</div>
+  }
+
   return (
     <div className=" max-ss:text-sm">
       <nav className="flex flex-col items-center">
@@ -60,11 +67,7 @@ export default function RestaurantDescription() {
         </span>
       </div>
       <p className=" font-medium text-lg mt-6 mb-12">
-        Circa.Nonparceil, located in the heart of Rushden Lakes shopping
-        development, is a calm oasis for shoppers to take a break and enjoy
-        breakfast, lunch, dinner and everything in between. From cosy booths to
-        larger sharing tables, the atmosphere is warm and friendly and you’ll be
-        well looked after from the moment you walk through the door
+        {data.text}
       </p>
     </div>
   );

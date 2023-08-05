@@ -4,6 +4,7 @@ import styles from "../../style";
 import { restaurants } from "../../constants";
 import "../../index.css";
 import { FaStar } from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 const NewRestaurant = () => {
   // console.log(restaurants);
@@ -30,20 +31,20 @@ const NewRestaurant = () => {
       {/* done with res part */}
       {/* display foods */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4">
-        {foods.map((item, index) => (
+        {foods.map((card) => (
           <div
-            key={index}
+            key={card.id}
             className=" 
           rounded-lg hover:scale-105 duration-300 hover:rounded-b-2xl hover:shadow-2xl"
           >
             <img
-              src={item.image}
-              alt={item.name}
+              src={card.image}
+              alt={card.name}
               className="w-[292px] h-[162px] object-cover
                rounded-t-lg lightgray 50%"
             />
             <div className="mx-2 pt-1 font-600 text-[18px] font-lato  ">
-              <p className="font-bold">{item.name}</p>
+              <p className="font-bold">{card.name}</p>
               <span className="pt-2  flex flex-row justify-between">
                 <div className="justify-center flex">
                 {[...Array(5)].map((star, index) => {
@@ -71,20 +72,21 @@ const NewRestaurant = () => {
                   );
                 })}
                 </div>
-                <p className="text-end tex text-[12px]  ">{item.review}</p>
+                <p className="text-end tex text-[12px]  ">{card.review}</p>
               </span>
               <div className="h-[110px] mt-4">
-                <p className="tes pt-1 ">{item.text}</p>
+                <p className="tes pt-1 ">{card.text}</p>
               </div>
               <section className=" ">
+                <Link to={`/gallery/restaurants/${card.id}`}>
                 <button
-                  onClick={() => {
-                    navigate("restaurants");
-                  }}
-                  className="butq button mb-2 text-[12px] hover:text-yellow-100"
+                 className="butq button mb-2 text-[12px] hover:text-yellow-100"
                 >
-                  {item.category}
+                  {card.category}
                 </button>
+                
+                </Link>
+                
               </section>
             </div>
           </div>

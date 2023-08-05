@@ -9,7 +9,6 @@ const ModalStyle = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "80%",
   height: "auto",
   bgcolor: "background.paper",
   boxShadow: 24,
@@ -34,7 +33,7 @@ export default function SuccessModal({ isOpen, handleClose }: props) {
           justifyContent: "center",
         }}
       >
-        <Box sx={ModalStyle}>
+        <Box sx={ModalStyle} className="lg:w-[45%] w-[80%]">
           <div className={"flex flex-col bg-white gap-8 p-8"}>
             <h1
               className={

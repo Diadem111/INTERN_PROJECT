@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/gallery" exact element={<Homepage />} />
-          <Route path="/gallery/restaurants" exact element={<Restaurant />} />
+          <Route path="/gallery/restaurants/:cardId" exact element={<Restaurant />} />
 
           {/* <Route
             path="/gallery/restaurants/reservation/arrangement"
