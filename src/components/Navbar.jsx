@@ -30,11 +30,15 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="TableScribe logo"
-          className="w-[50px] h-[49px] px-1"
-          onClick={"/"}
+          className="w-[50px] h-[49px] px-1 cursor-pointer"
+          onClick={() => {
+            navigate("/");
+          }}
         />
         <div>
-          <h3 className="logo text-[32px] font-bold "  onClick={"/"}>TableScribe</h3>
+          <h3 className="logo text-[32px] font-bold cursor-pointer "  onClick={() => {
+                    navigate("/");
+                  }}>TableScribe</h3>
         </div>
       </div>
       <ul

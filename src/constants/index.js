@@ -278,7 +278,7 @@ export const Menus = [
     img: birthday,
   },
   {
-    heading: "Dinier Menu",
+    heading: "Dinner Menu",
     price: "3000",
     dateRange: "5 June - 22 December",
     foodDecription:
