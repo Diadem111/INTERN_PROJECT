@@ -44,7 +44,7 @@ export default function RestaurantGallery() {
           <div className=" col-start-2 row-start-2 p-1 relative z-10">
             <div className="w-full h-full bg-gallery4 rounded-lg bg-center bg-no-repeat bg-cover flex place-items-center"></div>
             <p
-              className="text-white text-xl w-full text-center z-50 absolute top-1/2 left-1/2"
+              className="text-white text-xl max-sm:text-sm px-2 w-full text-center z-50 absolute top-1/2 left-1/2"
               style={{ transform: "translate(-50%, -25%)" }}
             >
               +246 more
