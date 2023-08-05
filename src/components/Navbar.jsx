@@ -31,9 +31,10 @@ const Navbar = () => {
           src={Logo}
           alt="TableScribe logo"
           className="w-[50px] h-[49px] px-1"
+          onClick={"/"}
         />
         <div>
-          <h3 className="logo text-[32px] font-bold ">TableScribe</h3>
+          <h3 className="logo text-[32px] font-bold "  onClick={"/"}>TableScribe</h3>
         </div>
       </div>
       <ul
