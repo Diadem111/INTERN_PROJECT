@@ -21,7 +21,8 @@ export const Footer = () => {
         className='w-[200px] h-[72px] object-contain'/> */}
           <h1 className="text-[26px] font-bold">TableScribe</h1>
           <p
-            className={`${styles.paragraph} mt-2 max-w-[310px] font-poppins text-sm`}
+            style={{ color: "black", fontWeight: 500 }}
+            className={`${styles.paragraph} mt-2 max-w-[310px] text-sm`}
           >
             Follow us on our social <br />
             platforms
