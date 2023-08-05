@@ -147,7 +147,7 @@ export const cards = [
     name: "Adeola Oyinka",
     title: "Lagos island",
     reviews: "4 reviews",
-    text: "We went for my daughter's 18th. She has has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
+    text: "We went for my daughter's 18th. She has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
     image: "../Ellipse 18.webp",
     category: "Coco Asia",
   },
@@ -156,7 +156,7 @@ export const cards = [
     name: "Adeola Oyinka",
     title: "Lagos island",
     reviews: "4 reviews",
-    text: "We went for my daughter's 18th. She has has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
+    text: "We went for my daughter's 18th. She has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
     image: "../Ellipse 18 (2).webp",
     category: "Le Bistro",
   },
@@ -165,7 +165,7 @@ export const cards = [
     name: "Romoke Johnson",
     title: "Lagos island",
     reviews: "4 reviews",
-    text: "We went for my daughter's 18th. She has has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
+    text: "We went for my daughter's 18th. She has always loved this place, but really wanted to try the cocktails. We had the buffet and some great cocktails and had a wonderful time. Loved it",
     image: "../Ellipse 18 (3).webp",
     category: "Mama Pot",
   },
@@ -266,7 +266,7 @@ export const Menus = [
     price: "2000",
     dateRange: "5 June - 22 December",
     foodDecription:
-      "Enjoy 2 courses for NGN 2,000 per person and 3 courses for NGN 3,000 per person on our Group Menu, available for 12 or more people.",
+      "Enjoy 2 course meals for NGN 2,000 per person and 3 courses for NGN 3,000 per person on our Group Menu, available for 12 or more people.",
     img: GroupDining,
   },
   {
@@ -274,7 +274,7 @@ export const Menus = [
     price: "2000",
     dateRange: "5 June - 22 December",
     foodDecription:
-      "Enjoy 2 courses for NGN 2,000 per person and 3 courses for NGN 3,000 per person on our Group Menu, available for 12 or more people.",
+      "Enjoy 2 course meals for NGN 2,000 per person and 3 courses for NGN 3,000 per person on our Group Menu, available for 12 or more people.",
     img: birthday,
   },
   {
@@ -282,7 +282,7 @@ export const Menus = [
     price: "3000",
     dateRange: "5 June - 22 December",
     foodDecription:
-      "Enjoy 2 courses for NGN 3,000 per person and 3 courses for NGN 3,500 per person on our Group Menu, available for 12 or more people.",
+      "Enjoy 2 course meals for NGN 3,000 per person and 3 courses for NGN 3,500 per person on our Group Menu, available for 12 or more people.",
     img: spaghetti,
   },
 ];
