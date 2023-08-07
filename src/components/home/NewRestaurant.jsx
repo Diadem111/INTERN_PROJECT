@@ -4,14 +4,23 @@ import styles from "../../style";
 import { restaurants } from "../../constants";
 import "../../index.css";
 import { FaStar } from "react-icons/fa";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const NewRestaurant = () => {
+const NewRestaurant = ({ maxWords }) => {
   // console.log(restaurants);
   const [foods, setFoods] = useState(restaurants);
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
   const navigate = useNavigate();
+
+  const splitText = (text, maxWords) => {
+    const words = text.split(" ");
+    if (words.length <= maxWords) {
+      return text;
+    } else {
+      return words.slice(0, maxWords).join(" ") + "...";
+    }
+  };
   return (
     <section className="p-4 py-16 m-auto ">
       <div className="flex flex-col lg:flex-row justify-between">
@@ -31,7 +40,7 @@ const NewRestaurant = () => {
       {/* done with res part */}
       {/* display foods */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4">
-        {foods.map((card) => (
+        {foods.map((card, index) => (
           <div
             key={card.id}
             className=" 
@@ -47,46 +56,46 @@ const NewRestaurant = () => {
               <p className="font-bold">{card.name}</p>
               <span className="pt-2  flex flex-row justify-between">
                 <div className="justify-center flex">
-                {[...Array(5)].map((star, index) => {
-                  const currentRating = index + 1;
-                  return (
-                    <label key={index}>
-                      <input
-                        type="radio"
-                        name="rating"
-                        value={currentRating}
-                        onClick={() => setRating(currentRating)}
-                      />
-                      <FaStar
-                        size={11}
-                        className="star"
-                        color={
-                          currentRating <= (hover || rating)
-                            ? "#BCA78C"
-                            : "#BCA78C"
-                        }
-                        onMouseEnter={() => setHover(currentRating)}
-                        onMouseLeave={() => setHover(null)}
-                      />
-                    </label>
-                  );
-                })}
+                  {[...Array(5)].map((star, index) => {
+                    const currentRating = index + 1;
+                    return (
+                      <label key={index}>
+                        <input
+                          type="radio"
+                          name="rating"
+                          value={currentRating}
+                          onClick={() => setRating(currentRating)}
+                        />
+                        <FaStar
+                          size={11}
+                          className="star"
+                          color={
+                            currentRating <= (hover || rating)
+                              ? "#BCA78C"
+                              : "#BCA78C"
+                          }
+                          onMouseEnter={() => setHover(currentRating)}
+                          onMouseLeave={() => setHover(null)}
+                        />
+                      </label>
+                    );
+                  })}
                 </div>
                 <p className="text-end tex text-[12px]  ">{card.review}</p>
               </span>
               <div className="h-[110px] mt-4">
-                <p className="tes pt-1 ">{card.text}</p>
+                {index === 0 ? (
+                  <p className="tes pt-1 ">{splitText(card.text, maxWords)}</p>
+                ) : (
+                  <p className="tes pt-1 ">{card.text}</p>
+                )}
               </div>
               <section className=" ">
                 <Link to={`/gallery/restaurants/column1/${card.id}`}>
-                <button
-                 className="butq button mb-2 text-[12px] hover:text-yellow-100"
-                >
-                  {card.category}
-                </button>
-                
+                  <button className="butq button mb-2 text-[12px] hover:text-yellow-100">
+                    {card.category}
+                  </button>
                 </Link>
-                
               </section>
             </div>
           </div>

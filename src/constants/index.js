@@ -36,9 +36,9 @@ export const restaurants = [
   {
     id: 1,
     name: "Circa.Nonparceil",
-    text: "Circa.Nonparceil located in the heart of Rushden Lakes shopping development, calm oasis for shoppers to take a break and enjoy breakfast, lunch...",
+    text: "Circa.Nonpareil, located in the heart of Rushden Lakes shopping development, is a calm oasis for shoppers to take a break and enjoy breakfast, lunch, dinner and everything in between. From cosy booths to larger sharing tables, the atmosphere is warm and friendly and you’ll be well looked after from the moment you walk through the door",
     image: "../Rectangle 203.webp",
-    box:"2",
+    box: "2",
     category: "Book Now",
     review: "8 reviews",
   },
@@ -47,28 +47,28 @@ export const restaurants = [
     name: "Mama Pot",
     text: "Mama Pot simply the perfect country destination for all who love good food and a relaxed drink in the beautiful village of Underwood ...",
     image: "../Rectangle 203 (1).webp",
-    box:"2",
+    box: "2",
     category: "Book Now",
-    review: "6 reviews"
+    review: "6 reviews",
   },
   {
     id: 3,
     name: "OX Restaurant & Lounge",
     text: "Big Eazy restaurant with a fresh outtake on a mixture of Mediterranean and Italian cuisines. Our ethos ‘Flavours of the Sun’ sounds...",
     image: "../Rectangle 203 (2).webp",
-    
-    box:"2",
+
+    box: "2",
     category: "Book Now",
-    review: "12 reviews"
+    review: "12 reviews",
   },
   {
     id: 4,
     name: "Xover Lounge",
     text: "Meal Meat restaurant in the heart of Covent Garden and the West End, serving the best seafood, fish, shellfish and oysters on the...",
     image: "../Rectangle 203 (3).webp",
-    box:"2",
+    box: "2",
     category: "Book Now",
-    review: "9 reviews"
+    review: "9 reviews",
   },
 ];
 export const breakfast = [
@@ -78,7 +78,7 @@ export const breakfast = [
     text: "The House  is a luxury Afternoon Tea experience is served in the dedicated Tea Lounge. Enjoy sweet and savoury treats designed by...",
     image: "../Rectangle 203 (4).webp",
     category: "Book Now",
-    review:"64 reviews",
+    review: "64 reviews",
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ export const breakfast = [
     text: "The Breakfast Club is bringing his abundance of cooking experience and expertise to breakfast lovers...",
     image: "../Rectangle 203 (5).webp",
     category: "Book Now",
-    review:"4 reviews",
+    review: "4 reviews",
   },
   {
     id: 3,
@@ -94,7 +94,7 @@ export const breakfast = [
     text: " Le Bistro contemporary, artistic and elegant, Brasserie of Light is a new destination restaurant and bar offering all day dining in a chic, Art ...",
     image: "../Rectangle 203 (6).webp",
     category: "Book Now",
-    review:"6 reviews",
+    review: "6 reviews",
   },
   {
     id: 4,
@@ -102,7 +102,7 @@ export const breakfast = [
     text: "Mama D Cafe is a classy  Modern European eatery offering walk-in seats in a polished, elegant space...",
     image: "../Rectangle 203 (7).webp",
     category: "Book Now",
-    review:"6 reviews",
+    review: "6 reviews",
   },
 ];
 
@@ -113,7 +113,7 @@ export const outDoor = [
     text: "Unwind and feel the energy at KIA, Nigeria's top USDA prime steak house, brought to you from New York with a sophisticated, trendy vibe...",
     image: "../Rectangle 203 (8).webp",
     category: "Book Now",
-    review:"64 reviews"
+    review: "64 reviews",
   },
   {
     id: 2,
@@ -121,7 +121,7 @@ export const outDoor = [
     text: "House Dine showcasing the flavors and traditions of Nigeria and a large selection of agave-based spirits, along with classic...",
     image: "../Rectangle 203 (9).webp",
     category: "Book Now",
-    review:"4 reviews"
+    review: "4 reviews",
   },
   {
     id: 3,
@@ -129,7 +129,7 @@ export const outDoor = [
     text: "Grillzly Influenced by the stylish country inns of Tuscany its unique interiors create a warmth and  enjoyed by both business and private parties...",
     image: "../Rectangle 203 (10).webp",
     category: "Book Now",
-    review:"6 reviews"
+    review: "6 reviews",
   },
   {
     id: 4,
@@ -137,7 +137,7 @@ export const outDoor = [
     text: " NO.4 speciality and cocktails & mocktails, Mouth-watering dynamite shrimps Mongolian Beef, freshly made desserts from our pastry bar...",
     image: "../Rectangle 203 (11).webp",
     category: "Book Now",
-    review:"6 reviews"
+    review: "6 reviews",
   },
 ];
 

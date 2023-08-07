@@ -5,11 +5,11 @@ import { cash, cutlery, magnifyingGlass } from "../../assets";
 import { useParams } from "react-router-dom";
 import { restaurants } from "../../constants/index";
 
-export default function RestaurantDescription({data}) {
+export default function RestaurantDescription({ data }) {
   let index = 1; //Index of each star staring from 1
   //  console.log(cardId);
-  if (!data ) {
-    return <div>Card not found</div>
+  if (!data) {
+    return <div>Card not found</div>;
   }
 
   return (
@@ -66,9 +66,7 @@ export default function RestaurantDescription({data}) {
           </span>
         </span>
       </div>
-      <p className=" font-medium text-lg mt-6 mb-12">
-        {data.text}
-      </p>
+      <p className=" font-medium text-lg mt-6 mb-12">{data.text}</p>
     </div>
   );
 }

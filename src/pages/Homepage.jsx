@@ -24,7 +24,7 @@ function Homepage() {
 
       <div className={` ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <NewRestaurant />
+          <NewRestaurant maxWords={25} />
           <Breakfast />
           <Outdoor />
           <Cards />
