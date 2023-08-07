@@ -44,7 +44,7 @@ const NewRestaurant = ({ maxWords }) => {
           <div
             key={card.id}
             className=" 
-          rounded-lg hover:scale-105 duration-300 hover:rounded-b-2xl hover:shadow-2xl"
+          rounded-lg hover:scale-105 duration-300 hover:rounded-b-2xl hover:shadow-2xl bg-white"
           >
             <img
               src={card.image}

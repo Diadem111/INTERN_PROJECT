@@ -6,11 +6,22 @@ import { restaurants, breakfast, outDoor } from "../../constants/index";
 export default function RestaurantHero() {
   const navigate = useNavigate();
   const [foods, setFoods] = useState(restaurants);
+<<<<<<< HEAD
   const { column, cardId } = useParams();
   // console.log(foods);
   // const card = restaurants.find((c) => c.id === parseInt(cardId));
   // console.log(card);
   // console.log(cardId);
+=======
+  const { cardId } = useParams();
+  console.log(foods);
+  const card = restaurants.find((c) => c.id === parseInt(cardId));
+  console.log(card);
+  // console.log(cardId);
+  if (!card) {
+    return <div>Card not found</div>;
+  }
+>>>>>>> 537bf1a52eeed9e47559ec99ae9d0bd65ae1183f
 
   let card;
   switch (column) {
@@ -38,7 +49,7 @@ export default function RestaurantHero() {
     return <div>Card not found</div>;
   }
   return (
-    <section className=" bg-restaurant bg-cover bg-no-repeat h-[45rem] max-xs:h-[35rem]">
+    <section className=" bg-restaurant bg-cover bg-no-repeat h-[45rem] max-sm:h-[35rem] max-mds:h-[40rem] mlg:h-[50rem] xl:h-[60rem]">
       <div className="z-10">
         <div className="text-white z-50 flex flex-col items-center gap-8 pt-[14%] w-full h-full ">
           <h1 className="max-xs:text-3xl xs:text-3xl sm:text-6xl font-zodiak font-bold text-center">
