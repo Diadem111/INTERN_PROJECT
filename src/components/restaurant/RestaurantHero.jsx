@@ -6,22 +6,11 @@ import { restaurants, breakfast, outDoor } from "../../constants/index";
 export default function RestaurantHero() {
   const navigate = useNavigate();
   const [foods, setFoods] = useState(restaurants);
-<<<<<<< HEAD
   const { column, cardId } = useParams();
   // console.log(foods);
   // const card = restaurants.find((c) => c.id === parseInt(cardId));
   // console.log(card);
   // console.log(cardId);
-=======
-  const { cardId } = useParams();
-  console.log(foods);
-  const card = restaurants.find((c) => c.id === parseInt(cardId));
-  console.log(card);
-  // console.log(cardId);
-  if (!card) {
-    return <div>Card not found</div>;
-  }
->>>>>>> 537bf1a52eeed9e47559ec99ae9d0bd65ae1183f
 
   let card;
   switch (column) {
