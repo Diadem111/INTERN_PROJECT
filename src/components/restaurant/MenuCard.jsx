@@ -60,7 +60,7 @@ export default function MenuCard({
           </div>
         </div>
         <p className="my-4">{foodDescription}</p>
-        {/* <Link to={`/gallery/restaurants/column/${card.id}/reservation`}>
+        <Link to={`/gallery/restaurants/column/${card.id}/reservation`}>
         <button
 
           id="but"
@@ -73,7 +73,7 @@ export default function MenuCard({
           Book a Table
         </button>
 
-        </Link> */}
+        </Link>
              </div>
       <div className="col-start-7 col-span-4 mds:inline hidden">
         <img
