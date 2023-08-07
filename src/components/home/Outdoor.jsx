@@ -73,7 +73,7 @@ const outdoor = () => {
                 <p className="tes pt-1">{card.text}</p>
               </div>
               
-              <Link to={`/gallery/restaurants/${card.id}`}>
+              <Link to={`/gallery/restaurants/column3/${card.id}`}>
                 <button
                  className="butq button mb-2 text-[12px] hover:text-yellow-100"
                 >

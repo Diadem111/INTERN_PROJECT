@@ -73,7 +73,7 @@ export const restaurants = [
 ];
 export const breakfast = [
   {
-    id: "1",
+    id: 1,
     name: "The House",
     text: "The House  is a luxury Afternoon Tea experience is served in the dedicated Tea Lounge. Enjoy sweet and savoury treats designed by...",
     image: "../Rectangle 203 (4).webp",
@@ -81,7 +81,7 @@ export const breakfast = [
     review:"64 reviews",
   },
   {
-    id: "2",
+    id: 2,
     name: "The Breakfast Club",
     text: "The Breakfast Club is bringing his abundance of cooking experience and expertise to breakfast lovers...",
     image: "../Rectangle 203 (5).webp",
@@ -89,7 +89,7 @@ export const breakfast = [
     review:"4 reviews",
   },
   {
-    id: "3",
+    id: 3,
     name: "Le Bistro",
     text: " Le Bistro contemporary, artistic and elegant, Brasserie of Light is a new destination restaurant and bar offering all day dining in a chic, Art ...",
     image: "../Rectangle 203 (6).webp",
@@ -97,7 +97,7 @@ export const breakfast = [
     review:"6 reviews",
   },
   {
-    id: "4",
+    id: 4,
     name: "Mama D Cafe",
     text: "Mama D Cafe is a classy  Modern European eatery offering walk-in seats in a polished, elegant space...",
     image: "../Rectangle 203 (7).webp",
@@ -108,7 +108,7 @@ export const breakfast = [
 
 export const outDoor = [
   {
-    id: "1",
+    id: 1,
     name: "KIA",
     text: "Unwind and feel the energy at KIA, Nigeria's top USDA prime steak house, brought to you from New York with a sophisticated, trendy vibe...",
     image: "../Rectangle 203 (8).webp",
@@ -116,7 +116,7 @@ export const outDoor = [
     review:"64 reviews"
   },
   {
-    id: "2",
+    id: 2,
     name: "House Dine",
     text: "House Dine showcasing the flavors and traditions of Nigeria and a large selection of agave-based spirits, along with classic...",
     image: "../Rectangle 203 (9).webp",
@@ -124,7 +124,7 @@ export const outDoor = [
     review:"4 reviews"
   },
   {
-    id: "3",
+    id: 3,
     name: "Grillzly",
     text: "Grillzly Influenced by the stylish country inns of Tuscany its unique interiors create a warmth and  enjoyed by both business and private parties...",
     image: "../Rectangle 203 (10).webp",
@@ -132,7 +132,7 @@ export const outDoor = [
     review:"6 reviews"
   },
   {
-    id: "4",
+    id: 4,
     name: "Replay",
     text: " NO.4 speciality and cocktails & mocktails, Mouth-watering dynamite shrimps Mongolian Beef, freshly made desserts from our pastry bar...",
     image: "../Rectangle 203 (11).webp",

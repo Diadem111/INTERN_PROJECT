@@ -5,17 +5,36 @@ import RestaurantGallery from "./RestaurantGallery";
 import RestaurantMenu from "./RestaurantMenu";
 import RestaurantReviews from "./RestaurantReviews";
 import { useParams } from "react-router-dom";
-import { restaurants } from "../../constants/index";
+import { restaurants,breakfast,outDoor } from "../../constants/index";
 
 
 
 export default function RestaurantInfo() {
   const [foods, setFoods] = useState(restaurants);
-  const {cardId} = useParams();
-  console.log(foods);
-  const card = restaurants.find((c) => c.id === parseInt(cardId));
-  console.log(card);
+  const {column, cardId} = useParams();
+  // console.log(foods);
+  // const card = restaurants.find((c) => c.id === parseInt(cardId));
+  // console.log(card);
 // console.log(cardId);
+
+let card;
+switch (column) {
+  case "column1":
+  card = restaurants.find(item => item.id  === parseInt(cardId,10) );
+  break;
+
+  case "column2" :
+    card = breakfast.find(item => item.id === parseInt(cardId, 10));
+    break;
+
+    case "column3":
+      card = outDoor.find(item => item.id === parseInt(cardId, 10));
+      break;
+      default:
+        card = null;
+}
+ 
+
   
 
   return (

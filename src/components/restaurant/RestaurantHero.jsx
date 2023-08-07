@@ -1,21 +1,39 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router";
 import { useParams } from "react-router-dom";
-import { restaurants } from "../../constants/index";
+import { restaurants,breakfast,outDoor } from "../../constants/index";
 
 export default function RestaurantHero() {
   const navigate = useNavigate();
   const [foods, setFoods] = useState(restaurants);
-  const {cardId} = useParams();
-  console.log(foods);
-  const card = restaurants.find((c) => c.id === parseInt(cardId));
-  console.log(card);
+  const {column, cardId} = useParams();
+  // console.log(foods);
+  // const card = restaurants.find((c) => c.id === parseInt(cardId));
+  // console.log(card);
 // console.log(cardId);
+
+let card;
+switch (column) {
+  case "column1":
+  card = restaurants.find(item => item.id  === parseInt(cardId) );
+  break;
+
+  case "column2" :
+    card = breakfast.find(item => item.id === parseInt(cardId));
+    break;
+
+    case "column3":
+      card = outDoor.find(item => item.id === parseInt(cardId));
+      break;
+      default:
+        card = null;
+}
+console.log(card);
+
   if (!card ) {
     return <div>Card not found</div>
   }
-
-  return (
+   return (
     <section className=" bg-restaurant bg-cover bg-no-repeat h-[45rem] max-xs:h-[35rem]">
       <div className="z-10">
         <div className="text-white z-50 flex flex-col items-center gap-8 pt-[14%] w-full h-full ">

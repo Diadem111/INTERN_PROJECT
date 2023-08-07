@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/gallery" exact element={<Homepage />} />
-          <Route path="/gallery/restaurants/:cardId" exact element={<Restaurant />} />
+          <Route path="/gallery/restaurants/:column/:cardId" exact element={<Restaurant />} />
 
           {/* <Route
             path="/gallery/restaurants/reservation/arrangement"
@@ -28,7 +28,7 @@ function App() {
             element={<Arrangement />}
           /> */}
           <Route
-            path="/gallery/restaurants/:cardId/reservation"
+            path="/gallery/restaurants/:column/:cardId/reservation"
             exact
             element={<Reservation />}
           />

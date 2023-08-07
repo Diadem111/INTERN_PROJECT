@@ -3,9 +3,11 @@ import DatePicker from "./DatePicker";
 import Time from "./Time";
 import SuccessModal from "../modal/SuccessModal";
 import Seating from "./Seating";
+import { useNavigate } from "react-router";
 
 export default function ReservationBody() {
   const [isOpen, setOpen] = React.useState(false);
+  const navigate = useNavigate();
   const handleOpen = () => {
     setOpen(true);
   };

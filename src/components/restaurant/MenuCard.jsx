@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { calender, cash } from "../../assets";
 import { useNavigate } from "react-router";
 import { useParams } from "react-router-dom";
-import { restaurants } from "../../constants/index";
+import { restaurants,breakfast,outDoor } from "../../constants/index";
 import { Link } from "react-router-dom";
 
 export default function MenuCard({
@@ -14,11 +14,28 @@ export default function MenuCard({
 }) {
   const navigate = useNavigate();
   const [foods, setFoods] = useState(restaurants);
-  const {cardId} = useParams();
+  const {column, cardId} = useParams();
   // console.log(foods);
-  const card = restaurants.find((c) => c.id === parseInt(cardId));
-  console.log(card);
+  // const card = restaurants.find((c) => c.id === parseInt(cardId, 10));
+  // console.log(card);
 
+  let card;
+  switch (column) {
+    case "column1":
+    card = restaurants.find(item => item.id  === parseInt(cardId) );
+    break;
+
+    case "column2" :
+      card = breakfast.find(item => item.id === parseInt(cardId));
+      break;
+
+      case "column3":
+        card = outDoor.find(item => item.id === parseInt(cardId));
+        break;
+        default:
+          card = null;
+  }
+  console.log(card)
   return (
     <div className="grid grid-cols-10 p-5 border border-[#64748B] my-4">
       <div className="flex flex-col col-start-1 mds:col-span-5 col-span-10 gap-3  ">
@@ -43,7 +60,7 @@ export default function MenuCard({
           </div>
         </div>
         <p className="my-4">{foodDescription}</p>
-        <Link to={`/gallery/restaurants/${card.id}/reservation`}>
+        {/* <Link to={`/gallery/restaurants/column/${card.id}/reservation`}>
         <button
 
           id="but"
@@ -56,7 +73,7 @@ export default function MenuCard({
           Book a Table
         </button>
 
-        </Link>
+        </Link> */}
              </div>
       <div className="col-start-7 col-span-4 mds:inline hidden">
         <img
