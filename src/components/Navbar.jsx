@@ -11,7 +11,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = (event) => {
+  const displayComingSoon = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -36,9 +36,14 @@ const Navbar = () => {
           }}
         />
         <div>
-          <h3 className="logo text-[32px] font-bold cursor-pointer "  onClick={() => {
-                    navigate("/");
-                  }}>TableScribe</h3>
+          <h3
+            className="logo text-[32px] font-bold cursor-pointer "
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            TableScribe
+          </h3>
         </div>
       </div>
       <ul
@@ -80,9 +85,9 @@ const Navbar = () => {
               onClick={(event) => {
                 nav.id == "Book a Table"
                   ? navigate("/gallery")
-                  : nav.id == "Gallery"
+                  : nav.id == "Restaurants"
                   ? navigate("/gallery")
-                  : handleClick(event);
+                  : displayComingSoon(event);
               }}
             >
               {nav.title}
