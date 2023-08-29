@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import Box from "@mui/material/Box";
 
 const ModalStyle = {
-  position: "absolute" as "absolute",
+  position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
@@ -16,6 +16,27 @@ const ModalStyle = {
   aspectRatio: 1 / 1,
   display: "grid",
 };
+
+const Month = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sept",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+const Week = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+const dateObj = new Date();
+const month = Month[dateObj.getMonth()];
+const day = dateObj.getDate();
+const weekDay = Week[dateObj.getDay()];
+const time = { hour: dateObj.getHours(), minutes: dateObj.getMinutes() };
 
 export default function SuccessModal({ isOpen, handleClose }: props) {
   const navigate = useNavigate();
@@ -40,7 +61,20 @@ export default function SuccessModal({ isOpen, handleClose }: props) {
                 "text-xl text-center font-semibold row-start-1 mt-5 md:text-sm"
               }
             >
-              Wed, 12 Jun 2 guest 17.30pm
+              <time
+                className=" max-xs:flex flex-col text-xl"
+                dateTime={dateObj.toString()}
+              >
+                <span>
+                  <span>{weekDay}</span>, <span>{day}</span>
+                  <span> {month}</span>
+                </span>
+                <span> 2 guests </span>
+                <span>
+                  {time.hour}:<span>{time.minutes}</span>{" "}
+                  {time.hour > 12 ? "pm" : "am"}
+                </span>
+              </time>
             </h1>
             <div className="flex justify-center w-full self-center row-start-2 ">
               <img className=" w-1/2" src={success} alt="" />
