@@ -4,7 +4,7 @@ import styles from "../style";
 export const LandingPage = () => {
   return (
     <div className="bg-[#FEFCF2] w-full overflow-hidden ">
-      <div className={`${styles.boxWidth}`}>
+      <div className={`${styles.boxWidth} m-auto`}>
         <LandingpageImg />
       </div>
     </div>

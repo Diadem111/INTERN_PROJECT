@@ -27,7 +27,7 @@ import closeUpToast from "./close-up-toast.webp";
 import blackman from "./black-man-presenting2.webp";
 import coupleCelebrating from "./couples-celebrating-birthday 2.avif";
 import youngCoupleDinner from "./young-couple-having-romantic-dinner.avif";
-import youngPeople from "./young-people.webp";
+import youngPeople from "./young-people.avif";
 import Logo from "./project.webp";
 import Adeola from "./Adeola1.webp";
 import topBackground from "./tasty.webp";
