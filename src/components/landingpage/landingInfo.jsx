@@ -5,6 +5,7 @@ import {
   youngPeople,
   blackman,
   coupleCelebrating,
+  design,
 } from "../../assets/index";
 export const LandingpageImg = () => {
   const navigate = useNavigate();
@@ -37,8 +38,9 @@ export const LandingpageImg = () => {
           alt=""
         />
         <img
+          className="w-full aspect-[7/5.1]"
           style={{ clipPath: "polygon(0 5%, 100% 5%, 100% 95%, 0 95%)" }}
-          src={youngCoupleDinner}
+          src={design}
           alt=""
         />
         <img

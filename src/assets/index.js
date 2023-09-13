@@ -27,13 +27,12 @@ import closeUpToast from "./close-up-toast.webp";
 import blackman from "./black-man-presenting2.png";
 import coupleCelebrating from "./couples-celebrating-birthday 2.avif";
 import youngCoupleDinner from "./young-couple-having-romantic-dinner.avif";
-import youngPeople from "./young-people.png";
+import youngPeople from "./young-people.avif";
 import Logo from "./project.webp";
 import Adeola from "./Adeola1.webp";
 import topBackground from "./tasty.webp";
 import Linda from "./linda.webp";
 import notfound from "./notfound.svg";
-import success from "./success.gif";
 export {
   youngPeople,
   coupleCelebrating,
@@ -70,5 +69,4 @@ export {
   Linda,
   Logo,
   notfound,
-  success,
 };
